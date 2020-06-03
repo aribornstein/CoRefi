@@ -1,91 +1,112 @@
 <template>
-  <div id="app">
-    <v-app>
-      <v-system-bar color="default" id="dashboard" fixed>
-        CDC Annotation Tool
-        <v-spacer />
-        Mention: {{viewedMentions.length}}/{{viewedMentions.length + candidateMentions.length}} Document: {{parseInt(currentDocument) + 1 }}
-      </v-system-bar>
+  <v-app>
+     <v-system-bar color="default" id="dashboard" fixed>
+      CDC Annotation Tool
+      <v-spacer />
+      Mention: {{viewedMentions.length}}/{{viewedMentions.length + candidateMentions.length}} Document: {{parseInt(currentDocument) + 1 }}
+    </v-system-bar>
 
-      <v-content>
-        <v-container>
-          <v-layout row>
-            <v-container>
-              <v-layout
-                row
-                v-for="(doc, docIndex) in docsViewModel"
-                v-bind:key="docIndex"
-                grid
-                body-1
-                mb-3
-                mt-3
+    <v-content>
+      <v-container>
+        <v-layout row>
+          <v-container>
+            <v-layout
+              row
+              v-for="(doc, docIndex) in docsViewModel"
+              v-bind:key="docIndex"
+              grid
+              body-1
+              mb-3
+              mt-3
+            >
+              <span
+                v-for="(tokenSpan, spanIndex) in doc"
+                v-bind:key="spanIndex"
+                v-bind:class="tokenSpan.class"
+                @click="viewedMentionClicked($event, tokenSpan)"
               >
                 <span
-                  v-for="(tokenSpan, spanIndex) in doc"
-                  v-bind:key="spanIndex"
-                  v-bind:class="tokenSpan.class"
-                  @click="viewedMentionClicked($event, tokenSpan)"
-                >
-                  <span
-                    v-if="!tokenSpan.tokens"
-                    class="token"
-                    :id="'token-' + tokenSpan.i"
-                    v-bind:class="{'no-white':tokenSpan.noWhite}"
-                    v-text="tokenSpan.text"
-                  ></span>
-                  <span
-                    v-else
-                    v-for="token in tokenSpan.tokens"
-                    class="token"
-                    :id="'token-' + token.i"
-                    v-bind:key="token.i"
-                    v-bind:class="{'no-white':token.noWhite}"
-                    v-text="token.text"
-                  ></span>
-                </span>
-              </v-layout>
-              <v-divider mx-4 />
-            </v-container>
-          </v-layout>
+                  v-if="!tokenSpan.tokens"
+                  class="token"
+                  :id="'token-' + tokenSpan.i"
+                  v-bind:class="{'no-white':tokenSpan.noWhite}"
+                  v-text="tokenSpan.text"
+                ></span>
+                <span
+                  v-else
+                  v-for="token in tokenSpan.tokens"
+                  class="token"
+                  :id="'token-' + token.i"
+                  v-bind:key="token.i"
+                  v-bind:class="{'no-white':token.noWhite}"
+                  v-text="token.text"
+                ></span>
+              </span>
+            </v-layout>
+            <v-divider mx-4 />
+          </v-container>
+        </v-layout>
 
-          <v-layout row fixed>
-            <v-chip-group
-              id="cluster-bank"
-              mandatory
-              show-arrows
-              active-class="primary--text"
-              v-model="selectedCluster"
-            >
-              <v-chip
-                v-for="cluster in clusters"
-                :key="cluster.id"
-                :value="cluster.id"
-                :color="cluster.suggestedColor"
-                label
-                small
-              >{{cluster.text}}</v-chip>
-            </v-chip-group>
-          </v-layout>
-        </v-container>
-      </v-content>
-      <v-snackbar v-model="snackbar" :timeout="snackbarTimeout">
-        {{ snackbarText }}
-        <v-btn color="blue" text @click="snackbar = false">Close</v-btn>
-      </v-snackbar>
-      <v-tour name="myTour" :steps="tourSteps"></v-tour>
-    </v-app>
-  </div>
+        <v-layout row fixed>
+          <v-chip-group
+            id="cluster-bank"
+            mandatory
+            show-arrows
+            active-class="primary--text"
+            v-model="selectedCluster"
+          >
+            <v-chip
+              v-for="cluster in clusters"
+              :key="cluster.id"
+              :value="cluster.id"
+              :color="cluster.suggestedColor"
+              label
+              small
+            >{{cluster.text}}</v-chip>
+          </v-chip-group>
+        </v-layout>
+      </v-container>
+    </v-content>
+    <v-snackbar v-model="snackbar" :timeout="snackbarTimeout">
+      {{ snackbarText }}
+      <v-btn color="blue" text @click="snackbar = false">Close</v-btn>
+    </v-snackbar>
+    <v-tour name="myTour" :steps="tourSteps"></v-tour>
+  </v-app>
 </template>
 
 <script>
-import jsonData from "./__mocks__/data.json";
-// import CDCTool from "./components/CDCTool.vue";
+import jsonData from "./__mocks__/mentions.json";
+
+import Vue from "vue";
+import Vuetify from 'vuetify/lib';
+import {VApp,
+    VContent,
+    VDivider,
+    VBtn,
+    VLayout,
+    VChip,
+    VChipGroup,
+    VSnackbar,
+    VSystemBar,
+    VSpacer,
+    VContainer} from 'vuetify/lib';
+Vue.use(Vuetify);
+var vuetify = new Vuetify({});
+
+import VueTour from "vue-tour";
+Vue.use(VueTour);
+Vue.config.productionTip = false;
 
 export default {
   name: "App",
-
+  vuetify,
+  VueTour,
   data() {
-    return jsonData;
+    if (!this.json) {
+      return jsonData;
+    }
+    return JSON.parse(this.json);
   },
   created() {
     window.addEventListener("keydown", this.processInput);
@@ -101,13 +122,29 @@ export default {
       this.generatePreviousCoreferringWorkerTokens();
     }
   },
+  components: {
+    VApp,
+    VContent,
+    VDivider,
+    VBtn,
+    VLayout,
+    VChip,
+    VChipGroup,
+    VSnackbar,
+    VSystemBar,
+    VSpacer,
+    VContainer,
+  },
+  props: {
+    json: String
+  },
   methods: {
     processInput(e) {
       // do stuff
       switch (e.keyCode) {
         case 70: //f
         case 102: //F
-          if (!e.ctrlKey){
+          if (!e.ctrlKey) {
             e.preventDefault();
             this.fixSpan();
           }
@@ -200,7 +237,10 @@ export default {
     },
 
     reassignMention(viewedIndex) {
-      if (this.currentMention.start > this.viewedMentions[this.viewedMentions.length - 1].start){
+      if (
+        this.currentMention.start >
+        this.viewedMentions[this.viewedMentions.length - 1].start
+      ) {
         this.candidateMentions.unshift(this.currentMention);
       }
       this.currentMention = this.viewedMentions[viewedIndex];
@@ -464,10 +504,13 @@ export default {
 </script>
 
 <style>
+@import "../node_modules/vue-tour/dist/vue-tour.css";
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+@import url("https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css");
+@import url("../node_modules/vuetify/dist/vuetify.min.css");
 
 .token,
 .mention-token {
-  /* font-size: 12px; */
   margin-right: 0.3em;
 }
 .token:hover {
@@ -479,26 +522,24 @@ export default {
 .viewed:hover {
   font-weight: bold;
   color: green;
-  /* border: 1px dotted yellowgreen; */
 }
 
 .cluster {
   font-weight: 400;
-  /* color:#b3d4fc; */
   text-decoration-color: #b3d4fc;
   color: #1976d2;
-  
   text-decoration-line: underline;
-  /* padding-bottom: 1px; */
-  /* border: 1px dotted blue; */
 }
 
 .current {
   font-weight: 500;
-  
   text-decoration-line: underline;
   text-decoration-color: red;
-
-  /* border: 1px dotted red; */
 }
+
+.theme--light.v-chip  {
+    border-color: #1867BE !important;
+    color: #1867c0 !important;
+}
+
 </style>

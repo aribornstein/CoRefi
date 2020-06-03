@@ -1,5 +1,5 @@
 {
-    "mode": "annotation",
+    "mode": "onboarding",
     "snackbar": false,
     "snackbarText": "",
     "snackbarTimeout": 2000,
@@ -171,3 +171,5 @@
     ],
     "previousCoreferringWorkerTokens":{}
 }
+
+
