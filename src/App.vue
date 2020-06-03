@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <v-app>
-      <v-system-bar color="default" id="dashboard">
+      <v-system-bar color="default" id="dashboard" fixed>
         CDC Annotation Tool
         <v-spacer />
-        Mention: {{viewedMentions.length}}/{{viewedMentions.length + candidateMentions.length}} Document: {{currentDocument}}
+        Mention: {{viewedMentions.length}}/{{viewedMentions.length + candidateMentions.length}} Document: {{parseInt(currentDocument) + 1 }}
       </v-system-bar>
 
       <v-content>
@@ -17,6 +17,8 @@
                 v-bind:key="docIndex"
                 grid
                 body-1
+                mb-3
+                mt-3
               >
                 <span
                   v-for="(tokenSpan, spanIndex) in doc"
@@ -47,7 +49,6 @@
           </v-layout>
 
           <v-layout row fixed>
-            <span body>Clusters:</span>
             <v-chip-group
               id="cluster-bank"
               mandatory
@@ -78,6 +79,7 @@
 
 <script>
 import jsonData from "./__mocks__/data.json";
+// import CDCTool from "./components/CDCTool.vue";
 
 export default {
   name: "App",
@@ -99,15 +101,16 @@ export default {
       this.generatePreviousCoreferringWorkerTokens();
     }
   },
-
   methods: {
     processInput(e) {
       // do stuff
       switch (e.keyCode) {
         case 70: //f
         case 102: //F
-          e.preventDefault();
-          this.fixSpan();
+          if (!e.ctrlKey){
+            e.preventDefault();
+            this.fixSpan();
+          }
           break;
         case 32: // space
           e.preventDefault();
@@ -197,7 +200,9 @@ export default {
     },
 
     reassignMention(viewedIndex) {
-      this.candidateMentions.unshift(this.currentMention);
+      if (this.currentMention.start > this.viewedMentions[this.viewedMentions.length - 1].start){
+        this.candidateMentions.unshift(this.currentMention);
+      }
       this.currentMention = this.viewedMentions[viewedIndex];
     },
 
@@ -405,7 +410,7 @@ export default {
             clustId: viewedMention.clustId,
             class:
               viewedMention.clustId == this.selectedCluster
-                ? "cluster"
+                ? "v-chip primary--text v-chip--active v-chip--label v-chip--no-color theme--light v-size--small" //cluster
                 : "viewed",
             viewedIndex: viewedIndex
           };
@@ -459,6 +464,7 @@ export default {
 </script>
 
 <style>
+
 .token,
 .mention-token {
   /* font-size: 12px; */
@@ -471,14 +477,28 @@ export default {
   margin-right: 0;
 }
 .viewed:hover {
-  border: 1px dotted yellowgreen;
+  font-weight: bold;
+  color: green;
+  /* border: 1px dotted yellowgreen; */
 }
 
 .cluster {
-  border: 1px dotted blue;
+  font-weight: 400;
+  /* color:#b3d4fc; */
+  text-decoration-color: #b3d4fc;
+  color: #1976d2;
+  
+  text-decoration-line: underline;
+  /* padding-bottom: 1px; */
+  /* border: 1px dotted blue; */
 }
 
 .current {
-  border: 1px dotted red;
+  font-weight: 500;
+  
+  text-decoration-line: underline;
+  text-decoration-color: red;
+
+  /* border: 1px dotted red; */
 }
 </style>
