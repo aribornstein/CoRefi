@@ -2,8 +2,9 @@
   <v-app>
      <v-system-bar color="default" id="dashboard" fixed>
       CDC Annotation Tool
-      <v-spacer />
+      <v-spacer/>
       Mention: {{viewedMentions.length}}/{{viewedMentions.length + candidateMentions.length}} Document: {{parseInt(currentDocument) + 1 }}
+      <span>--</span>
     </v-system-bar>
 
     <v-content>
@@ -76,7 +77,7 @@
 </template>
 
 <script>
-import jsonData from "./__mocks__/mentions.json";
+import jsonData from "./__mocks__/data.json";
 
 import Vue from "vue";
 import Vuetify from 'vuetify/lib';
