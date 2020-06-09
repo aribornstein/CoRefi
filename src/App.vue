@@ -1,25 +1,30 @@
 <template>
   <v-app>
-     <v-system-bar color="default" id="dashboard" fixed>
+    <v-system-bar color="default" id="dashboard" part="dash" fixed>
       CDC Annotation Tool
-      <v-spacer/>
+      <v-spacer />
       Mention: {{viewedMentions.length}}/{{viewedMentions.length + candidateMentions.length}} Document: {{parseInt(currentDocument) + 1 }}
       <span>--</span>
     </v-system-bar>
 
     <v-content>
       <v-container>
-        <v-layout row>
+        <v-layout
+          align-center
+          fluid
+          row
+          v-for="(doc, docIndex) in docsViewModel"
+          v-bind:key="docIndex"
+          grid
+          body-1
+          mb-3
+          mt-3
+        >
           <v-container>
-            <v-layout
-              row
-              v-for="(doc, docIndex) in docsViewModel"
-              v-bind:key="docIndex"
-              grid
-              body-1
-              mb-3
-              mt-3
-            >
+            <v-layout row>
+              <span mb-2 class="title">Document {{docIndex + 1}}:</span>
+            </v-layout>
+            <v-layout row mt-2>
               <span
                 v-for="(tokenSpan, spanIndex) in doc"
                 v-bind:key="spanIndex"
@@ -44,54 +49,59 @@
                 ></span>
               </span>
             </v-layout>
-            <v-divider mx-4 />
           </v-container>
         </v-layout>
-
-        <v-layout row fixed>
-          <v-chip-group
-            id="cluster-bank"
-            mandatory
-            show-arrows
-            active-class="primary--text"
-            v-model="selectedCluster"
-          >
-            <v-chip
-              v-for="cluster in clusters"
-              :key="cluster.id"
-              :value="cluster.id"
-              :color="cluster.suggestedColor"
-              label
-              small
-            >{{cluster.text}}</v-chip>
-          </v-chip-group>
-        </v-layout>
+        <v-divider mx-4 />
+      </v-container>
+      <v-container sticky>
+        <v-chip-group
+          id="cluster-bank"
+          mandatory
+          show-arrows
+          active-class="primary--text"
+          v-model="selectedCluster"
+        >
+          <v-chip small @click="assignMention(true)" >
+            <v-icon dark :color="newClusterButtonColor">mdi-plus</v-icon>
+          </v-chip>
+          <v-chip
+            v-for="cluster in clusters"
+            :key="cluster.id"
+            :value="cluster.id"
+            :text-color="cluster.suggestedColor"
+            label
+            small
+          >{{cluster.text}}</v-chip>
+        </v-chip-group>
       </v-container>
     </v-content>
     <v-snackbar v-model="snackbar" :timeout="snackbarTimeout">
       {{ snackbarText }}
       <v-btn color="blue" text @click="snackbar = false">Close</v-btn>
     </v-snackbar>
-    <v-tour name="myTour" :steps="tourSteps"></v-tour>
+    <v-tour name="myTour" :steps="tourSteps" :options="{ debug: true }"></v-tour>
+    <v-footer fixed padless></v-footer>
   </v-app>
 </template>
 
 <script>
-import jsonData from "./__mocks__/data.json";
+import jsonData from "./__mocks__/mentions.json";
 
 import Vue from "vue";
-import Vuetify from 'vuetify/lib';
-import {VApp,
-    VContent,
-    VDivider,
-    VBtn,
-    VLayout,
-    VChip,
-    VChipGroup,
-    VSnackbar,
-    VSystemBar,
-    VSpacer,
-    VContainer} from 'vuetify/lib';
+import Vuetify from "vuetify/lib";
+import {
+  VApp,
+  VContent,
+  VDivider,
+  VBtn,
+  VLayout,
+  VChip,
+  VChipGroup,
+  VSnackbar,
+  VSystemBar,
+  VSpacer,
+  VContainer
+} from "vuetify/lib";
 Vue.use(Vuetify);
 var vuetify = new Vuetify({});
 
@@ -134,7 +144,7 @@ export default {
     VSnackbar,
     VSystemBar,
     VSpacer,
-    VContainer,
+    VContainer
   },
   props: {
     json: String
@@ -182,7 +192,9 @@ export default {
     },
 
     fixSpan() {
-      let sel = window.getSelection(),
+      let sel = document
+          .getElementsByTagName("cdc-tool")[0]
+          .shadowRoot.getSelection(), //super hacky but works
         newStart = sel.getRangeAt(0).startContainer.parentNode.id,
         newEnd = sel.getRangeAt(0).endContainer.parentNode.id;
 
@@ -373,7 +385,7 @@ export default {
       ) {
         if (this.previousCoreferringWorkerTokens[i] != undefined) {
           this.previousCoreferringWorkerTokens[i].forEach(token => {
-            coreferingTokens.add(token);
+            coreferingTokens.add(this.tokens2Cluster[token]);
           });
         }
       }
@@ -381,6 +393,13 @@ export default {
         suggestedClusters.add(token);
       });
       return suggestedClusters;
+    },
+
+    newClusterButtonColor: function() {
+      if (this.mode == "reviewer" && !this.clusterIds.includes(Array.from(this.suggestedReviewerClusters)[0])) {
+        return "red";
+      }
+      return "";
     },
 
     clusters: function() {
@@ -451,7 +470,7 @@ export default {
             clustId: viewedMention.clustId,
             class:
               viewedMention.clustId == this.selectedCluster
-                ? "v-chip primary--text v-chip--active v-chip--label v-chip--no-color theme--light v-size--small" //cluster
+                ? "cluster" //"v-chip primary--text v-chip--active v-chip--label v-chip--no-color theme--light v-size--default"
                 : "viewed",
             viewedIndex: viewedIndex
           };
@@ -526,10 +545,17 @@ export default {
 }
 
 .cluster {
+  /* border-radius: 10px;
+  padding-left:0.3em;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border: 1px solid #2D9CDB;
   font-weight: 400;
-  text-decoration-color: #b3d4fc;
-  color: #1976d2;
-  text-decoration-line: underline;
+  color: #2D9CDB; */
+  background: #ddeff9;
+  color: #2d9cdb;
+  margin-right: 0.3em;
+  padding-left: 0.3em;
 }
 
 .current {
@@ -538,9 +564,8 @@ export default {
   text-decoration-color: red;
 }
 
-.theme--light.v-chip  {
-    border-color: #1867BE !important;
-    color: #1867c0 !important;
+.theme--light.v-chip {
+  border-color: #1867be !important;
+  color: #1867c0 !important;
 }
-
 </style>

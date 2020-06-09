@@ -12,32 +12,28 @@
             "content": "This HIT will walkthrough how to perform CDC annotation. Displayed on the screen below is a document and two hilighted mentions."
         },
         {
-            "target": "#cluster",
-            "header": {
-                "title": "Cluster Mentions"
-            },
-            "content": "The first available mention is automatically assigned to the first cluster. Mentions in the selected cluster appear in <span class=\"cluster\">blue</span>."
-        },
-        {
-            "target": "#cluster-bank",
+            "target": ".v-chip--active",
             "header": {
                 "title": "Cluster Bank"
             },
-            "content": "Clusters are managed in the cluster bank they can be selected with the → keys on the keyboard or by clicking on a previously asigned cluster."
+            "content": "Clusters are managed in the cluster bank they can be selected with the ↔ keys on the keyboard or by clicking on a previously asigned cluster.",
+            "params": {
+                "placement": "right"
+              }
         },
         {
-            "target": "#current",
+            "target": ".current",
             "header": {
                 "title": "Current Mention"
             },
             "content": "The current mention appears in <span class=\"current\">red</span>."
         },
         {
-            "target": "#current",
+            "target": ".current",
             "header": {
                 "title": "Assigning a New Cluster"
             },
-            "content": "Since the current mention <span class=\"badge badge-warning\">aquired</span> does not co-refer with the only existing mention cluster <span class=\"cluster\">Intel< /span>. Press <span class=\"badge badge-light\">CTRL</span> + <span class=\"badge badge-light\">SPACE</span> to assign it to a new cluster."
+            "content": "Since the current mention <span class=\"current\">aquired</span> does not co-refer with the only existing mention cluster <span class=\"cluster\">Intel</span>. Press CTRL + SPACE to assign it to a new cluster."
         }
     ],
     "tokens": [
