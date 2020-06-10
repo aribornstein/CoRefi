@@ -1,41 +1,5 @@
 {
-    "mode": "onboarding",
-    "snackbar": false,
-    "snackbarText": "",
-    "snackbarTimeout": 2000,
-    "tourSteps": [
-        {
-            "target": "#dashboard",
-            "header": {
-                "title": "CDC Annotation Tool Onboarding!"
-            },
-            "content": "This HIT will walkthrough how to perform CDC annotation. Displayed on the screen below is a document and two hilighted mentions."
-        },
-        {
-            "target": ".v-chip--active",
-            "header": {
-                "title": "Cluster Bank"
-            },
-            "content": "Clusters are managed in the cluster bank they can be selected with the ↔ keys on the keyboard or by clicking on a previously asigned cluster.",
-            "params": {
-                "placement": "right"
-              }
-        },
-        {
-            "target": ".current",
-            "header": {
-                "title": "Current Mention"
-            },
-            "content": "The current mention appears in <span class=\"current\">red</span>."
-        },
-        {
-            "target": ".current",
-            "header": {
-                "title": "Assigning a New Cluster"
-            },
-            "content": "Since the current mention <span class=\"current\">aquired</span> does not co-refer with the only existing mention cluster <span class=\"cluster\">Intel</span>. Press CTRL + SPACE to assign it to a new cluster."
-        }
-    ],
+    "mode": "reviewer",
     "tokens": [
         {
             "i": 0,
@@ -137,6 +101,39 @@
         "end": 1,
         "clustId":"1-1"
     },
+    "tourSteps" : [
+        {
+            "target": "#dashboard",
+            "header": {
+                "title": "CDC Annotation Tool Onboarding!"
+            },
+            "content": "This HIT will walkthrough how to perform CDC annotation. Displayed on the screen below is a document and two hilighted mentions."
+        },
+        {
+            "target": ".v-chip--active",
+            "header": {
+                "title": "Cluster Bank"
+            },
+            "content": "Clusters are managed in the cluster bank they can be selected with the ↔ keys on the keyboard or by clicking on a previously asigned cluster.",
+            "params": {
+                "placement": "right"
+              }
+        },
+        {
+            "target": ".current",
+            "header": {
+                "title": "Current Mention"
+            },
+            "content": "The current mention appears in <span class=\"current\">red</span>."
+        },
+        {
+            "target": ".current",
+            "header": {
+                "title": "Assigning a New Cluster"
+            },
+            "content": "Since the current mention <span class=\"current\">aquired</span> does not co-refer with the only existing mention cluster <span class=\"cluster\">Intel</span>. Press CTRL + SPACE to assign it to a new cluster."
+        }
+    ],
     "goldMentions": [
         {
             "start": 1,
@@ -164,8 +161,7 @@
             "end": 7,
             "clustId": "2-2"
         }
-    ],
-    "previousCoreferringWorkerTokens":{}
+    ]
 }
 
 

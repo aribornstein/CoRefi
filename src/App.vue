@@ -8,7 +8,7 @@
     </v-system-bar>
 
     <v-content>
-      <v-container>
+      <v-container v-mutate="docsOnScreen" ref="documents" fluid style="max-width:850px">
         <v-layout
           align-center
           fluid
@@ -20,13 +20,14 @@
           mb-3
           mt-3
         >
-          <v-container>
+          <v-container v-bind:class="doc.class">
             <v-layout row>
               <span mb-2 class="title">Document {{docIndex + 1}}:</span>
             </v-layout>
             <v-layout row mt-2>
               <span
-                v-for="(tokenSpan, spanIndex) in doc"
+                ref="mentions"
+                v-for="(tokenSpan, spanIndex) in doc.docSpans"
                 v-bind:key="spanIndex"
                 v-bind:class="tokenSpan.class"
                 @click="viewedMentionClicked($event, tokenSpan)"
@@ -53,39 +54,59 @@
         </v-layout>
         <v-divider mx-4 />
       </v-container>
-      <v-container sticky>
-        <v-chip-group
-          id="cluster-bank"
-          mandatory
-          show-arrows
-          active-class="primary--text"
-          v-model="selectedCluster"
-        >
-          <v-chip small @click="assignMention(true)" >
-            <v-icon dark :color="newClusterButtonColor">mdi-plus</v-icon>
-          </v-chip>
-          <v-chip
-            v-for="cluster in clusters"
-            :key="cluster.id"
-            :value="cluster.id"
-            :text-color="cluster.suggestedColor"
-            label
-            small
-          >{{cluster.text}}</v-chip>
-        </v-chip-group>
-      </v-container>
+      <v-chip-group
+        v-if="clusterBarBottom == false"
+        id="cluster-bank"
+        mandatory
+        show-arrows
+        active-class="primary--text"
+        v-model="selectedCluster"
+      >
+        <v-chip small @click="assignMention(true)">
+          <v-icon dark :color="newClusterButtonColor">mdi-plus</v-icon>
+        </v-chip>
+        <v-chip
+          v-for="cluster in clusters"
+          :key="cluster.id"
+          :value="cluster.id"
+          :text-color="cluster.suggestedColor"
+          label
+          small
+        >{{cluster.text}}</v-chip>
+      </v-chip-group>
     </v-content>
     <v-snackbar v-model="snackbar" :timeout="snackbarTimeout">
       {{ snackbarText }}
       <v-btn color="blue" text @click="snackbar = false">Close</v-btn>
     </v-snackbar>
-    <v-tour name="myTour" :steps="tourSteps" :options="{ debug: true }"></v-tour>
-    <v-footer fixed padless></v-footer>
+    <v-tour name="myTour" :steps="tourSteps"></v-tour>
+    <v-footer v-if="clusterBarBottom" fixed padless>
+      <v-chip-group
+        id="cluster-bank"
+        mandatory
+        show-arrows
+        active-class="primary--text"
+        v-model="selectedCluster"
+      >
+        <v-chip small @click="assignMention(true)">
+          <v-icon dark :color="newClusterButtonColor">mdi-plus</v-icon>
+        </v-chip>
+
+        <v-chip
+          v-for="cluster in clusters"
+          :key="cluster.id"
+          :value="cluster.id"
+          :text-color="cluster.suggestedColor"
+          label
+          small
+        >{{cluster.text}}</v-chip>
+      </v-chip-group>
+    </v-footer>
   </v-app>
 </template>
 
 <script>
-import jsonData from "./__mocks__/mentions.json";
+import jsonData from "./__mocks__/data.json";
 
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
@@ -100,7 +121,7 @@ import {
   VSnackbar,
   VSystemBar,
   VSpacer,
-  VContainer
+  VContainer,
 } from "vuetify/lib";
 Vue.use(Vuetify);
 var vuetify = new Vuetify({});
@@ -114,16 +135,21 @@ export default {
   vuetify,
   VueTour,
   data() {
-    if (!this.json) {
-      return jsonData;
-    }
-    return JSON.parse(this.json);
+    let data = !this.json ? jsonData : JSON.parse(this.json);
+    data.snackbar = false;
+    data.snackbarText = "";
+    data.snackbarTimeout = 2000;
+    data.previousCoreferringWorkerTokens = {};
+    data.clusterBarBottom = false;
+    return data;
   },
   created() {
     window.addEventListener("keydown", this.processInput);
+    window.addEventListener("resize", this.docsOnScreen);
   },
   destroyed() {
     window.removeEventListener("keydown", this.processInput);
+    window.removeEventListener("resize", this.docsOnScreen);
   },
   mounted() {
     if (this.mode == "onboarding") {
@@ -133,6 +159,7 @@ export default {
       this.generatePreviousCoreferringWorkerTokens();
     }
   },
+
   components: {
     VApp,
     VContent,
@@ -144,12 +171,18 @@ export default {
     VSnackbar,
     VSystemBar,
     VSpacer,
-    VContainer
+    VContainer,
   },
   props: {
     json: String
   },
   methods: {
+    docsOnScreen() {
+      // if this needs to be fixed for mechanical turk look at freezing the component hight
+      this.clusterBarBottom =
+        this.$refs.documents.offsetHeight > window.innerHeight;
+    },
+
     processInput(e) {
       // do stuff
       switch (e.keyCode) {
@@ -163,6 +196,9 @@ export default {
         case 32: // space
           e.preventDefault();
           this.assignMention(e.ctrlKey);
+          this.$vuetify.goTo(
+            this.$refs.mentions.filter(s => s.className == "current")[0]
+          );
           break;
         case 37: // left arrow
           e.preventDefault();
@@ -357,6 +393,12 @@ export default {
       return this.tokens[this.currentMention.start].document;
     },
 
+    documentsViewed: function() {
+      return this.tokens[
+        this.viewedMentions[this.viewedMentions.length - 1].start
+      ].document;
+    },
+
     tokens2Cluster: function() {
       let tokens2Cluster = {},
         mentions = this.viewedMentions
@@ -396,10 +438,13 @@ export default {
     },
 
     newClusterButtonColor: function() {
-      if (this.mode == "reviewer" && !this.clusterIds.includes(Array.from(this.suggestedReviewerClusters)[0])) {
+      if (
+        this.mode == "reviewer" &&
+        !this.clusterIds.includes(Array.from(this.suggestedReviewerClusters)[0])
+      ) {
         return "red";
       }
-      return "";
+      return "#1867c0";
     },
 
     clusters: function() {
@@ -512,8 +557,12 @@ export default {
           spans.push(this.tokens[tokInd]);
           tokInd++;
         }
-        documentSpans.push(spans);
-        if (doc_id == this.currentDocument) {
+        // TBD check if current doc if not bind style to lighten text
+        documentSpans.push({
+          class: doc_id == this.currentDocument ? "" : "other-document",
+          docSpans: spans
+        });
+        if (doc_id == this.documentsViewed) {
           break;
         }
       }
@@ -545,13 +594,6 @@ export default {
 }
 
 .cluster {
-  /* border-radius: 10px;
-  padding-left:0.3em;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  border: 1px solid #2D9CDB;
-  font-weight: 400;
-  color: #2D9CDB; */
   background: #ddeff9;
   color: #2d9cdb;
   margin-right: 0.3em;
@@ -562,6 +604,10 @@ export default {
   font-weight: 500;
   text-decoration-line: underline;
   text-decoration-color: red;
+}
+
+.other-document {
+  color: #bdbdbd;
 }
 
 .theme--light.v-chip {
