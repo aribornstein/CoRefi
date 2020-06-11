@@ -106,7 +106,7 @@
 </template>
 
 <script>
-import jsonData from "./__mocks__/data.json";
+import jsonData from "./__mocks__/topic_5.json";
 
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
@@ -122,6 +122,7 @@ import {
   VSystemBar,
   VSpacer,
   VContainer,
+  VIcon
 } from "vuetify/lib";
 Vue.use(Vuetify);
 var vuetify = new Vuetify({});
@@ -136,6 +137,7 @@ export default {
   VueTour,
   data() {
     let data = !this.json ? jsonData : JSON.parse(this.json);
+    data.tourSteps = [] // if not created
     data.snackbar = false;
     data.snackbarText = "";
     data.snackbarTimeout = 2000;
@@ -172,9 +174,10 @@ export default {
     VSystemBar,
     VSpacer,
     VContainer,
+    VIcon
   },
   props: {
-    json: String
+    json: String,
   },
   methods: {
     docsOnScreen() {
@@ -208,6 +211,7 @@ export default {
           e.preventDefault();
           this.nextCluster();
       }
+
     },
 
     viewedMentionClicked(e, mention) {
@@ -562,7 +566,7 @@ export default {
           class: doc_id == this.currentDocument ? "" : "other-document",
           docSpans: spans
         });
-        if (doc_id == this.documentsViewed) {
+        if (doc_id ==  Math.max(this.documentsViewed, this.currentDocument)) {
           break;
         }
       }
@@ -574,6 +578,7 @@ export default {
 
 <style>
 @import "../node_modules/vue-tour/dist/vue-tour.css";
+@import url("https://fonts.googleapis.com/css?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 @import url("https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css");
 @import url("../node_modules/vuetify/dist/vuetify.min.css");
