@@ -1,23 +1,13 @@
 <template>
   <v-app>
-    <v-system-bar 
-      id="dashboard"
-      color="default"
-      part="dash"
-      fixed
-    >
+    <v-system-bar id="dashboard" color="default" part="dash" fixed>
       CDC Annotation Tool
       <v-spacer />
       Mention: {{ viewedMentions.length }}/{{ viewedMentions.length + candidateMentions.length }} Document: {{ parseInt(currentDocument) + 1 }}
       <span>--</span>
     </v-system-bar>
     <v-content>
-      <v-container 
-        ref="documents"
-        v-mutate="docsOnScreen"
-        style="max-width:850px"
-        fluid
-      >
+      <v-container ref="documents" v-mutate="docsOnScreen" style="max-width:850px" fluid>
         <v-layout
           v-for="(doc, docIndex) in docsViewModel"
           :key="docIndex"
@@ -29,23 +19,11 @@
           mb-3
           mt-3
         >
-          <v-container 
-            :class="doc.class"
-          >
-            <v-layout 
-              row
-            >
-              <span 
-                mb-2
-                class="title"
-              >
-                Document {{ docIndex + 1 }}:
-              </span>
+          <v-container :class="doc.class">
+            <v-layout row>
+              <span mb-2 class="title">Document {{ docIndex + 1 }}:</span>
             </v-layout>
-            <v-layout 
-              row
-              mt-2
-            >
+            <v-layout row mt-2>
               <span
                 v-for="(tokenSpan, spanIndex) in doc.docSpans"
                 :key="spanIndex"
@@ -83,16 +61,8 @@
         mandatory
         show-arrows
       >
-        <v-chip 
-          small
-          @click="assignMention(true)"
-        >
-          <v-icon 
-            dark
-            :color="newClusterButtonColor"
-          >
-            mdi-plus
-          </v-icon>
+        <v-chip small @click="assignMention(true)">
+          <v-icon dark :color="newClusterButtonColor">mdi-plus</v-icon>
         </v-chip>
         <v-chip
           v-for="cluster in clusters"
@@ -101,33 +71,15 @@
           :text-color="cluster.suggestedColor"
           label
           small
-        >
-          {{ cluster.text }}
-        </v-chip>
+        >{{ cluster.text }}</v-chip>
       </v-chip-group>
     </v-content>
-    <v-snackbar 
-      v-model="snackbar" 
-      :timeout="snackbarTimeout"
-    >
+    <v-snackbar v-model="snackbar" :timeout="snackbarTimeout">
       {{ snackbarText }}
-      <v-btn
-        color="blue" 
-        text
-        @click="snackbar = false"
-      >
-        Close
-      </v-btn>
+      <v-btn color="blue" text @click="snackbar = false">Close</v-btn>
     </v-snackbar>
-    <v-tour 
-      name="myTour" 
-      :steps="tourSteps"
-    />
-    <v-footer 
-      v-if="clusterBarBottom" 
-      fixed
-      padless
-    >
+    <v-tour name="myTour" :steps="tourSteps" />
+    <v-footer v-if="clusterBarBottom" fixed padless>
       <v-chip-group
         id="cluster-bank"
         v-model="selectedCluster"
@@ -135,16 +87,8 @@
         mandatory
         show-arrows
       >
-        <v-chip 
-          small 
-          @click="assignMention(true)"
-        >
-          <v-icon
-            dark
-            :color="newClusterButtonColor"
-          >
-            mdi-plus
-          </v-icon>
+        <v-chip small @click="assignMention(true)">
+          <v-icon dark :color="newClusterButtonColor">mdi-plus</v-icon>
         </v-chip>
         <v-chip
           v-for="cluster in clusters"
@@ -153,16 +97,14 @@
           :text-color="cluster.suggestedColor"
           label
           small
-        >
-          {{ cluster.text }}
-        </v-chip>
+        >{{ cluster.text }}</v-chip>
       </v-chip-group>
     </v-footer>
   </v-app>
 </template>
 
 <script>
-import jsonData from "./__mocks__/topic_5.json";
+import jsonData from "./__mocks__/topic_5_review.json";
 
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
@@ -221,7 +163,7 @@ export default {
     data.clusterBarBottom = false;
     return data;
   },
-    computed: {
+  computed: {
     documents: function() {
       let documents = this.groupBy(this.tokens, "document");
       for (var doc in documents) {
@@ -464,7 +406,11 @@ export default {
 
     viewedMentionClicked(e, mention) {
       if (e.ctrlKey) {
-        if (mention.viewedIndex && this.mode == "annotation") {
+        e.preventDefault();
+        if (
+          mention.viewedIndex &&
+          (this.mode == "annotation" || this.mode == "reviewer")
+        ) {
           this.reassignMention(mention.viewedIndex);
         }
       } else {
