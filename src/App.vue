@@ -104,7 +104,7 @@
 </template>
 
 <script>
-import jsonData from "./__mocks__/topic_5_review.json";
+import jsonData from "./__mocks__/guided_hit_topic_34.json";
 
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
@@ -447,12 +447,12 @@ export default {
         }
 
         // pop remaining fully covered mentions
-        while (this.candidateMentions[0].end <= newEnd) {
+        while (this.candidateMentions.length > 0 && this.candidateMentions[0].end <= newEnd) {
           this.candidateMentions.shift();
         }
 
         // If next mention partly covered - split it
-        if (this.candidateMentions[0].start <= newEnd) {
+        if (this.candidateMentions.length > 0 && this.candidateMentions[0].start <= newEnd) {
           this.candidateMentions[0].start = newEnd + 1;
         }
         // If the current mention span is longer than the new end split the mention
@@ -503,7 +503,7 @@ export default {
         : this.selectedCluster;
 
       if (
-        this.mode == ("onboarding" || "tutorial") &&
+        this.mode == ("onboarding") &&
         !this.isValidAssignment(clusterAssignment)
       ) {
         return;
@@ -607,8 +607,7 @@ export default {
 }
 .current {
   font-weight: 500;
-  text-decoration-line: underline;
-  text-decoration-color: red;
+  border-bottom: 1px solid red;
 }
 .other-document {
   color: #bdbdbd;
