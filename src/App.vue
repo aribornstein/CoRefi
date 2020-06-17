@@ -104,7 +104,7 @@
 </template>
 
 <script>
-import jsonData from "./__mocks__/guided_hit_topic_34.json";
+import jsonData from "./__mocks__/guided_hit_topic_34_.json";
 
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
@@ -538,11 +538,13 @@ export default {
       }
       if (this.goldMentions[0].clustId != clusterAssignment) {
         this.notify(
-          "Incorrect Mention Cluster Assignment Message to be updated with gold mentions messages "
+                this.goldMentions[0].errorMessage
+          // "Incorrect Mention Cluster Assignment Message to be updated with gold mentions messages "
         );
         return false;
       }
-      this.notify("Valid Assignment");
+      // this.notify("Valid Assignment");
+      this.notify(this.goldMentions[0].validMessage)
       this.goldMentions.shift();
       return true;
     },
