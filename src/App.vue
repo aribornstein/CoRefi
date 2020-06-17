@@ -54,7 +54,7 @@
         <v-divider mx-4 />
       </v-container>
       <v-chip-group
-        v-if="clusterBarBottom == false"
+        v-if="!clusterBarBottom"
         id="cluster-bank"
         v-model="selectedCluster"
         active-class="primary--text"
@@ -154,7 +154,7 @@ export default {
     }
   },
   data() {
-    let data = !this.json ? jsonData : JSON.parse(this.json);
+    const data = !this.json ? jsonData : JSON.parse(this.json);
     data.tourSteps = []; // if not created
     data.snackbar = false;
     data.snackbarText = "";
@@ -165,13 +165,13 @@ export default {
   },
   computed: {
     documents: function() {
-      let documents = this.groupBy(this.tokens, "document");
-      for (var doc in documents) {
+      const documents = this.groupBy(this.tokens, "document");
+      Object.keys(documents).map(doc => {
         documents[doc] = {
           start: documents[doc][0].i,
           end: documents[doc][documents[doc].length - 1].i
         };
-      }
+      });
       return documents;
     },
 
@@ -192,7 +192,7 @@ export default {
           .concat(this.candidateMentions);
 
       mentions.forEach(mention => {
-        for (var i = mention.start; i <= mention.end; i++) {
+        for (let i = mention.start; i <= mention.end; i++) {
           tokens2Cluster[i] = mention.clustId;
         }
       });
@@ -204,7 +204,7 @@ export default {
       if (this.mode != "reviewer") {
         return new Set();
       }
-      let coreferingTokens = new Set(),
+      const coreferingTokens = new Set(),
         suggestedClusters = new Set([this.currentMention.clustId]);
       for (
         var i = this.currentMention.start;
@@ -278,8 +278,8 @@ export default {
       let documentSpans = [];
       // For each doc up to the current doc
       for (let [doc_id, doc] of Object.entries(this.documents)) {
-        let spans = [],
-          tokInd = doc.start,
+        const spans = [];
+        let tokInd = doc.start,
           docViewedMentions = this.viewedMentions.filter(
             m => m.start >= doc.start && m.end <= doc.end
           );
@@ -328,7 +328,7 @@ export default {
             tokInd++;
           }
           // add current mention span
-          let mentionSpan = {
+          const mentionSpan = {
             tokens: this.tokens.slice(
               this.currentMention.start,
               this.currentMention.end + 1
@@ -382,7 +382,7 @@ export default {
       switch (e.keyCode) {
         case 70: //f
         case 102: //F
-          if (!e.ctrlKey) {
+          if (!e.ctrlKey && this.fixableSpans) {
             e.preventDefault();
             this.fixSpan();
           }
@@ -391,7 +391,7 @@ export default {
           e.preventDefault();
           this.assignMention(e.ctrlKey);
           this.$vuetify.goTo(
-            this.$refs.mentions.filter(s => s.className == "current")[0]
+            this.$refs.mentions.filter(s => s.className === "current")[0]
           );
           break;
         case 37: // left arrow
@@ -447,12 +447,18 @@ export default {
         }
 
         // pop remaining fully covered mentions
-        while (this.candidateMentions.length > 0 && this.candidateMentions[0].end <= newEnd) {
+        while (
+          this.candidateMentions.length > 0 &&
+          this.candidateMentions[0].end <= newEnd
+        ) {
           this.candidateMentions.shift();
         }
 
         // If next mention partly covered - split it
-        if (this.candidateMentions.length > 0 && this.candidateMentions[0].start <= newEnd) {
+        if (
+          this.candidateMentions.length > 0 &&
+          this.candidateMentions[0].start <= newEnd
+        ) {
           this.candidateMentions[0].start = newEnd + 1;
         }
         // If the current mention span is longer than the new end split the mention
@@ -503,7 +509,7 @@ export default {
         : this.selectedCluster;
 
       if (
-        this.mode == ("onboarding") &&
+        this.mode == "onboarding" &&
         !this.isValidAssignment(clusterAssignment)
       ) {
         return;
@@ -555,7 +561,7 @@ export default {
         clusterTokens.push({ token: token, clustId: cluster });
       }
       let tokenClusters = this.groupBy(clusterTokens, "clustId");
-      for (var clust in tokenClusters) {
+      for (let clust in tokenClusters) {
         let prevToken;
         tokenClusters[clust].forEach(token => {
           if (prevToken != undefined) {
