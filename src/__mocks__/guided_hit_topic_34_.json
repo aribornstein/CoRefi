@@ -653,14 +653,14 @@
             "end": 1,
             "clustId": "1-1",
             "errorMessage": "This is a mistake - Nominates does not refer to Obama.",
-            "validMessage": "Valid"
+            "validMessage": "Awesome!"
         },
         {
             "start": 3,
             "end": 4,
             "clustId": "3-4",
-            "errorMessage": "Error! Try again!",
-            "validMessage": "Valid"
+            "errorMessage": "Not Quite! Try again!",
+            "validMessage": "You're a star!"
         },
         {
             "start": 6,
@@ -674,7 +674,7 @@
             "end": 12,
             "clustId": "12-12",
             "errorMessage": "Error! Try again!",
-            "validMessage": "Valid"
+            "validMessage": "Great work! Keep going!"
         },
         {
             "start": 15,
@@ -688,7 +688,7 @@
             "end": 17,
             "clustId": "17-17",
             "errorMessage": "Error! Try again!",
-            "validMessage": "Good job!"
+            "validMessage": "Great job!"
         },
         {
             "start": 18,
@@ -702,7 +702,7 @@
             "end": 19,
             "clustId": "19-19",
             "errorMessage": "Error! Try again!",
-            "validMessage": "Valid"
+            "validMessage": "Don't Stop Now!"
         },
         {
             "start": 21,
@@ -730,14 +730,14 @@
             "end": 35,
             "clustId": "30-35",
             "errorMessage": "Error! This is a new mention!",
-            "validMessage": "Valid"
+            "validMessage": "Nice!"
         },
         {
             "start": 37,
             "end": 37,
             "clustId": "37-37",
             "errorMessage": "Error! Try again!",
-            "validMessage": "Valid"
+            "validMessage": "You're unstopable!"
         },
         {
             "start": 39,
@@ -758,21 +758,21 @@
             "end": 45,
             "clustId": "43-45",
             "errorMessage": "Error! Try again!",
-            "validMessage": "Valid"
+            "validMessage": "Way to Go!"
         },
         {
             "start": 47,
             "end": 48,
             "clustId": "47-48",
             "errorMessage": "Error! Try again!",
-            "validMessage": "Valid"
+            "validMessage": "Amazing!"
         },
         {
             "start": 50,
             "end": 50,
             "clustId": "50-50",
             "errorMessage": "Error! Try again!",
-            "validMessage": "Valid"
+            "validMessage": "Keep going!"
         },
         {
             "start": 53,
@@ -786,14 +786,14 @@
             "end": 56,
             "clustId": "56-56",
             "errorMessage": "Error! Try again!",
-            "validMessage": "Valid"
+            "validMessage": "You are almost done!"
         },
         {
             "start": 61,
             "end": 61,
             "clustId": "61-61",
             "errorMessage": "Error! Try again!",
-            "validMessage": "Valid"
+            "validMessage": "You are getting the hang of this!"
         },
         {
             "start": 64,
@@ -814,14 +814,14 @@
             "end": 70,
             "clustId": "6-11",
             "errorMessage": "Error! Find correct occurrences of Regina Benjamin!",
-            "validMessage": "Great!"
+            "validMessage": "Just a few more left!"
         },
         {
             "start": 72,
             "end": 77,
             "clustId": "3-4",
             "errorMessage": "You seem not focused, this title was mentioned many times before!",
-            "validMessage": "Great!"
+            "validMessage": "Perfect just three more!"
         },
         {
             "start": 80,
@@ -835,14 +835,37 @@
             "end": 82,
             "clustId": "17-17",
             "errorMessage": "Error! Look at the second document!",
-            "validMessage": "Very Good!"
+            "validMessage": "Last one!"
         },
         {
             "start": 83,
             "end": 85,
             "clustId": "12-12",
             "errorMessage": "Wrong! This case is subtle, it refers to ``Today'' in the second paragraph since both refer to the time of the nomination of Regina Benjamin",
-            "validMessage": "Correct! This was tricky but you got it, Kudos!"
+            "validMessage": "Correct! This was tricky but you got it, Kudos you annotated all the mentions!"
+        }
+    ],
+    "tourSteps": [
+        {
+            "target": "#dashboard",
+            "header": {
+                "title": "CDC Annotation Guided Training !"
+            },
+            "content": "This HIT will guide you through the CDC decision process. "
+        },
+        {
+            "target": "#dashboard",
+            "header": {
+                "title": "CDC Annotation Guided Training !"
+            },
+            "content": "Preform the task just as before, if you make a mistake the tool will guide you to the correct answer."
+        },
+        {
+            "target": "#dashboard",
+            "header": {
+                "title": "CDC Annotation Guided Training !"
+            },
+            "content": "Please pay careful attention as this will help you when you preform the full task in the next hit."
         }
     ]
 }

@@ -155,7 +155,7 @@ export default {
   },
   data() {
     const data = !this.json ? jsonData : JSON.parse(this.json);
-    data.tourSteps = []; // if not created
+    data.tourSteps =  !data.tourSteps ? [] : data.tourSteps; // if not created
     data.snackbar = false;
     data.snackbarText = "";
     data.snackbarTimeout = 2000;
@@ -545,11 +545,9 @@ export default {
       if (this.goldMentions[0].clustId != clusterAssignment) {
         this.notify(
                 this.goldMentions[0].errorMessage
-          // "Incorrect Mention Cluster Assignment Message to be updated with gold mentions messages "
         );
         return false;
       }
-      // this.notify("Valid Assignment");
       this.notify(this.goldMentions[0].validMessage)
       this.goldMentions.shift();
       return true;
