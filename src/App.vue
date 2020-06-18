@@ -104,7 +104,7 @@
 </template>
 
 <script>
-import jsonData from "./__mocks__/guided_hit_topic_34_.json";
+import jsonData from "./__mocks__/5_1.json";
 
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
@@ -382,14 +382,14 @@ export default {
       switch (e.keyCode) {
         case 70: //f
         case 102: //F
-          if (!e.ctrlKey && this.fixableSpans) {
+          if (!e.altKey && this.fixableSpans) {
             e.preventDefault();
             this.fixSpan();
           }
           break;
         case 32: // space
           e.preventDefault();
-          this.assignMention(e.ctrlKey);
+          this.assignMention(e.altKey);
           this.$vuetify.goTo(
             this.$refs.mentions.filter(s => s.className === "current")[0]
           );
@@ -405,7 +405,7 @@ export default {
     },
 
     viewedMentionClicked(e, mention) {
-      if (e.ctrlKey) {
+      if (e.altKey) {
         e.preventDefault();
         if (
           mention.viewedIndex &&
