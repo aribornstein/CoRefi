@@ -1,5 +1,30 @@
 <template>
   <v-app>
+    <v-dialog
+      v-model="help"
+      fullscreen
+      hide-overlay
+      transition="dialog-bottom-transition"
+      width="600px"
+    >
+      <v-card>
+        <v-card-title>
+          <span class="headline">Keyboard Shortcuts</span>
+        </v-card-title>
+        <v-card-text>
+          <ul>
+            <li>Assign Mention to Current Cluster: SPACE</li>
+            <li>Assign Mention to New Cluster: Ctrl + SPACE (Windows) or Alt + SPACE (MacOS)</li>
+            <li>Select Cluster: Click on a previously assigned mention or use the ↔ keys on the keyboard </li>
+            <li>Select Mention to Reassign: Ctrl + Click (Windows) or Alt + Click (MacOS) the mention </li>
+          </ul>
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="green darken-1" text @click="help = false">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
     <v-system-bar id="dashboard" color="default" part="dash" fixed>
       CDC Annotation Tool
       <v-spacer />
@@ -74,13 +99,21 @@
         >{{ cluster.text }}</v-chip>
       </v-chip-group>
     </v-content>
+
     <v-snackbar v-model="snackbar" :timeout="snackbarTimeout">
       {{ snackbarText }}
       <v-btn color="blue" text @click="snackbar = false">Close</v-btn>
     </v-snackbar>
+
     <v-tour name="myTour" :steps="tourSteps" />
-    <v-footer v-if="clusterBarBottom" fixed padless>
+    <v-footer>
+      <v-btn id="help" @click.stop="help = true" fab dark small icon color="blue">
+        <v-icon>mdi-help</v-icon>
+      </v-btn>
       <v-chip-group
+        v-if="clusterBarBottom"
+        fixed
+        padless
         id="cluster-bank"
         v-model="selectedCluster"
         active-class="primary--text"
@@ -104,7 +137,7 @@
 </template>
 
 <script>
-import jsonData from "./__mocks__/5_1.json";
+import jsonData from "./data/ecb/guided_hit_topic_34_.json"//"./__mocks__/mentions.json";
 
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
@@ -118,10 +151,15 @@ import {
   VChipGroup,
   VSnackbar,
   VSystemBar,
+  VFooter,
   VSpacer,
   VContainer,
-  VIcon
+  VIcon,
+  VDialog,
+  VCard,
+  VCardTitle
 } from "vuetify/lib";
+
 Vue.use(Vuetify);
 var vuetify = new Vuetify({});
 
@@ -144,8 +182,12 @@ export default {
     VSnackbar,
     VSystemBar,
     VSpacer,
+    VFooter,
     VContainer,
-    VIcon
+    VIcon,
+    VDialog,
+    VCard,
+    VCardTitle
   },
   props: {
     json: {
@@ -154,11 +196,12 @@ export default {
     }
   },
   data() {
-    const data = !this.json ? jsonData : JSON.parse(this.json);
-    data.tourSteps =  !data.tourSteps ? [] : data.tourSteps; // if not created
+    const data = (!this.json || this.json=="${data}") ? jsonData : JSON.parse(unescape(this.json));
+    data.tourSteps = !data.tourSteps ? [] : data.tourSteps; // if not created
     data.snackbar = false;
     data.snackbarText = "";
     data.snackbarTimeout = 2000;
+    data.help = false;
     data.previousCoreferringWorkerTokens = {};
     data.clusterBarBottom = false;
     return data;
@@ -382,14 +425,14 @@ export default {
       switch (e.keyCode) {
         case 70: //f
         case 102: //F
-          if (!e.altKey && this.fixableSpans) {
+          if (!(e.altKey || e.ctrlKey) && this.fixableSpans) {
             e.preventDefault();
             this.fixSpan();
           }
           break;
         case 32: // space
           e.preventDefault();
-          this.assignMention(e.altKey);
+          this.assignMention(e.altKey || e.ctrlKey);
           this.$vuetify.goTo(
             this.$refs.mentions.filter(s => s.className === "current")[0]
           );
@@ -405,7 +448,7 @@ export default {
     },
 
     viewedMentionClicked(e, mention) {
-      if (e.altKey) {
+      if (e.altKey || e.ctrlKey) {
         e.preventDefault();
         if (
           mention.viewedIndex &&
@@ -543,12 +586,10 @@ export default {
         return false;
       }
       if (this.goldMentions[0].clustId != clusterAssignment) {
-        this.notify(
-                this.goldMentions[0].errorMessage
-        );
+        this.notify(this.goldMentions[0].errorMessage);
         return false;
       }
-      this.notify(this.goldMentions[0].validMessage)
+      this.notify(this.goldMentions[0].validMessage);
       this.goldMentions.shift();
       return true;
     },
@@ -575,7 +616,6 @@ export default {
         });
       }
     },
-
     notify(text) {
       this.snackbarText = text;
       this.snackbar = true;
