@@ -196,7 +196,7 @@ export default {
     }
   },
   data() {
-    const data = (!this.json || this.json=="${data}") ? jsonData : JSON.parse(unescape(this.json));
+    const data = (!this.json || this.json=="${data}") ? jsonData : JSON.parse(unescape(this.json).replace("\u00e2\u20ac\u2122","'"));
     data.tourSteps = !data.tourSteps ? [] : data.tourSteps; // if not created
     data.snackbar = false;
     data.snackbarText = "";
@@ -344,7 +344,7 @@ export default {
             clustId: viewedMention.clustId,
             class:
               viewedMention.clustId == this.selectedCluster
-                ? "cluster" //"v-chip primary--text v-chip--active v-chip--label v-chip--no-color theme--light v-size--default"
+                ? "cluster"
                 : "viewed",
             viewedIndex: viewedIndex
           };
