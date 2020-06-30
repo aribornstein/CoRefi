@@ -14,61 +14,50 @@
 
 ---
 
-## Table of Contents (Optional)
-
-> If your `README` has a lot of info, section headers might be nice.
-
-- [Installation](#installation)
-- [Features](#features)
-- [Contributing](#contributing)
-- [Support](#support)
-- [License](#license)
-
-
-
-
----
+## Table of Contents 
 
 ## Installation
 
-- All the `code` required to get started
-- Images of what it should look like
 
-### Clone
+### NPM 
 
-- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
+Clone this repo to your local machine 
 
-### Setup
-
-- If you want more syntax highlighting, format your code like this:
-
-> update and install this package first
-
-```shell
-$ brew update
-$ brew install fvcproductions
+```shell 
+$ git clone https://github.com/aribornstein/cdc-app.git
 ```
 
-> now install npm and bower packages
-
+Then run the following npm commands to install and run the tool locally.
 ```shell
 $ npm install
-$ bower install
+$ npm run --serve 
 ```
 
-- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
+### CDN
+Add the following code your html file.
 
----
+```html
+<script src="https://unpkg.com/vue"></script>
+<script src="https://github.com/aribornstein/testAPPTOBedeleted/releases/download/0.0.1/cdc-tool.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+```
+
+The app can then be embeded as a Web Component
+
+```html
+    <cdc-tool json="{html escaped json config}" ></cdc-tool>
+```
+
+
 
 ## Features
+
 ## Usage (Optional)
-## Documentation (Optional)
-## Tests (Optional)
-
-- Going into more detail on code and technologies used
-- I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
-
----
+    ###
 
 ## Contributing
 
@@ -120,15 +109,6 @@ Reach out to me at one of the following places!
 - Website at <a href="http://fvcproductions.com" target="_blank">`fvcproductions.com`</a>
 - Twitter at <a href="http://twitter.com/fvcproductions" target="_blank">`@fvcproductions`</a>
 - Insert more social links here.
-
----
-
-## Donations (Optional)
-
-- You could include a <a href="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png" target="_blank">Gratipay</a> link as well.
-
-[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png)](https://gratipay.com/fvcproductions/)
-
 
 ---
 
