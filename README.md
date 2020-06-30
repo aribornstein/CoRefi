@@ -33,10 +33,20 @@ This tool provides capabilites for annotator Onboarding, Annotaiton and Review.
 
 ### Onboarding
 
+A trainee is provided with a sequence of mentions. For each mention the trainee decides whether to update the mention’s span and then to either create a new mention or assign the mention to an existing cluster.  At any point of time, the trainee may view the mentions in any existing cluster. If the trainee incorrectly changes a mention span or assigns a mention to the wrong cluster they will be notified. Additionally after certain decisions an explanation of a specific important rule of co-reference will be explained. Once all mentions are clustered the annotator can submit the job.
+
 ![CDC APP](https://cdn-images-1.medium.com/max/800/0*xzCT4O9PbDvzq3rE.gif)
 
 
+#### Configuration
+A sample configuration file for onboarding can be found here
+
+
 ### Annotation 
+
+
+#### Configuration
+A sample configuration file for onboarding can be found here
 
 ### Reviewing 
 
