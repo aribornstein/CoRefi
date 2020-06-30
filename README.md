@@ -5,15 +5,17 @@
 
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)  ![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)
 
-
-
 ---
 
 ## Table of Contents 
 
-- Introduction 
-- Features
-- Installation
+1. Introduction 
+2. Features
+3. Installation
+4. Usage
+5. Contributing
+6. Team
+7. Support
 
 ## Intoduction 
 
@@ -29,29 +31,40 @@ When using please cite
 
 ## Features
 
-This tool provides capabilites for annotator Onboarding, Annotaiton and Review. 
+This tool provides capabilites for the full end to end process for CDC Annotation consisting of:
+![E2E Process](https://cdn-images-1.medium.com/max/800/1*PkVBeqteVqxfljbqSY1qww.png)
 
-### Onboarding
+### 1. Onboarding
 
 A trainee is provided with a sequence of mentions. For each mention the trainee decides whether to update the mention’s span and then to either create a new mention or assign the mention to an existing cluster.  At any point of time, the trainee may view the mentions in any existing cluster. If the trainee incorrectly changes a mention span or assigns a mention to the wrong cluster they will be notified. Additionally after certain decisions an explanation of a specific important rule of co-reference will be explained. Once all mentions are clustered the annotator can submit the job.
 
-![CDC APP](https://cdn-images-1.medium.com/max/800/0*xzCT4O9PbDvzq3rE.gif)
+![Onboarding](https://cdn-images-1.medium.com/max/800/0*xzCT4O9PbDvzq3rE.gif)
 
 
 #### Configuration
-A sample configuration file for onboarding can be found here
+A sample configuration json file for onboarding can be found here for more information on tool configuration see the configuration section.
 
 
-### Annotation 
+### 2. Annotation 
+
+The annotator is provided with a sequence of mentions. For each mention the annotator decides whether to update the mention’s span and then to either create a new mention or assign the mention to an existing cluster.  At any point in time the annotator can re-assign a previously assigned mention to another cluster or view the mentions in an existing cluster. Once all mentions are clustered the annotator can submit the job.
+
+![Annotation](https://cdn-images-1.medium.com/max/800/0*Cge_4wkNeF-vKjAx.gif)
 
 
 #### Configuration
-A sample configuration file for onboarding can be found here
+A sample configuration json file for annotation can be found here for more information on tool configuration see the configuration section.
 
-### Reviewing 
+### 3. Reviewing 
+
+The Reviewer is provided a sequential list of mentions as well as a highlighted list of clusters that the reviewer may have meant to assign them to. For each mention the reviewer is shown the potential clusters that the annotator believed the mention belongs to. The reviewer then  decides whether to update the mention’s span and then whether to agree or update the annotators assignment. 
+
+![Review Mode](https://cdn-images-1.medium.com/max/800/0*eikVOb8FQ6JNZ0yw.gif)
+
+#### Configuration
+A sample configuration json file for reviewing can be found here for more information on tool configuration see the configuration section.
 
 ## Installation
-
 
 ### NPM 
 
@@ -83,16 +96,26 @@ Add the following code your html file.
 The app can then be embeded as a Web Component
 
 ```html
-    <cdc-tool json="{html escaped json config}" ></cdc-tool>
+<cdc-tool json="{html escaped json config}" ></cdc-tool>
 ```
 
-## Usage (Optional)
+## Usage 
 
-### Configuration
+### Keyboard Shortcuts
+- Assign Mention to Current Cluster: SPACE
+- Assign Mention to New Cluster: Ctrl + SPACE (Windows) or Alt + SPACE (MacOS)
+- Select Cluster: Click on a previously assigned mention or use the ↔ keys on the keyboard
+- Select Mention to Reassign: Ctrl + Click (Windows) or Alt + Click (MacOS) the mention
 
-### Controls 
+### JSON Configuration
 
 ### Extracting Annotation Data
+
+```javascript
+let cdcTool = document.getElementsByTagName("cdc-tool")[0].vueComponent;
+let results = {tokens:cdcTool.tokens, mentions:cdcTool.viewedMentions}
+JSON.stringify(results);
+```
 
 ### Post Processing
 
@@ -130,17 +153,6 @@ Special Thanks and Support
 
 Ido Dagan, Uri Fried, Amir , Valentina, Ayal Klien
 
-
-
-
----
-
-## FAQ
-
-- **How do I do *specifically* so and so?**
-    - No problem! Just do this.
-
----
 
 ## Support
 
