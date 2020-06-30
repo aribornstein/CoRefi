@@ -1,5 +1,5 @@
 # CDC APP
-![logo placeholder](https://cdn-images-1.medium.com/max/800/0*QBTGr5Q0KDqzSXfq.png)
+## LOGO GOES HERE
 > An emebedable web component and stand alone tool for exaughstive coreference anntoation. 
 
 
@@ -11,14 +11,26 @@
 
 ## Table of Contents 
 
+- Introduction 
 - Features
 - Installation
 
+## Intoduction 
+
+**Cross Document Coreference (CDC)**  is the task of clustering words and names - across multiple documents, that refer to the same concept, entity or event. CDC is an important natural language processing task for downstream applications such as abstractive summarization, question & answering, and information extraction.
+
+![](https://cdn-images-1.medium.com/max/800/0*DqTwuASwM-JUgBoN)
+
+To ensure quality when crowdsourcing Cross Document Coreference, an annotator must be trained to understand the nuances of co-reference and then be provided with all the information needed to accurately make coreference cluster assignments for every mention in a topic. The quality of an annotator's work must then be reviewable by a designated reviewer.
+
 ## Features
+
+This tool provides capabilites for annotator Onboarding, Annotaiton and Review. 
+
+### Onboarding
 
 ![CDC APP](https://cdn-images-1.medium.com/max/800/0*xzCT4O9PbDvzq3rE.gif)
 
-### Onboarding
 
 ### Annotation 
 
