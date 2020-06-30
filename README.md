@@ -1,6 +1,5 @@
-<a href="http://fvcproductions.com"><img src="https://avatars1.githubusercontent.com/u/4284691?v=3&s=200" title="FVCproductions" alt="FVCproductions"></a>
+<img src="https://cdn-images-1.medium.com/proxy/1*b31hiO4ynbDLRrXWEFF4aQ.png" title="FVCproductions" alt="FVCproductions">
 
-<!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
 
 
 # CDC APP
@@ -15,6 +14,9 @@
 ---
 
 ## Table of Contents 
+
+- Installation
+- Features
 
 ## Installation
 
@@ -53,11 +55,17 @@ The app can then be embeded as a Web Component
 ```
 
 
-
 ## Features
 
 ## Usage (Optional)
-    ###
+
+### Configuration
+
+### Controls 
+
+### Extracting Annotation Data
+
+### Post Processing
 
 ## Contributing
 
