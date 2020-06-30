@@ -101,6 +101,8 @@ The app can then be embeded as a Web Component
 
 ## Usage 
 
+![Usage](https://cdn-images-1.medium.com/max/800/1*WGoYMR374IvbmayzicIisQ.png)
+
 ### Keyboard Shortcuts
 - Assign Mention to Current Cluster: SPACE
 - Assign Mention to New Cluster: Ctrl + SPACE (Windows) or Alt + SPACE (MacOS)
