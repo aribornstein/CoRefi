@@ -1,22 +1,28 @@
-<img src="https://cdn-images-1.medium.com/proxy/1*b31hiO4ynbDLRrXWEFF4aQ.png" title="FVCproductions" alt="FVCproductions">
-
-
-
 # CDC APP
+![logo placeholder](https://cdn-images-1.medium.com/max/800/0*QBTGr5Q0KDqzSXfq.png)
 > An emebedable web component and stand alone tool for exaughstive coreference anntoation. 
 
 
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)  ![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)
 
-![CDC APP](https://cdn-images-1.medium.com/max/800/0*xzCT4O9PbDvzq3rE.gif)
 
 
 ---
 
 ## Table of Contents 
 
-- Installation
 - Features
+- Installation
+
+## Features
+
+![CDC APP](https://cdn-images-1.medium.com/max/800/0*xzCT4O9PbDvzq3rE.gif)
+
+### Onboarding
+
+### Annotation 
+
+### Reviewing 
 
 ## Installation
 
@@ -53,9 +59,6 @@ The app can then be embeded as a Web Component
 ```html
     <cdc-tool json="{html escaped json config}" ></cdc-tool>
 ```
-
-
-## Features
 
 ## Usage (Optional)
 
