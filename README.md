@@ -1,6 +1,6 @@
-# CDC APP
-## LOGO GOES HERE
-> An emebedable web component and stand alone tool for exaughstive coreference anntoation. 
+![logo](https://cdn-images-1.medium.com/max/800/1*Q9bXCpOcpxlQ0olOZrcrDw.jpeg)
+
+> CoRefi is an emebedable web component and stand alone tool for exaughstive coreference anntoation. 
 
 
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)  ![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)
@@ -31,7 +31,7 @@ When using please cite
 
 ## Features
 
-This tool provides capabilites for the full end to end process for CDC Annotation consisting of:
+CoRefi provides capabilites for the full end to end process for CDC Annotation consisting of:
 ![E2E Process](https://cdn-images-1.medium.com/max/800/1*PkVBeqteVqxfljbqSY1qww.png)
 
 ### 1. Onboarding
