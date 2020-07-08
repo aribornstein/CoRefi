@@ -15,8 +15,8 @@
           <ul>
             <li>Assign Mention to Current Cluster: SPACE</li>
             <li>Assign Mention to New Cluster: Ctrl + SPACE (Windows) or Alt + SPACE (MacOS)</li>
-            <li>Select Cluster: Click on a previously assigned mention or use the ↔ keys on the keyboard </li>
-            <li>Select Mention to Reassign: Ctrl + Click (Windows) or Alt + Click (MacOS) the mention </li>
+            <li>Select Cluster: Click on a previously assigned mention or use the ↔ keys on the keyboard</li>
+            <li>Select Mention to Reassign: Ctrl + Click (Windows) or Alt + Click (MacOS) the mention</li>
           </ul>
         </v-card-text>
         <v-card-actions>
@@ -25,8 +25,14 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-    <v-system-bar id="dashboard" color="default" part="dash" fixed>
-      CDC Annotation Tool
+    <v-system-bar id="dashboard" color="default" fixed>
+      <v-img
+        class="mx-2"
+        :src="require('@/assets/corefi_logo.png')"
+        max-height="40"
+        max-width="40"
+        contain
+      ></v-img>
       <v-spacer />
       Mention: {{ viewedMentions.length }}/{{ viewedMentions.length + candidateMentions.length }} Document: {{ parseInt(currentDocument) + 1 }}
       <span>--</span>
@@ -78,6 +84,39 @@
         </v-layout>
         <v-divider mx-4 />
       </v-container>
+      <div v-if="mode=='reviewer' && !clusterBarBottom" class="d-flex .justify-center">
+        <v-chip class="ma-2" disabled label color="white" font-weight="700" text-color="black">
+          <strong>Annotator Clusters:</strong>
+        </v-chip>
+        <v-chip-group
+          id="review-bank"
+          v-bind:value="selectedCluster"
+          active-class="primary--text"
+          mandatory
+          show-arrows
+        >
+          <v-chip
+            small
+            v-if="reviewBankClusters.length==0"
+            text-color="purple"
+            color="#F7EFFF"
+            @click="assignMention(true)"
+          >
+            <v-icon dark>mdi-plus</v-icon>
+          </v-chip>
+          <v-chip
+            v-for="cluster in reviewBankClusters"
+            :key="cluster.id"
+            color="#F7EFFF"
+            text-color="purple"
+            @click="selectCluster(cluster.id)"
+            label
+            small
+          >{{ cluster.text }}</v-chip>
+        </v-chip-group>
+      </div>
+      <v-divider v-if="mode=='reviewer' && !clusterBarBottom"></v-divider>
+
       <v-chip-group
         v-if="!clusterBarBottom"
         id="cluster-bank"
@@ -87,13 +126,12 @@
         show-arrows
       >
         <v-chip small @click="assignMention(true)">
-          <v-icon dark :color="newClusterButtonColor">mdi-plus</v-icon>
+          <v-icon color="#2d9cdb" dark>mdi-plus</v-icon>
         </v-chip>
         <v-chip
           v-for="cluster in clusters"
           :key="cluster.id"
           :value="cluster.id"
-          :text-color="cluster.suggestedColor"
           label
           small
         >{{ cluster.text }}</v-chip>
@@ -110,10 +148,39 @@
       <v-btn id="help" @click.stop="help = true" fab dark small icon color="blue">
         <v-icon>mdi-help</v-icon>
       </v-btn>
+      <div v-if="mode=='reviewer' && clusterBarBottom" class="d-flex .justify-center">
+        <v-chip class="ma-2" disabled label color="#f5f5f5" text-color="black">
+          <strong>Annotator Clusters:</strong>
+        </v-chip>
+        <v-chip-group
+          id="review-bank"
+          v-bind:value="selectedCluster"
+          active-class="primary--text"
+          mandatory
+          show-arrows
+        >
+          <v-chip
+            v-if="reviewBankClusters.length==0"
+            small
+            text-color="purple"
+            color="#F7EFFF"
+            @click="assignMention(true)"
+          >
+            <v-icon dark>mdi-plus</v-icon>
+          </v-chip>
+          <v-chip
+            v-for="cluster in reviewBankClusters"
+            :key="cluster.id"
+            color="#F7EFFF"
+            text-color="purple"
+            @click="selectCluster(cluster.id)"
+            label
+            small
+          >{{ cluster.text }}</v-chip>
+        </v-chip-group>
+      </div>
       <v-chip-group
         v-if="clusterBarBottom"
-        fixed
-        padless
         id="cluster-bank"
         v-model="selectedCluster"
         active-class="primary--text"
@@ -121,13 +188,12 @@
         show-arrows
       >
         <v-chip small @click="assignMention(true)">
-          <v-icon dark :color="newClusterButtonColor">mdi-plus</v-icon>
+          <v-icon color="#2d9cdb" dark>mdi-plus</v-icon>
         </v-chip>
         <v-chip
           v-for="cluster in clusters"
           :key="cluster.id"
           :value="cluster.id"
-          :text-color="cluster.suggestedColor"
           label
           small
         >{{ cluster.text }}</v-chip>
@@ -137,7 +203,7 @@
 </template>
 
 <script>
-import jsonData from "./data/ecb/guided_hit_topic_34_.json"//"./__mocks__/mentions.json";
+import jsonData from "./data/ecb/topic_5_review.json";
 
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
@@ -196,7 +262,10 @@ export default {
     }
   },
   data() {
-    const data = (!this.json || this.json=="${data}") ? jsonData : JSON.parse(unescape(this.json).replace("\u00e2\u20ac\u2122","'"));
+    const data =
+      !this.json || this.json == "${data}"
+        ? jsonData
+        : JSON.parse(unescape(this.json).replace("\u00e2\u20ac\u2122", "'"));
     data.tourSteps = !data.tourSteps ? [] : data.tourSteps; // if not created
     data.snackbar = false;
     data.snackbarText = "";
@@ -250,7 +319,7 @@ export default {
       const coreferingTokens = new Set(),
         suggestedClusters = new Set([this.currentMention.clustId]);
       for (
-        var i = this.currentMention.start;
+        let i = this.currentMention.start;
         i <= this.currentMention.end;
         i++
       ) {
@@ -266,14 +335,10 @@ export default {
       return suggestedClusters;
     },
 
-    newClusterButtonColor: function() {
-      if (
-        this.mode == "reviewer" &&
-        !this.clusterIds.includes(Array.from(this.suggestedReviewerClusters)[0])
-      ) {
-        return "red";
-      }
-      return "#1867c0";
+    reviewBankClusters: function() {
+      return Object.values(this.clusters).filter(c =>
+        this.suggestedReviewerClusters.has(c.id)
+      );
     },
 
     clusters: function() {
@@ -282,9 +347,6 @@ export default {
         let clustSpan = clustId.split("-");
         clusters[clustId] = {
           id: clustId,
-          suggestedColor: this.suggestedReviewerClusters.has(clustId)
-            ? "red"
-            : "",
           text: this.tokens
             .slice(parseInt(clustSpan[0]), parseInt(clustSpan[1]) + 1)
             .map(t => t.text + (t.noWhite ? "" : " "))
@@ -636,14 +698,14 @@ export default {
   margin-right: 0.3em;
 }
 .token:hover {
-  background-color: yellow;
+  background-color: #ffffb8;
 }
 .no-white {
   margin-right: 0;
 }
 .viewed:hover {
-  font-weight: bold;
-  color: green;
+  font-weight: medium;
+  color: #b16a00;
 }
 .cluster {
   background: #ddeff9;
@@ -653,7 +715,8 @@ export default {
 }
 .current {
   font-weight: 500;
-  border-bottom: 1px solid red;
+  padding: 0em;
+  border-bottom: 1px solid #c71585;
 }
 .other-document {
   color: #bdbdbd;
