@@ -84,58 +84,16 @@
         </v-layout>
         <v-divider mx-4 />
       </v-container>
-      <div v-if="mode=='reviewer' && !clusterBarBottom" class="d-flex .justify-center">
-        <v-chip class="ma-2" disabled label color="white" font-weight="700" text-color="black">
-          <strong>Annotator Clusters:</strong>
-        </v-chip>
-        <v-chip-group
-          id="review-bank"
-          v-bind:value="selectedCluster"
-          active-class="primary--text"
-          mandatory
-          show-arrows
-        >
-          <v-chip
-            small
-            v-if="reviewBankClusters.length==0"
-            text-color="purple"
-            color="#F7EFFF"
-            @click="assignMention(true)"
-          >
-            <v-icon dark>mdi-plus</v-icon>
-          </v-chip>
-          <v-chip
-            v-for="cluster in reviewBankClusters"
-            :key="cluster.id"
-            color="#F7EFFF"
-            text-color="purple"
-            @click="selectCluster(cluster.id)"
-            label
-            small
-          >{{ cluster.text }}</v-chip>
-        </v-chip-group>
-      </div>
-      <v-divider v-if="mode=='reviewer' && !clusterBarBottom"></v-divider>
 
-      <v-chip-group
+      <ClusterBank
         v-if="!clusterBarBottom"
-        id="cluster-bank"
-        v-model="selectedCluster"
-        active-class="primary--text"
-        mandatory
-        show-arrows
-      >
-        <v-chip small @click="assignMention(true)">
-          <v-icon color="#2d9cdb" dark>mdi-plus</v-icon>
-        </v-chip>
-        <v-chip
-          v-for="cluster in clusters"
-          :key="cluster.id"
-          :value="cluster.id"
-          label
-          small
-        >{{ cluster.text }}</v-chip>
-      </v-chip-group>
+        :clusters="clusters"
+        :selectedCluster="selectedCluster"
+        :suggestedReviewerClusters="suggestedReviewerClusters"
+        :mode="mode"
+        v-on:newCluster="assignMention(true)"
+        v-on:candidateSelected="selectCluster"
+      ></ClusterBank>
     </v-content>
 
     <v-snackbar v-model="snackbar" :timeout="snackbarTimeout">
@@ -148,56 +106,15 @@
       <v-btn id="help" @click.stop="help = true" fab dark small icon color="blue">
         <v-icon>mdi-help</v-icon>
       </v-btn>
-      <div v-if="mode=='reviewer' && clusterBarBottom" class="d-flex .justify-center">
-        <v-chip class="ma-2" disabled label color="#f5f5f5" text-color="black">
-          <strong>Annotator Clusters:</strong>
-        </v-chip>
-        <v-chip-group
-          id="review-bank"
-          v-bind:value="selectedCluster"
-          active-class="primary--text"
-          mandatory
-          show-arrows
-        >
-          <v-chip
-            v-if="reviewBankClusters.length==0"
-            small
-            text-color="purple"
-            color="#F7EFFF"
-            @click="assignMention(true)"
-          >
-            <v-icon dark>mdi-plus</v-icon>
-          </v-chip>
-          <v-chip
-            v-for="cluster in reviewBankClusters"
-            :key="cluster.id"
-            color="#F7EFFF"
-            text-color="purple"
-            @click="selectCluster(cluster.id)"
-            label
-            small
-          >{{ cluster.text }}</v-chip>
-        </v-chip-group>
-      </div>
-      <v-chip-group
+      <ClusterBank
         v-if="clusterBarBottom"
-        id="cluster-bank"
-        v-model="selectedCluster"
-        active-class="primary--text"
-        mandatory
-        show-arrows
-      >
-        <v-chip small @click="assignMention(true)">
-          <v-icon color="#2d9cdb" dark>mdi-plus</v-icon>
-        </v-chip>
-        <v-chip
-          v-for="cluster in clusters"
-          :key="cluster.id"
-          :value="cluster.id"
-          label
-          small
-        >{{ cluster.text }}</v-chip>
-      </v-chip-group>
+        :clusters="clusters"
+        :selectedCluster="selectedCluster"
+        :suggestedReviewerClusters="suggestedReviewerClusters"
+        :mode="mode"
+        v-on:newCluster="assignMention(true)"
+        v-on:candidateSelected="selectCluster"
+      ></ClusterBank>
     </v-footer>
   </v-app>
 </template>
@@ -213,8 +130,6 @@ import {
   VDivider,
   VBtn,
   VLayout,
-  VChip,
-  VChipGroup,
   VSnackbar,
   VSystemBar,
   VFooter,
@@ -233,6 +148,8 @@ import VueTour from "vue-tour";
 Vue.use(VueTour);
 Vue.config.productionTip = false;
 
+import ClusterBank from "./components/ClusterBank.vue";
+
 export default {
   name: "App",
   vuetify,
@@ -243,8 +160,6 @@ export default {
     VDivider,
     VBtn,
     VLayout,
-    VChip,
-    VChipGroup,
     VSnackbar,
     VSystemBar,
     VSpacer,
@@ -253,7 +168,8 @@ export default {
     VIcon,
     VDialog,
     VCard,
-    VCardTitle
+    VCardTitle,
+    ClusterBank
   },
   props: {
     json: {
@@ -333,12 +249,6 @@ export default {
         suggestedClusters.add(token);
       });
       return suggestedClusters;
-    },
-
-    reviewBankClusters: function() {
-      return Object.values(this.clusters).filter(c =>
-        this.suggestedReviewerClusters.has(c.id)
-      );
     },
 
     clusters: function() {
