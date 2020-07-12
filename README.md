@@ -155,8 +155,8 @@ JSON.stringify(results);
 - Ayal Klien & Paul Roit - Crowd Sourcing Review 
 - Amir Cohen - Archtecutal Review
 - Sharon Oren - Code Review
-- Ori Shapira, Daniela Stepanov, Ori Ernst, Yehudit Meged, Valentina Pyatkin - Feedback and Review
-
+- Chris Noring & Asaf Amrami
+- Ori Shapira, Daniela Stepanov, Ori Ernst, Yehudit Meged, Valentina Pyatkin, Moshe Uzan, Ofer Sabo - Feedback and Review
 
 
 ## Support
