@@ -1,6 +1,7 @@
 # CoRefi
 
-![logo](https://cdn-images-1.medium.com/max/800/1*Q9bXCpOcpxlQ0olOZrcrDw.jpeg)
+<span style="display:block;text-align:center">![logo](https://cdn-images-1.medium.com/max/800/1*Q9bXCpOcpxlQ0olOZrcrDw.jpeg)</span>
+
 
 > CoRefi is an emebedable web component and stand alone tool for exaughstive coreference anntoation. 
 
