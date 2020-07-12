@@ -147,7 +147,7 @@ JSON.stringify(results);
 
 ## Team
 
-> Or Contributors/People
+> People/Contribution
 
 - Ari Bornstein and Arie Cattan - Core Team
 - Ido Dagan - Advisor
