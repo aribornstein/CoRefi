@@ -22,11 +22,11 @@
 
 ## Intoduction 
 
-**Cross Document Coreference (CDC)**  is the task of clustering words and names - across multiple documents, that refer to the same concept, entity or event. CDC is an important natural language processing task for downstream applications such as abstractive summarization, question & answering, and information extraction.
+Coreference Resolution is the task of clustering words and names that refer to the same concept, entity or event. Coreference is an important NLP task for downstream applications such as abstractive summarization, reading comprehension, and information extraction. 
 
 ![](https://cdn-images-1.medium.com/max/800/0*DqTwuASwM-JUgBoN)
 
-To ensure quality when crowdsourcing Cross Document Coreference, an annotator must be trained to understand the nuances of co-reference and then be provided with all the information needed to accurately make coreference cluster assignments for every mention in a topic. The quality of an annotator's work must then be reviewable by a designated reviewer.
+To ensure quality when crowdsourcing Coreference, an annotator must be trained to understand the nuances of co-reference and then be provided with all the information needed to accurately make coreference cluster assignments for every mention in a topic. The quality of an annotator's work must then be reviewable by a designated reviewer.
 
 When using please cite
 
@@ -34,14 +34,14 @@ When using please cite
 
 ## Features
 
-CoRefi provides capabilites for the full end to end process for CDC Annotation consisting of:
+CoRefi provides capabilites for the full end to end process for Exaughstive Coreference Annotation consisting of:
 ![E2E Process](https://cdn-images-1.medium.com/max/800/1*PkVBeqteVqxfljbqSY1qww.png)
 
 ### 1. Onboarding
 
 A trainee is provided with a sequence of mentions. For each mention the trainee decides whether to update the mention’s span and then to either create a new mention or assign the mention to an existing cluster.  At any point of time, the trainee may view the mentions in any existing cluster. If the trainee incorrectly changes a mention span or assigns a mention to the wrong cluster they will be notified. Additionally after certain decisions an explanation of a specific important rule of co-reference will be explained. Once all mentions are clustered the annotator can submit the job.
 
-![Onboarding](https://cdn-images-1.medium.com/max/800/0*xzCT4O9PbDvzq3rE.gif)
+![Onboarding](https://cdn-images-1.medium.com/max/1200/0*8O3CzPy7vSHy_a3p.gif)
 
 
 #### Configuration
@@ -154,7 +154,7 @@ JSON.stringify(results);
 - Ido Dagan - Advisor
 - Uri Fried - Lead Designer
 - Ayal Klien & Paul Roit - Crowd Sourcing Review 
-- Amir Cohen - Archtecutal Review
+- Amir Cohen - Architectural Review
 - Sharon Oren - Code Review
 - Chris Noring & Asaf Amrami
 - Ori Shapira, Daniela Stepanov, Ori Ernst, Yehudit Meged, Valentina Pyatkin, Moshe Uzan, Ofer Sabo - Feedback and Review
