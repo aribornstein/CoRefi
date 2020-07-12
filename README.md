@@ -149,13 +149,14 @@ JSON.stringify(results);
 
 > Or Contributors/People
 
-Core Team
+- Ari Bornstein and Arie Cattan - Core Team
+- Ido Dagan - Advisor
+- Uri Fried - Lead Designer
+- Ayal Klien & Paul Roit - Crowd Sourcing Review 
+- Amir Cohen - Archtecutal Review
+- Sharon Oren - Code Review
+- Ori Shapira, Daniela Stepanov, Ori Ernst, Yehudit Meged, Valentina Pyatkin - Feedback and Review
 
-Ari Bornstein and Arie Cattan
-
-Special Thanks and Support
-
-Ido Dagan, Uri Fried, Amir , Valentina, Ayal Klien
 
 
 ## Support
