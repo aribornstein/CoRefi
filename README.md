@@ -52,7 +52,7 @@ A sample configuration json file for onboarding can be found here for more infor
 
 The annotator is provided with a sequence of mentions. For each mention the annotator decides whether to update the mention’s span and then to either create a new mention or assign the mention to an existing cluster.  At any point in time the annotator can re-assign a previously assigned mention to another cluster or view the mentions in an existing cluster. Once all mentions are clustered the annotator can submit the job.
 
-![Annotation](https://cdn-images-1.medium.com/max/800/0*Cge_4wkNeF-vKjAx.gif)
+![Annotation](https://cdn-images-1.medium.com/max/1200/1*CY4WATkSvpXW-ltpvzBtrw.png)
 
 
 #### Configuration
@@ -62,7 +62,7 @@ A sample configuration json file for annotation can be found here for more infor
 
 The Reviewer is provided a sequential list of mentions as well as a highlighted list of clusters that the reviewer may have meant to assign them to. For each mention the reviewer is shown the potential clusters that the annotator believed the mention belongs to. The reviewer then  decides whether to update the mention’s span and then whether to agree or update the annotators assignment. 
 
-![Review Mode](https://cdn-images-1.medium.com/max/800/0*eikVOb8FQ6JNZ0yw.gif)
+![Review Mode](https://cdn-images-1.medium.com/max/1200/1*DKmZyMjJNmYC4EGI7KJFrg.jpeg)
 
 #### Configuration
 A sample configuration json file for reviewing can be found here for more information on tool configuration see the configuration section.
