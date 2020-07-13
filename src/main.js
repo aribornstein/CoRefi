@@ -9,4 +9,4 @@ import wrap from '@vue/web-component-wrapper';
 // }).$mount('#app')
 
 const WrappedElement = wrap(Vue, App);
-window.customElements.define('cdc-tool', WrappedElement);
+window.customElements.define('co-refi', WrappedElement);

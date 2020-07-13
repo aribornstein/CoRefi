@@ -99,7 +99,7 @@ Add the following code your html file.
 The app can then be embeded as a Web Component
 
 ```html
-<cdc-tool json="{html escaped json config}" ></cdc-tool>
+<co-refi json="{html escaped json config}" ></co-refi>
 ```
 
 ## Usage 
@@ -117,8 +117,8 @@ The app can then be embeded as a Web Component
 ### Extracting Annotation Data
 
 ```javascript
-let cdcTool = document.getElementsByTagName("cdc-tool")[0].vueComponent;
-let results = {tokens:cdcTool.tokens, mentions:cdcTool.viewedMentions}
+let corefi = document.getElementsByTagName("co-refi")[0].vueComponent;
+let results = {tokens:corefi.tokens, mentions:corefi.viewedMentions}
 JSON.stringify(results);
 ```
 
