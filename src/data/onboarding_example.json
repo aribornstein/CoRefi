@@ -201,7 +201,7 @@
             "header": {
                 "title": "Assigning a New Cluster"
             },
-            "content": "Since the current mention <span class=\"current\">acquired</span> does not co-refer with the only existing mention in the <span class=\"cluster\">Intel</span> cluster it can be assigned to a new cluster with the Ctrl + SPACE (Windows) or ALT + SPACE (MacOS) shortcut."
+            "content": "Since the current mention <span class=\"current\">acquired</span> does not co-refer with the only existing mention in the <span class=\"cluster\">Intel</span> cluster assign it to a new cluster with the Ctrl + SPACE (Windows) or ALT + SPACE (MacOS) shortcut."
         }
     ]
 }

@@ -87,7 +87,7 @@
       <ClusterBank
         v-if="!clusterBarBottom"
         :clusters="clusters"
-        :selectedCluster="selectedCluster"
+        :selectedCluster.sync="selectedCluster"
         :suggestedReviewerClusters="suggestedReviewerClusters"
         :mode="mode"
         v-on:newCluster="assignMention(true)"
@@ -101,14 +101,14 @@
     </v-snackbar>
 
     <v-tour name="myTour" :steps="tourSteps" />
-    <v-footer>
+    <v-footer fixed>
       <v-btn id="help" @click.stop="help = true" fab dark small icon color="blue">
         <v-icon>mdi-help</v-icon>
       </v-btn>
       <ClusterBank
         v-if="clusterBarBottom"
         :clusters="clusters"
-        :selectedCluster="selectedCluster"
+        :selectedCluster.sync="selectedCluster"
         :suggestedReviewerClusters="suggestedReviewerClusters"
         :mode="mode"
         v-on:newCluster="assignMention(true)"
