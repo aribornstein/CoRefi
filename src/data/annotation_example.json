@@ -1,0 +1,3597 @@
+{
+    "mode": "annotation",
+    "tokens": [
+        {
+            "i": 0,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "A"
+        },
+        {
+            "i": 1,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 2,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "man"
+        },
+        {
+            "i": 3,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "has"
+        },
+        {
+            "i": 4,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "been"
+        },
+        {
+            "i": 5,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "charged"
+        },
+        {
+            "i": 6,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "with"
+        },
+        {
+            "i": 7,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "first-degree"
+        },
+        {
+            "i": 8,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "murder"
+        },
+        {
+            "i": 9,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "after"
+        },
+        {
+            "i": 10,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 11,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "killing"
+        },
+        {
+            "i": 12,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 13,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "an"
+        },
+        {
+            "i": 14,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "office"
+        },
+        {
+            "i": 15,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 16,
+            "document": 0,
+            "doc_name": "18_10ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 17,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "A"
+        },
+        {
+            "i": 18,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "former"
+        },
+        {
+            "i": 19,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "employee"
+        },
+        {
+            "i": 20,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "recently"
+        },
+        {
+            "i": 21,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "let"
+        },
+        {
+            "i": 22,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "go"
+        },
+        {
+            "i": 23,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "from"
+        },
+        {
+            "i": 24,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "his"
+        },
+        {
+            "i": 25,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "job"
+        },
+        {
+            "i": 26,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "opened"
+        },
+        {
+            "i": 27,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "fire"
+        },
+        {
+            "i": 28,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 29,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "an"
+        },
+        {
+            "i": 30,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "office"
+        },
+        {
+            "i": 31,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "Christmas"
+        },
+        {
+            "i": 32,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 33,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "yesterday"
+        },
+        {
+            "i": 34,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 35,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "killing"
+        },
+        {
+            "i": 36,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "one"
+        },
+        {
+            "i": 37,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "person"
+        },
+        {
+            "i": 38,
+            "document": 1,
+            "doc_name": "18_11ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 39,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "Employees"
+        },
+        {
+            "i": 40,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 41,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 42,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 43,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "wholesaler"
+        },
+        {
+            "i": 44,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "were"
+        },
+        {
+            "i": 45,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "coping"
+        },
+        {
+            "i": 46,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "Saturday"
+        },
+        {
+            "i": 47,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "with"
+        },
+        {
+            "i": 48,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 49,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "death"
+        },
+        {
+            "i": 50,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 51,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "their"
+        },
+        {
+            "i": 52,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "boss"
+        },
+        {
+            "i": 53,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 54,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "who"
+        },
+        {
+            "i": 55,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "was"
+        },
+        {
+            "i": 56,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "gunned"
+        },
+        {
+            "i": 57,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "down"
+        },
+        {
+            "i": 58,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 59,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "their"
+        },
+        {
+            "i": 60,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "office"
+        },
+        {
+            "i": 61,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "Christmas"
+        },
+        {
+            "i": 62,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 63,
+            "document": 2,
+            "doc_name": "18_12ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 64,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "Constable"
+        },
+        {
+            "i": 65,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "Tim"
+        },
+        {
+            "i": 66,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "Fanning"
+        },
+        {
+            "i": 67,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "allege"
+        },
+        {
+            "i": 68,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 69,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "recently-"
+        },
+        {
+            "i": 70,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "fired"
+        },
+        {
+            "i": 71,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "man"
+        },
+        {
+            "i": 72,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 73,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "Eric"
+        },
+        {
+            "i": 74,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "Allen"
+        },
+        {
+            "i": 75,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "Kirkpatrick"
+        },
+        {
+            "i": 76,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 77,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "61"
+        },
+        {
+            "i": 78,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 79,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "opened"
+        },
+        {
+            "i": 80,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "fire"
+        },
+        {
+            "i": 81,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 82,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 83,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 84,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "office"
+        },
+        {
+            "i": 85,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "Friday"
+        },
+        {
+            "i": 86,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 87,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "killing"
+        },
+        {
+            "i": 88,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "Benjamin"
+        },
+        {
+            "i": 89,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "David"
+        },
+        {
+            "i": 90,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "Banky"
+        },
+        {
+            "i": 91,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 92,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "40"
+        },
+        {
+            "i": 93,
+            "document": 3,
+            "doc_name": "18_13ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 94,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "One"
+        },
+        {
+            "i": 95,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "man"
+        },
+        {
+            "i": 96,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "is"
+        },
+        {
+            "i": 97,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "dead"
+        },
+        {
+            "i": 98,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "after"
+        },
+        {
+            "i": 99,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "being"
+        },
+        {
+            "i": 100,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "shot"
+        },
+        {
+            "i": 101,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "by"
+        },
+        {
+            "i": 102,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 103,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "gunman"
+        },
+        {
+            "i": 104,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "who"
+        },
+        {
+            "i": 105,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "marched"
+        },
+        {
+            "i": 106,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "into"
+        },
+        {
+            "i": 107,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 108,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "company"
+        },
+        {
+            "i": 109,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "Christmas"
+        },
+        {
+            "i": 110,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 111,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "Friday"
+        },
+        {
+            "i": 112,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "night"
+        },
+        {
+            "i": 113,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 114,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 115,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "police"
+        },
+        {
+            "i": 116,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "have"
+        },
+        {
+            "i": 117,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "arrested"
+        },
+        {
+            "i": 118,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 119,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "61-year-old"
+        },
+        {
+            "i": 120,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "former"
+        },
+        {
+            "i": 121,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "employee"
+        },
+        {
+            "i": 122,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "after"
+        },
+        {
+            "i": 123,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 124,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "shooting"
+        },
+        {
+            "i": 125,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 126,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "Tallgrass"
+        },
+        {
+            "i": 127,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "Distributors"
+        },
+        {
+            "i": 128,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "Ltd."
+        },
+        {
+            "i": 129,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 130,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "an"
+        },
+        {
+            "i": 131,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "organic"
+        },
+        {
+            "i": 132,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "supplements"
+        },
+        {
+            "i": 133,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "and"
+        },
+        {
+            "i": 134,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "health"
+        },
+        {
+            "i": 135,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "product"
+        },
+        {
+            "i": 136,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "store"
+        },
+        {
+            "i": 137,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "in"
+        },
+        {
+            "i": 138,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 139,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "Mount"
+        },
+        {
+            "i": 140,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "Pleasant"
+        },
+        {
+            "i": 141,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "neighbourhood"
+        },
+        {
+            "i": 142,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "near"
+        },
+        {
+            "i": 143,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "downtown"
+        },
+        {
+            "i": 144,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 145,
+            "document": 4,
+            "doc_name": "18_14ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 146,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "A"
+        },
+        {
+            "i": 147,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "former"
+        },
+        {
+            "i": 148,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "employee"
+        },
+        {
+            "i": 149,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "walked"
+        },
+        {
+            "i": 150,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "into"
+        },
+        {
+            "i": 151,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 152,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "staff"
+        },
+        {
+            "i": 153,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "Christmas"
+        },
+        {
+            "i": 154,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 155,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 156,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "an"
+        },
+        {
+            "i": 157,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "east"
+        },
+        {
+            "i": 158,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 159,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "health"
+        },
+        {
+            "i": 160,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "products"
+        },
+        {
+            "i": 161,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "business"
+        },
+        {
+            "i": 162,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "Friday"
+        },
+        {
+            "i": 163,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "and"
+        },
+        {
+            "i": 164,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "shot"
+        },
+        {
+            "i": 165,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "and"
+        },
+        {
+            "i": 166,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "killed"
+        },
+        {
+            "i": 167,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 168,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "man"
+        },
+        {
+            "i": 169,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 170,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "according"
+        },
+        {
+            "i": 171,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "to"
+        },
+        {
+            "i": 172,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "police"
+        },
+        {
+            "i": 173,
+            "document": 5,
+            "doc_name": "18_15ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 174,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "A"
+        },
+        {
+            "i": 175,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "61-year-old"
+        },
+        {
+            "i": 176,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "man"
+        },
+        {
+            "i": 177,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "in"
+        },
+        {
+            "i": 178,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "Canada"
+        },
+        {
+            "i": 179,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "is"
+        },
+        {
+            "i": 180,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "charged"
+        },
+        {
+            "i": 181,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "with"
+        },
+        {
+            "i": 182,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "first-degree"
+        },
+        {
+            "i": 183,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "murder"
+        },
+        {
+            "i": 184,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "in"
+        },
+        {
+            "i": 185,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 186,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "deadly"
+        },
+        {
+            "i": 187,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "office"
+        },
+        {
+            "i": 188,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "Christmas"
+        },
+        {
+            "i": 189,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 190,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "shooting"
+        },
+        {
+            "i": 191,
+            "document": 6,
+            "doc_name": "18_16ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 192,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "A"
+        },
+        {
+            "i": 193,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "61-year-old"
+        },
+        {
+            "i": 194,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "man"
+        },
+        {
+            "i": 195,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "was"
+        },
+        {
+            "i": 196,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "charged"
+        },
+        {
+            "i": 197,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "with"
+        },
+        {
+            "i": 198,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "first-degree"
+        },
+        {
+            "i": 199,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "murder"
+        },
+        {
+            "i": 200,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "Saturday"
+        },
+        {
+            "i": 201,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "after"
+        },
+        {
+            "i": 202,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "allegedly"
+        },
+        {
+            "i": 203,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "opening"
+        },
+        {
+            "i": 204,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "fire"
+        },
+        {
+            "i": 205,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 206,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "his"
+        },
+        {
+            "i": 207,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "former"
+        },
+        {
+            "i": 208,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "employers"
+        },
+        {
+            "i": 209,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "'"
+        },
+        {
+            "i": 210,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "office"
+        },
+        {
+            "i": 211,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "Christmas"
+        },
+        {
+            "i": 212,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 213,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "in"
+        },
+        {
+            "i": 214,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 215,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 216,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "killing"
+        },
+        {
+            "i": 217,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "one"
+        },
+        {
+            "i": 218,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "man"
+        },
+        {
+            "i": 219,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 220,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "police"
+        },
+        {
+            "i": 221,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "said"
+        },
+        {
+            "i": 222,
+            "document": 7,
+            "doc_name": "18_1ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 223,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "A"
+        },
+        {
+            "i": 224,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "61-year-old"
+        },
+        {
+            "i": 225,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 226,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "man"
+        },
+        {
+            "i": 227,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "was"
+        },
+        {
+            "i": 228,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "charged"
+        },
+        {
+            "i": 229,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "yesterday"
+        },
+        {
+            "i": 230,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "in"
+        },
+        {
+            "i": 231,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "connection"
+        },
+        {
+            "i": 232,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "with"
+        },
+        {
+            "i": 233,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 234,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "fatal"
+        },
+        {
+            "i": 235,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "shooting"
+        },
+        {
+            "i": 236,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 237,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "his"
+        },
+        {
+            "i": 238,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "former"
+        },
+        {
+            "i": 239,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "boss"
+        },
+        {
+            "i": 240,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 241,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "an"
+        },
+        {
+            "i": 242,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "office"
+        },
+        {
+            "i": 243,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "Christmas"
+        },
+        {
+            "i": 244,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 245,
+            "document": 8,
+            "doc_name": "18_2ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 246,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "A"
+        },
+        {
+            "i": 247,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "man"
+        },
+        {
+            "i": 248,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "has"
+        },
+        {
+            "i": 249,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "been"
+        },
+        {
+            "i": 250,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "charged"
+        },
+        {
+            "i": 251,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "with"
+        },
+        {
+            "i": 252,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "first-degree"
+        },
+        {
+            "i": 253,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "murder"
+        },
+        {
+            "i": 254,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "after"
+        },
+        {
+            "i": 255,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 256,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "shooting"
+        },
+        {
+            "i": 257,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 258,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "an"
+        },
+        {
+            "i": 259,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "office"
+        },
+        {
+            "i": 260,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "Christmas"
+        },
+        {
+            "i": 261,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 262,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "in"
+        },
+        {
+            "i": 263,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 264,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "Friday"
+        },
+        {
+            "i": 265,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 266,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "Police"
+        },
+        {
+            "i": 267,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "allege"
+        },
+        {
+            "i": 268,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "Eric"
+        },
+        {
+            "i": 269,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "Allen"
+        },
+        {
+            "i": 270,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "Kirkpatrick"
+        },
+        {
+            "i": 271,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 272,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "61"
+        },
+        {
+            "i": 273,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 274,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "opened"
+        },
+        {
+            "i": 275,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "fire"
+        },
+        {
+            "i": 276,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 277,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 278,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "TallGrass"
+        },
+        {
+            "i": 279,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "Distribution"
+        },
+        {
+            "i": 280,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "Ltd"
+        },
+        {
+            "i": 281,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "Christmas"
+        },
+        {
+            "i": 282,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 283,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 284,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "killing"
+        },
+        {
+            "i": 285,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "Benjamin"
+        },
+        {
+            "i": 286,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "David"
+        },
+        {
+            "i": 287,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "Banky"
+        },
+        {
+            "i": 288,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 289,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "40"
+        },
+        {
+            "i": 290,
+            "document": 9,
+            "doc_name": "18_3ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 291,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "A"
+        },
+        {
+            "i": 292,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "former"
+        },
+        {
+            "i": 293,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "employee"
+        },
+        {
+            "i": 294,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "recently"
+        },
+        {
+            "i": 295,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "let"
+        },
+        {
+            "i": 296,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "go"
+        },
+        {
+            "i": 297,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "from"
+        },
+        {
+            "i": 298,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "his"
+        },
+        {
+            "i": 299,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "job"
+        },
+        {
+            "i": 300,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "opened"
+        },
+        {
+            "i": 301,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "fire"
+        },
+        {
+            "i": 302,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 303,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "an"
+        },
+        {
+            "i": 304,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "office"
+        },
+        {
+            "i": 305,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "Christmas"
+        },
+        {
+            "i": 306,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 307,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "Friday"
+        },
+        {
+            "i": 308,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 309,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "killing"
+        },
+        {
+            "i": 310,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "one"
+        },
+        {
+            "i": 311,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "person"
+        },
+        {
+            "i": 312,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 313,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "police"
+        },
+        {
+            "i": 314,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "said"
+        },
+        {
+            "i": 315,
+            "document": 10,
+            "doc_name": "18_4ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 316,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "A"
+        },
+        {
+            "i": 317,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "former"
+        },
+        {
+            "i": 318,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "employee"
+        },
+        {
+            "i": 319,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "who"
+        },
+        {
+            "i": 320,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "opened"
+        },
+        {
+            "i": 321,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "fire"
+        },
+        {
+            "i": 322,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 323,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "an"
+        },
+        {
+            "i": 324,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "office"
+        },
+        {
+            "i": 325,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "Christmas"
+        },
+        {
+            "i": 326,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 327,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "killing"
+        },
+        {
+            "i": 328,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "one"
+        },
+        {
+            "i": 329,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "man"
+        },
+        {
+            "i": 330,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 331,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "has"
+        },
+        {
+            "i": 332,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "been"
+        },
+        {
+            "i": 333,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "charged"
+        },
+        {
+            "i": 334,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "with"
+        },
+        {
+            "i": 335,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "first-degree"
+        },
+        {
+            "i": 336,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "murder"
+        },
+        {
+            "i": 337,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 338,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "police"
+        },
+        {
+            "i": 339,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "said"
+        },
+        {
+            "i": 340,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "Saturday"
+        },
+        {
+            "i": 341,
+            "document": 11,
+            "doc_name": "18_5ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 342,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "61-year-old"
+        },
+        {
+            "i": 343,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 344,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "man"
+        },
+        {
+            "i": 345,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "charged"
+        },
+        {
+            "i": 346,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "with"
+        },
+        {
+            "i": 347,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "first-degree"
+        },
+        {
+            "i": 348,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "murder"
+        },
+        {
+            "i": 349,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "after"
+        },
+        {
+            "i": 350,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "company"
+        },
+        {
+            "i": 351,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "CEO"
+        },
+        {
+            "i": 352,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "gunned"
+        },
+        {
+            "i": 353,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "down"
+        },
+        {
+            "i": 354,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 355,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "office"
+        },
+        {
+            "i": 356,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "holiday"
+        },
+        {
+            "i": 357,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 358,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "Employees"
+        },
+        {
+            "i": 359,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 360,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 361,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 362,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "wholesaler"
+        },
+        {
+            "i": 363,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "were"
+        },
+        {
+            "i": 364,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "coping"
+        },
+        {
+            "i": 365,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "Saturday"
+        },
+        {
+            "i": 366,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "with"
+        },
+        {
+            "i": 367,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 368,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "death"
+        },
+        {
+            "i": 369,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 370,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "their"
+        },
+        {
+            "i": 371,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "boss"
+        },
+        {
+            "i": 372,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 373,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "who"
+        },
+        {
+            "i": 374,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "was"
+        },
+        {
+            "i": 375,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "gunned"
+        },
+        {
+            "i": 376,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "down"
+        },
+        {
+            "i": 377,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 378,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "their"
+        },
+        {
+            "i": 379,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "office"
+        },
+        {
+            "i": 380,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "Christmas"
+        },
+        {
+            "i": 381,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 382,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 383,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "A"
+        },
+        {
+            "i": 384,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "61-year-old"
+        },
+        {
+            "i": 385,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 386,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "man"
+        },
+        {
+            "i": 387,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "-"
+        },
+        {
+            "i": 388,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "Eric"
+        },
+        {
+            "i": 389,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "Allen"
+        },
+        {
+            "i": 390,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "Kirkpatrick"
+        },
+        {
+            "i": 391,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "-"
+        },
+        {
+            "i": 392,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "was"
+        },
+        {
+            "i": 393,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "charged"
+        },
+        {
+            "i": 394,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "Saturday"
+        },
+        {
+            "i": 395,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "with"
+        },
+        {
+            "i": 396,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "one"
+        },
+        {
+            "i": 397,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "count"
+        },
+        {
+            "i": 398,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 399,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "first-degree"
+        },
+        {
+            "i": 400,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "murder"
+        },
+        {
+            "i": 401,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "in"
+        },
+        {
+            "i": 402,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "connection"
+        },
+        {
+            "i": 403,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "with"
+        },
+        {
+            "i": 404,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 405,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "shooting"
+        },
+        {
+            "i": 406,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 407,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 408,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "police"
+        },
+        {
+            "i": 409,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "said"
+        },
+        {
+            "i": 410,
+            "document": 12,
+            "doc_name": "18_6ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 411,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "A"
+        },
+        {
+            "i": 412,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "just-"
+        },
+        {
+            "i": 413,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "fired"
+        },
+        {
+            "i": 414,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "employee"
+        },
+        {
+            "i": 415,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 416,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 417,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "Canadian"
+        },
+        {
+            "i": 418,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "health"
+        },
+        {
+            "i": 419,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "products"
+        },
+        {
+            "i": 420,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "company"
+        },
+        {
+            "i": 421,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "crashed"
+        },
+        {
+            "i": 422,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 423,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "office"
+        },
+        {
+            "i": 424,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "Christmas"
+        },
+        {
+            "i": 425,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 426,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "in"
+        },
+        {
+            "i": 427,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 428,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 429,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "killing"
+        },
+        {
+            "i": 430,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 431,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "chief"
+        },
+        {
+            "i": 432,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "executive"
+        },
+        {
+            "i": 433,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "officer"
+        },
+        {
+            "i": 434,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 435,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "police"
+        },
+        {
+            "i": 436,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "said"
+        },
+        {
+            "i": 437,
+            "document": 13,
+            "doc_name": "18_7ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 438,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "One"
+        },
+        {
+            "i": 439,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "man"
+        },
+        {
+            "i": 440,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "is"
+        },
+        {
+            "i": 441,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "dead"
+        },
+        {
+            "i": 442,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "after"
+        },
+        {
+            "i": 443,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "an"
+        },
+        {
+            "i": 444,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "ex-employee"
+        },
+        {
+            "i": 445,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "opened"
+        },
+        {
+            "i": 446,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "fire"
+        },
+        {
+            "i": 447,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 448,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "his"
+        },
+        {
+            "i": 449,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "company"
+        },
+        {
+            "i": 450,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "'s"
+        },
+        {
+            "i": 451,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "Christmas"
+        },
+        {
+            "i": 452,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 453,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 454,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 455,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 456,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 457,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "B.C."
+        },
+        {
+            "i": 458,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "business"
+        },
+        {
+            "i": 459,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "Friday"
+        },
+        {
+            "i": 460,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "night"
+        },
+        {
+            "i": 461,
+            "document": 14,
+            "doc_name": "18_8ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 462,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "A"
+        },
+        {
+            "i": 463,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "former"
+        },
+        {
+            "i": 464,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "employee"
+        },
+        {
+            "i": 465,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "walked"
+        },
+        {
+            "i": 466,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "into"
+        },
+        {
+            "i": 467,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 468,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "staff"
+        },
+        {
+            "i": 469,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "Christmas"
+        },
+        {
+            "i": 470,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "party"
+        },
+        {
+            "i": 471,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "at"
+        },
+        {
+            "i": 472,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "an"
+        },
+        {
+            "i": 473,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "east"
+        },
+        {
+            "i": 474,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "Vancouver"
+        },
+        {
+            "i": 475,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "health"
+        },
+        {
+            "i": 476,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "products"
+        },
+        {
+            "i": 477,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "business"
+        },
+        {
+            "i": 478,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "Friday"
+        },
+        {
+            "i": 479,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "and"
+        },
+        {
+            "i": 480,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "allegedly"
+        },
+        {
+            "i": 481,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "shot"
+        },
+        {
+            "i": 482,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "and"
+        },
+        {
+            "i": 483,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "killed"
+        },
+        {
+            "i": 484,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 485,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "man"
+        },
+        {
+            "i": 486,
+            "document": 15,
+            "doc_name": "18_9ecb.xml",
+            "text": "."
+        }
+    ],
+    "candidateMentions": [
+        {
+            "start": 8,
+            "end": 8
+        },
+        {
+            "start": 11,
+            "end": 11
+        },
+        {
+            "start": 15,
+            "end": 15
+        },
+        {
+            "start": 19,
+            "end": 19
+        },
+        {
+            "start": 21,
+            "end": 22
+        },
+        {
+            "start": 25,
+            "end": 25
+        },
+        {
+            "start": 26,
+            "end": 27
+        },
+        {
+            "start": 32,
+            "end": 32
+        },
+        {
+            "start": 33,
+            "end": 33
+        },
+        {
+            "start": 35,
+            "end": 35
+        },
+        {
+            "start": 37,
+            "end": 37
+        },
+        {
+            "start": 39,
+            "end": 39
+        },
+        {
+            "start": 43,
+            "end": 43
+        },
+        {
+            "start": 45,
+            "end": 45
+        },
+        {
+            "start": 46,
+            "end": 46
+        },
+        {
+            "start": 49,
+            "end": 49
+        },
+        {
+            "start": 52,
+            "end": 52
+        },
+        {
+            "start": 56,
+            "end": 57
+        },
+        {
+            "start": 62,
+            "end": 62
+        },
+        {
+            "start": 65,
+            "end": 66
+        },
+        {
+            "start": 67,
+            "end": 67
+        },
+        {
+            "start": 70,
+            "end": 70
+        },
+        {
+            "start": 71,
+            "end": 71
+        },
+        {
+            "start": 73,
+            "end": 75
+        },
+        {
+            "start": 79,
+            "end": 80
+        },
+        {
+            "start": 82,
+            "end": 84
+        },
+        {
+            "start": 85,
+            "end": 85
+        },
+        {
+            "start": 87,
+            "end": 87
+        },
+        {
+            "start": 88,
+            "end": 90
+        },
+        {
+            "start": 95,
+            "end": 95
+        },
+        {
+            "start": 97,
+            "end": 97
+        },
+        {
+            "start": 100,
+            "end": 100
+        },
+        {
+            "start": 103,
+            "end": 103
+        },
+        {
+            "start": 105,
+            "end": 105
+        },
+        {
+            "start": 110,
+            "end": 110
+        },
+        {
+            "start": 111,
+            "end": 112
+        },
+        {
+            "start": 115,
+            "end": 115
+        },
+        {
+            "start": 117,
+            "end": 117
+        },
+        {
+            "start": 121,
+            "end": 121
+        },
+        {
+            "start": 124,
+            "end": 124
+        },
+        {
+            "start": 126,
+            "end": 128
+        },
+        {
+            "start": 136,
+            "end": 144
+        },
+        {
+            "start": 148,
+            "end": 148
+        },
+        {
+            "start": 149,
+            "end": 149
+        },
+        {
+            "start": 154,
+            "end": 154
+        },
+        {
+            "start": 156,
+            "end": 161
+        },
+        {
+            "start": 162,
+            "end": 162
+        },
+        {
+            "start": 164,
+            "end": 164
+        },
+        {
+            "start": 166,
+            "end": 166
+        },
+        {
+            "start": 168,
+            "end": 168
+        },
+        {
+            "start": 170,
+            "end": 171
+        },
+        {
+            "start": 172,
+            "end": 172
+        },
+        {
+            "start": 176,
+            "end": 176
+        },
+        {
+            "start": 177,
+            "end": 178
+        },
+        {
+            "start": 180,
+            "end": 180
+        },
+        {
+            "start": 183,
+            "end": 183
+        },
+        {
+            "start": 189,
+            "end": 189
+        },
+        {
+            "start": 190,
+            "end": 190
+        },
+        {
+            "start": 194,
+            "end": 194
+        },
+        {
+            "start": 196,
+            "end": 196
+        },
+        {
+            "start": 199,
+            "end": 199
+        },
+        {
+            "start": 200,
+            "end": 200
+        },
+        {
+            "start": 203,
+            "end": 204
+        },
+        {
+            "start": 210,
+            "end": 210
+        },
+        {
+            "start": 212,
+            "end": 212
+        },
+        {
+            "start": 214,
+            "end": 214
+        },
+        {
+            "start": 216,
+            "end": 216
+        },
+        {
+            "start": 218,
+            "end": 218
+        },
+        {
+            "start": 220,
+            "end": 220
+        },
+        {
+            "start": 221,
+            "end": 221
+        },
+        {
+            "start": 226,
+            "end": 226
+        },
+        {
+            "start": 228,
+            "end": 228
+        },
+        {
+            "start": 229,
+            "end": 229
+        },
+        {
+            "start": 235,
+            "end": 235
+        },
+        {
+            "start": 239,
+            "end": 239
+        },
+        {
+            "start": 241,
+            "end": 242
+        },
+        {
+            "start": 244,
+            "end": 244
+        },
+        {
+            "start": 246,
+            "end": 247
+        },
+        {
+            "start": 250,
+            "end": 250
+        },
+        {
+            "start": 252,
+            "end": 253
+        },
+        {
+            "start": 256,
+            "end": 256
+        },
+        {
+            "start": 259,
+            "end": 259
+        },
+        {
+            "start": 261,
+            "end": 261
+        },
+        {
+            "start": 263,
+            "end": 263
+        },
+        {
+            "start": 264,
+            "end": 264
+        },
+        {
+            "start": 266,
+            "end": 266
+        },
+        {
+            "start": 267,
+            "end": 267
+        },
+        {
+            "start": 268,
+            "end": 272
+        },
+        {
+            "start": 274,
+            "end": 275
+        },
+        {
+            "start": 278,
+            "end": 280
+        },
+        {
+            "start": 282,
+            "end": 282
+        },
+        {
+            "start": 284,
+            "end": 284
+        },
+        {
+            "start": 285,
+            "end": 289
+        },
+        {
+            "start": 293,
+            "end": 293
+        },
+        {
+            "start": 295,
+            "end": 296
+        },
+        {
+            "start": 299,
+            "end": 299
+        },
+        {
+            "start": 300,
+            "end": 301
+        },
+        {
+            "start": 306,
+            "end": 306
+        },
+        {
+            "start": 307,
+            "end": 307
+        },
+        {
+            "start": 309,
+            "end": 309
+        },
+        {
+            "start": 311,
+            "end": 311
+        },
+        {
+            "start": 313,
+            "end": 313
+        },
+        {
+            "start": 314,
+            "end": 314
+        },
+        {
+            "start": 318,
+            "end": 318
+        },
+        {
+            "start": 320,
+            "end": 321
+        },
+        {
+            "start": 323,
+            "end": 324
+        },
+        {
+            "start": 326,
+            "end": 326
+        },
+        {
+            "start": 327,
+            "end": 327
+        },
+        {
+            "start": 329,
+            "end": 329
+        },
+        {
+            "start": 333,
+            "end": 333
+        },
+        {
+            "start": 336,
+            "end": 336
+        },
+        {
+            "start": 338,
+            "end": 338
+        },
+        {
+            "start": 339,
+            "end": 339
+        },
+        {
+            "start": 340,
+            "end": 340
+        },
+        {
+            "start": 344,
+            "end": 344
+        },
+        {
+            "start": 345,
+            "end": 345
+        },
+        {
+            "start": 348,
+            "end": 348
+        },
+        {
+            "start": 351,
+            "end": 351
+        },
+        {
+            "start": 352,
+            "end": 353
+        },
+        {
+            "start": 357,
+            "end": 357
+        },
+        {
+            "start": 358,
+            "end": 358
+        },
+        {
+            "start": 360,
+            "end": 362
+        },
+        {
+            "start": 364,
+            "end": 364
+        },
+        {
+            "start": 365,
+            "end": 365
+        },
+        {
+            "start": 368,
+            "end": 368
+        },
+        {
+            "start": 371,
+            "end": 371
+        },
+        {
+            "start": 375,
+            "end": 376
+        },
+        {
+            "start": 378,
+            "end": 378
+        },
+        {
+            "start": 381,
+            "end": 381
+        },
+        {
+            "start": 388,
+            "end": 390
+        },
+        {
+            "start": 393,
+            "end": 393
+        },
+        {
+            "start": 394,
+            "end": 394
+        },
+        {
+            "start": 400,
+            "end": 400
+        },
+        {
+            "start": 405,
+            "end": 405
+        },
+        {
+            "start": 408,
+            "end": 408
+        },
+        {
+            "start": 409,
+            "end": 409
+        },
+        {
+            "start": 413,
+            "end": 413
+        },
+        {
+            "start": 414,
+            "end": 414
+        },
+        {
+            "start": 420,
+            "end": 420
+        },
+        {
+            "start": 421,
+            "end": 421
+        },
+        {
+            "start": 422,
+            "end": 423
+        },
+        {
+            "start": 425,
+            "end": 425
+        },
+        {
+            "start": 429,
+            "end": 429
+        },
+        {
+            "start": 433,
+            "end": 433
+        },
+        {
+            "start": 435,
+            "end": 435
+        },
+        {
+            "start": 436,
+            "end": 436
+        },
+        {
+            "start": 439,
+            "end": 439
+        },
+        {
+            "start": 441,
+            "end": 441
+        },
+        {
+            "start": 444,
+            "end": 444
+        },
+        {
+            "start": 445,
+            "end": 446
+        },
+        {
+            "start": 449,
+            "end": 449
+        },
+        {
+            "start": 452,
+            "end": 452
+        },
+        {
+            "start": 455,
+            "end": 455
+        },
+        {
+            "start": 458,
+            "end": 458
+        },
+        {
+            "start": 459,
+            "end": 460
+        },
+        {
+            "start": 464,
+            "end": 464
+        },
+        {
+            "start": 465,
+            "end": 465
+        },
+        {
+            "start": 470,
+            "end": 470
+        },
+        {
+            "start": 473,
+            "end": 474
+        },
+        {
+            "start": 477,
+            "end": 477
+        },
+        {
+            "start": 478,
+            "end": 478
+        },
+        {
+            "start": 481,
+            "end": 481
+        },
+        {
+            "start": 483,
+            "end": 483
+        },
+        {
+            "start": 485,
+            "end": 485
+        }
+    ],
+    "selectedCluster": "2-2",
+    "viewedMentions": [
+        {
+            "start": 2,
+            "end": 2,
+            "clustId": "2-2"
+        }
+    ],
+    "currentMention": {
+        "start": 5,
+        "end": 5
+    }
+}

@@ -1,16 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
-import vuetify from './plugins/vuetify';
+import wrap from '@vue/web-component-wrapper';
 
-import VueTour from 'vue-tour'
-require('vue-tour/dist/vue-tour.css')
-Vue.use(VueTour)
+// new Vue({
+//   vuetify,
+//   VueTour,
+//   render: h => h(App)
+// }).$mount('#app')
 
-
-Vue.config.productionTip = false
-
-new Vue({
-  vuetify,
-  VueTour,
-  render: h => h(App)
-}).$mount('#app')
+const WrappedElement = wrap(Vue, App);
+window.customElements.define('co-refi', WrappedElement);

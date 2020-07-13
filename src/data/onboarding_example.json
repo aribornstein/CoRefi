@@ -1,0 +1,209 @@
+{
+    "mode": "onboarding",
+    "fixableSpans":false,
+    "tokens": [
+        {
+            "i": 0,
+            "pos": "PROPN",
+            "document": 0,
+            "text": "Intel",
+            "lemma": "Intel"
+        },
+        {
+            "i": 1,
+            "pos": "VERB",
+            "document": 0,
+            "text": "acquired",
+            "lemma": "acquire"
+        },
+        {
+            "i": 2,
+            "pos": "PROPN",
+            "document": 0,
+            "text": "MobileEye",
+            "lemma": "MobileEye"
+        },
+        {
+            "i": 3,
+            "pos": "PUNCT",
+            "document": 0,
+            "text": ".",
+            "lemma": "."
+        },
+        {
+            "i": 4,
+            "pos": "PROPN",
+            "document": 1,
+            "text": "Intel",
+            "lemma": "Intel"
+        },
+        {
+            "i": 5,
+            "pos": "PROPN",
+            "document": 1,
+            "text": "corp",
+            "lemma": "corp"
+        },
+        {
+            "i": 6,
+            "pos": "VERB",
+            "document": 1,
+            "text": "purchased",
+            "lemma": "purchase"
+        },
+        {
+            "i": 7,
+            "pos": "PROPN",
+            "document": 1,
+            "text": "MobileEye",
+            "lemma": "MobileEye"
+        },
+        {
+            "i": 8,
+            "pos": "PUNCT",
+            "document": 1,
+            "text": ".",
+            "lemma": "."
+        }
+    ],
+    "candidateMentions": [
+        {
+            "start": 2,
+            "end": 2,
+            "clustId": "2-2"
+        },
+        {
+            "start": 4,
+            "end": 5,
+            "clustId": "0-0"
+        },
+        {
+            "start": 6,
+            "end": 6,
+            "clustId": "1-1"
+        },
+        {
+            "start": 7,
+            "end": 7,
+            "clustId": "2-2"
+        }
+
+    ],
+    "selectedCluster": "0-0",
+    "viewedMentions": [
+        {
+            "start": 0,
+            "end": 0,
+            "clustId": "0-0"
+        }
+    ],
+    "currentMention": {
+        "start": 1,
+        "end": 1,
+        "clustId":"1-1"
+    },
+    "goldMentions": [
+        {
+            "start": 1,
+            "end": 1,
+            "clustId": "1-1",
+            "errorMessage": "Note that CoRefi's experiential learning features can be used to guide users to the correct annotation decision.",
+            "validMessage": "Great job you're a natrual now try with the next two mentions!"
+        },
+        {
+            "start": 2,
+            "end": 2,
+            "clustId": "2-2",
+            "errorMessage": "Are you sure this mention co-refers with the mentions in the selected cluster?",
+            "validMessage": "Now you are getting the hang of things try one more!"
+        },
+        {
+            "start": 4,
+            "end": 5,
+            "clustId": "0-0",
+            "errorMessage": "Select the Intel cluster and assign the Intel Corp mention to it using the SPACE key",
+            "validMessage": "Great work! Two more mentions left!"            
+        },
+        {
+            "start": 6,
+            "end": 6,
+            "clustId": "1-1",
+            "errorMessage": "Are you sure about that?",
+            "validMessage": "Now you are getting the hang of this! One more mention left!"        
+        },
+        {
+            "start": 7,
+            "end": 7,
+            "clustId": "2-2",
+            "errorMessage": "That's not quite right! Choose the and assign the mention to the correct cluster!",
+            "validMessage": "Amazing now click submit and you can move on to the next task!"
+
+        }
+    ],
+    "tourSteps" : [
+        {
+            "target": "#dashboard",
+            "header": {
+                "title": "CoRefi Onboarding!"
+            },
+            "content": "This experience will walkthrough how to perform corference annotation."
+        },
+        {
+            "target": "#dashboard",
+            "header": {
+                "title": "CoRefi Getting Started!"
+            },
+            "content": "Displayed on the screen below is a document and two mentions."
+        },
+        {
+            "target": ".cluster",
+            "header": {
+                "title": "Cluster Mentions"
+            },
+            "content": "The first Mention is automatically assigned to it's own Corefernce  <span class=\"cluster\">Cluster</span>."
+        },
+        {
+            "target": ".v-chip--active",
+            "header": {
+                "title": "Cluster Bank"
+            },
+            "content": "Clusters are managed in the cluster bank.",
+            "params": {
+                "placement": "right"
+              }
+        },
+        {
+            "target": ".v-chip--active",
+            "header": {
+                "title": "Selecting Clusters"
+            },
+            "content": "Clusters can be selected with the arrow keys, or by clicking on a previously asigned mention.",
+            "params": {
+                "placement": "right"
+              }
+        },
+        {
+            "target": ".current",
+            "header": {
+                "title": "Current Mention"
+            },
+            "content": "The current mention appears in <span class=\"current\">purple</span>."
+        },
+        {
+            "target": ".current",
+            "header": {
+                "title": "Assigning Mentions"
+            },
+            "content": "The <span class=\"current\">current mention</span> can be assigned to the <span class=\"cluster\">selected cluster</span> with the SPACE bar."
+        },
+        {
+            "target": ".current",
+            "header": {
+                "title": "Assigning a New Cluster"
+            },
+            "content": "Since the current mention <span class=\"current\">acquired</span> does not co-refer with the only existing mention in the <span class=\"cluster\">Intel</span> cluster it can be assigned to a new cluster with the Ctrl + SPACE (Windows) or ALT + SPACE (MacOS) shortcut."
+        }
+    ]
+}
+
+

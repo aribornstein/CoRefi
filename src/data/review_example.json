@@ -1,0 +1,2875 @@
+{
+    "mode": "reviewer",
+    "tokens": [
+        {
+            "i": 0,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "Advanced"
+        },
+        {
+            "i": 1,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "Micro"
+        },
+        {
+            "i": 2,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "Devices"
+        },
+        {
+            "i": 3,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "("
+        },
+        {
+            "i": 4,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "AMD"
+        },
+        {
+            "i": 5,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": ")"
+        },
+        {
+            "i": 6,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "Chief"
+        },
+        {
+            "i": 7,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "Executive"
+        },
+        {
+            "i": 8,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "Hector"
+        },
+        {
+            "i": 9,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "Ruiz"
+        },
+        {
+            "i": 10,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "waxed"
+        },
+        {
+            "i": 11,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "metaphorical"
+        },
+        {
+            "i": 12,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "as"
+        },
+        {
+            "i": 13,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "he"
+        },
+        {
+            "i": 14,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "described"
+        },
+        {
+            "i": 15,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "his"
+        },
+        {
+            "i": 16,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "company"
+        },
+        {
+            "i": 17,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "'s"
+        },
+        {
+            "i": 18,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "acquisition"
+        },
+        {
+            "i": 19,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 20,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "ATI"
+        },
+        {
+            "i": 21,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "Technologies"
+        },
+        {
+            "i": 22,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "("
+        },
+        {
+            "i": 23,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "ATYT"
+        },
+        {
+            "i": 24,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": ")"
+        },
+        {
+            "i": 25,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 26,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "Chipmaker"
+        },
+        {
+            "i": 27,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "AMD"
+        },
+        {
+            "i": 28,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 29,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "hoping"
+        },
+        {
+            "i": 30,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "to"
+        },
+        {
+            "i": 31,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "gain"
+        },
+        {
+            "i": 32,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 33,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "leg"
+        },
+        {
+            "i": 34,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "up"
+        },
+        {
+            "i": 35,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "on"
+        },
+        {
+            "i": 36,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 37,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "resurgent"
+        },
+        {
+            "i": 38,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "rival"
+        },
+        {
+            "i": 39,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "Intel"
+        },
+        {
+            "i": 40,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "("
+        },
+        {
+            "i": 41,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "INTC"
+        },
+        {
+            "i": 42,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": ")"
+        },
+        {
+            "i": 43,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 44,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "on"
+        },
+        {
+            "i": 45,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "July"
+        },
+        {
+            "i": 46,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "24"
+        },
+        {
+            "i": 47,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "ended"
+        },
+        {
+            "i": 48,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "months"
+        },
+        {
+            "i": 49,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 50,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "speculation"
+        },
+        {
+            "i": 51,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "by"
+        },
+        {
+            "i": 52,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "saying"
+        },
+        {
+            "i": 53,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "it"
+        },
+        {
+            "i": 54,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "would"
+        },
+        {
+            "i": 55,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "buy"
+        },
+        {
+            "i": 56,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "graphics"
+        },
+        {
+            "i": 57,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "chipmaker"
+        },
+        {
+            "i": 58,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "ATI"
+        },
+        {
+            "i": 59,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "for"
+        },
+        {
+            "i": 60,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "about"
+        },
+        {
+            "i": 61,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "$"
+        },
+        {
+            "i": 62,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "5.4"
+        },
+        {
+            "i": 63,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "billion"
+        },
+        {
+            "i": 64,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 65,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "Maybe"
+        },
+        {
+            "i": 66,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "that"
+        },
+        {
+            "i": 67,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "'s"
+        },
+        {
+            "i": 68,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "why"
+        },
+        {
+            "i": 69,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "Intel"
+        },
+        {
+            "i": 70,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "and"
+        },
+        {
+            "i": 71,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "Nvidia"
+        },
+        {
+            "i": 72,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "("
+        },
+        {
+            "i": 73,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "NVDA"
+        },
+        {
+            "i": 74,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": ")"
+        },
+        {
+            "i": 75,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 76,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 77,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "companies"
+        },
+        {
+            "i": 78,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "'"
+        },
+        {
+            "i": 79,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "two"
+        },
+        {
+            "i": 80,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "biggest"
+        },
+        {
+            "i": 81,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "rivals"
+        },
+        {
+            "i": 82,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 83,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "found"
+        },
+        {
+            "i": 84,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 85,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "lot"
+        },
+        {
+            "i": 86,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "to"
+        },
+        {
+            "i": 87,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "smile"
+        },
+        {
+            "i": 88,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "about"
+        },
+        {
+            "i": 89,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "on"
+        },
+        {
+            "i": 90,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "July"
+        },
+        {
+            "i": 91,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "24"
+        },
+        {
+            "i": 92,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 93,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 94,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "day"
+        },
+        {
+            "i": 95,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 96,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "deal"
+        },
+        {
+            "i": 97,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "was"
+        },
+        {
+            "i": 98,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "announced"
+        },
+        {
+            "i": 99,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 100,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "Intel"
+        },
+        {
+            "i": 101,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 102,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 103,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "world"
+        },
+        {
+            "i": 104,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "'s"
+        },
+        {
+            "i": 105,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "largest"
+        },
+        {
+            "i": 106,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "graphics-chipmaker"
+        },
+        {
+            "i": 107,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 108,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "declined"
+        },
+        {
+            "i": 109,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "to"
+        },
+        {
+            "i": 110,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "comment"
+        },
+        {
+            "i": 111,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "specifically"
+        },
+        {
+            "i": 112,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "on"
+        },
+        {
+            "i": 113,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 114,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "deal"
+        },
+        {
+            "i": 115,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 116,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "The"
+        },
+        {
+            "i": 117,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "merger"
+        },
+        {
+            "i": 118,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "also"
+        },
+        {
+            "i": 119,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "could"
+        },
+        {
+            "i": 120,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "lock"
+        },
+        {
+            "i": 121,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "ATI"
+        },
+        {
+            "i": 122,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "out"
+        },
+        {
+            "i": 123,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 124,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 125,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "business"
+        },
+        {
+            "i": 126,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 127,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "supplying"
+        },
+        {
+            "i": 128,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "graphics"
+        },
+        {
+            "i": 129,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "chipsets"
+        },
+        {
+            "i": 130,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "to"
+        },
+        {
+            "i": 131,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "Intel-based"
+        },
+        {
+            "i": 132,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "PCs"
+        },
+        {
+            "i": 133,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 134,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "worth"
+        },
+        {
+            "i": 135,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "about"
+        },
+        {
+            "i": 136,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "$"
+        },
+        {
+            "i": 137,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "90"
+        },
+        {
+            "i": 138,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "million"
+        },
+        {
+            "i": 139,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 140,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "year"
+        },
+        {
+            "i": 141,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "in"
+        },
+        {
+            "i": 142,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "revenue"
+        },
+        {
+            "i": 143,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 144,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "AMD"
+        },
+        {
+            "i": 145,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "says"
+        },
+        {
+            "i": 146,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "there"
+        },
+        {
+            "i": 147,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "'s"
+        },
+        {
+            "i": 148,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "plenty"
+        },
+        {
+            "i": 149,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 150,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "reason"
+        },
+        {
+            "i": 151,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "to"
+        },
+        {
+            "i": 152,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "be"
+        },
+        {
+            "i": 153,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "bullish"
+        },
+        {
+            "i": 154,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "on"
+        },
+        {
+            "i": 155,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 156,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "deal"
+        },
+        {
+            "i": 157,
+            "document": 0,
+            "doc_name": "43_1ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 158,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "The"
+        },
+        {
+            "i": 159,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "pitched"
+        },
+        {
+            "i": 160,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "battle"
+        },
+        {
+            "i": 161,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "for"
+        },
+        {
+            "i": 162,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "supremacy"
+        },
+        {
+            "i": 163,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "in"
+        },
+        {
+            "i": 164,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 165,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "chip-making"
+        },
+        {
+            "i": 166,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "market"
+        },
+        {
+            "i": 167,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "reached"
+        },
+        {
+            "i": 168,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 169,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "critical"
+        },
+        {
+            "i": 170,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "phase"
+        },
+        {
+            "i": 171,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "yesterday"
+        },
+        {
+            "i": 172,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "with"
+        },
+        {
+            "i": 173,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Advanced"
+        },
+        {
+            "i": 174,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Micro"
+        },
+        {
+            "i": 175,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Devices"
+        },
+        {
+            "i": 176,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "("
+        },
+        {
+            "i": 177,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "AMD"
+        },
+        {
+            "i": 178,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": ")"
+        },
+        {
+            "i": 179,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "in"
+        },
+        {
+            "i": 180,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Sunnyvale"
+        },
+        {
+            "i": 181,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 182,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Calif"
+        },
+        {
+            "i": 183,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 184,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "announcing"
+        },
+        {
+            "i": 185,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "its"
+        },
+        {
+            "i": 186,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "decision"
+        },
+        {
+            "i": 187,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "to"
+        },
+        {
+            "i": 188,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "acquire"
+        },
+        {
+            "i": 189,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Canadian"
+        },
+        {
+            "i": 190,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "graphic"
+        },
+        {
+            "i": 191,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "cards"
+        },
+        {
+            "i": 192,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "manufacturer"
+        },
+        {
+            "i": 193,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "ATI"
+        },
+        {
+            "i": 194,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Technologies"
+        },
+        {
+            "i": 195,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "("
+        },
+        {
+            "i": 196,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "ATI"
+        },
+        {
+            "i": 197,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": ")"
+        },
+        {
+            "i": 198,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 199,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "The"
+        },
+        {
+            "i": 200,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "imminent"
+        },
+        {
+            "i": 201,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "purchase"
+        },
+        {
+            "i": 202,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 203,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "ATI"
+        },
+        {
+            "i": 204,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 205,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "analysts"
+        },
+        {
+            "i": 206,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "say"
+        },
+        {
+            "i": 207,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 208,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "is"
+        },
+        {
+            "i": 209,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 210,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "most"
+        },
+        {
+            "i": 211,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "vital"
+        },
+        {
+            "i": 212,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "element"
+        },
+        {
+            "i": 213,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "in"
+        },
+        {
+            "i": 214,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "AMD"
+        },
+        {
+            "i": 215,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "'s"
+        },
+        {
+            "i": 216,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "concerted"
+        },
+        {
+            "i": 217,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "campaign"
+        },
+        {
+            "i": 218,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "to"
+        },
+        {
+            "i": 219,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "dethrone"
+        },
+        {
+            "i": 220,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 221,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "mighty"
+        },
+        {
+            "i": 222,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Intel"
+        },
+        {
+            "i": 223,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Corp"
+        },
+        {
+            "i": 224,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 225,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "AMD"
+        },
+        {
+            "i": 226,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "agreed"
+        },
+        {
+            "i": 227,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "to"
+        },
+        {
+            "i": 228,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "buy"
+        },
+        {
+            "i": 229,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Markham"
+        },
+        {
+            "i": 230,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 231,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Ont-based"
+        },
+        {
+            "i": 232,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "ATI"
+        },
+        {
+            "i": 233,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "for"
+        },
+        {
+            "i": 234,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "around"
+        },
+        {
+            "i": 235,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "$"
+        },
+        {
+            "i": 236,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "5.4"
+        },
+        {
+            "i": 237,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "billion"
+        },
+        {
+            "i": 238,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "in"
+        },
+        {
+            "i": 239,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "cash"
+        },
+        {
+            "i": 240,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "and"
+        },
+        {
+            "i": 241,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "stock"
+        },
+        {
+            "i": 242,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 243,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 244,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "companies"
+        },
+        {
+            "i": 245,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "announced"
+        },
+        {
+            "i": 246,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Monday"
+        },
+        {
+            "i": 247,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 248,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "The"
+        },
+        {
+            "i": 249,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "acquisition"
+        },
+        {
+            "i": 250,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 251,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "which"
+        },
+        {
+            "i": 252,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "is"
+        },
+        {
+            "i": 253,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "subject"
+        },
+        {
+            "i": 254,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "to"
+        },
+        {
+            "i": 255,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "shareholder"
+        },
+        {
+            "i": 256,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "and"
+        },
+        {
+            "i": 257,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "regulatory"
+        },
+        {
+            "i": 258,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "approvals"
+        },
+        {
+            "i": 259,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 260,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "would"
+        },
+        {
+            "i": 261,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "turn"
+        },
+        {
+            "i": 262,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "AMD"
+        },
+        {
+            "i": 263,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "into"
+        },
+        {
+            "i": 264,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "one"
+        },
+        {
+            "i": 265,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 266,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 267,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "world"
+        },
+        {
+            "i": 268,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "'s"
+        },
+        {
+            "i": 269,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "largest"
+        },
+        {
+            "i": 270,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "providers"
+        },
+        {
+            "i": 271,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 272,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "graphics"
+        },
+        {
+            "i": 273,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "chips"
+        },
+        {
+            "i": 274,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 275,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "``"
+        },
+        {
+            "i": 276,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "You"
+        },
+        {
+            "i": 277,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "wo"
+        },
+        {
+            "i": 278,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "n't"
+        },
+        {
+            "i": 279,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "see"
+        },
+        {
+            "i": 280,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "it"
+        },
+        {
+            "i": 281,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "tomorrow"
+        },
+        {
+            "i": 282,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 283,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "but"
+        },
+        {
+            "i": 284,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 285,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "merger"
+        },
+        {
+            "i": 286,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "will"
+        },
+        {
+            "i": 287,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "potentially"
+        },
+        {
+            "i": 288,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "put"
+        },
+        {
+            "i": 289,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "AMD"
+        },
+        {
+            "i": 290,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "on"
+        },
+        {
+            "i": 291,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 292,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "more"
+        },
+        {
+            "i": 293,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "equal"
+        },
+        {
+            "i": 294,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "footing"
+        },
+        {
+            "i": 295,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "with"
+        },
+        {
+            "i": 296,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Intel"
+        },
+        {
+            "i": 297,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 298,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "''"
+        },
+        {
+            "i": 299,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "said"
+        },
+        {
+            "i": 300,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Michelle"
+        },
+        {
+            "i": 301,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Warren"
+        },
+        {
+            "i": 302,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": ","
+        },
+        {
+            "i": 303,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "an"
+        },
+        {
+            "i": 304,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "analyst"
+        },
+        {
+            "i": 305,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "with"
+        },
+        {
+            "i": 306,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Evans"
+        },
+        {
+            "i": 307,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Research"
+        },
+        {
+            "i": 308,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "in"
+        },
+        {
+            "i": 309,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Toronto"
+        },
+        {
+            "i": 310,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 311,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Another"
+        },
+        {
+            "i": 312,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Canadian"
+        },
+        {
+            "i": 313,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "analyst"
+        },
+        {
+            "i": 314,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "noted"
+        },
+        {
+            "i": 315,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "that"
+        },
+        {
+            "i": 316,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 317,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "merger"
+        },
+        {
+            "i": 318,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "was"
+        },
+        {
+            "i": 319,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "likely"
+        },
+        {
+            "i": 320,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "to"
+        },
+        {
+            "i": 321,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "bring"
+        },
+        {
+            "i": 322,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "significant"
+        },
+        {
+            "i": 323,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "benefits"
+        },
+        {
+            "i": 324,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "to"
+        },
+        {
+            "i": 325,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "both"
+        },
+        {
+            "i": 326,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "companies"
+        },
+        {
+            "i": 327,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 328,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "The"
+        },
+        {
+            "i": 329,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "marketing"
+        },
+        {
+            "i": 330,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "message"
+        },
+        {
+            "i": 331,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "from"
+        },
+        {
+            "i": 332,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "ATI"
+        },
+        {
+            "i": 333,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "executives"
+        },
+        {
+            "i": 334,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "too"
+        },
+        {
+            "i": 335,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "is"
+        },
+        {
+            "i": 336,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "all"
+        },
+        {
+            "i": 337,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "about"
+        },
+        {
+            "i": 338,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 339,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "'mutual"
+        },
+        {
+            "i": 340,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "benefits"
+        },
+        {
+            "i": 341,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "'"
+        },
+        {
+            "i": 342,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 343,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 344,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "proposed"
+        },
+        {
+            "i": 345,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "acquisition"
+        },
+        {
+            "i": 346,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 347,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "Hartog"
+        },
+        {
+            "i": 348,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "said"
+        },
+        {
+            "i": 349,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 350,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "purchase"
+        },
+        {
+            "i": 351,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 352,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "ATI"
+        },
+        {
+            "i": 353,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "by"
+        },
+        {
+            "i": 354,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "AMD"
+        },
+        {
+            "i": 355,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "will"
+        },
+        {
+            "i": 356,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "involve"
+        },
+        {
+            "i": 357,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "'"
+        },
+        {
+            "i": 358,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "some"
+        },
+        {
+            "i": 359,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "changes"
+        },
+        {
+            "i": 360,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "'"
+        },
+        {
+            "i": 361,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "but"
+        },
+        {
+            "i": 362,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "he"
+        },
+        {
+            "i": 363,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "downplayed"
+        },
+        {
+            "i": 364,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "any"
+        },
+        {
+            "i": 365,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "potential"
+        },
+        {
+            "i": 366,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "lay-offs"
+        },
+        {
+            "i": 367,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "from"
+        },
+        {
+            "i": 368,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "among"
+        },
+        {
+            "i": 369,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "the"
+        },
+        {
+            "i": 370,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "company"
+        },
+        {
+            "i": 371,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "'s"
+        },
+        {
+            "i": 372,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "more"
+        },
+        {
+            "i": 373,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "than"
+        },
+        {
+            "i": 374,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "3,000"
+        },
+        {
+            "i": 375,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "employees"
+        },
+        {
+            "i": 376,
+            "document": 2,
+            "doc_name": "43_3ecb.xml",
+            "text": "."
+        }
+    ],
+    "candidateMentions": [
+        {
+            "start": 8,
+            "end": 9,
+            "clustId": "8-9"
+        },
+        {
+            "start": 10,
+            "end": 11,
+            "clustId": "10-11"
+        },
+        {
+            "start": 13,
+            "end": 13,
+            "clustId": "0-2"
+        },
+        {
+            "start": 14,
+            "end": 14,
+            "clustId": "14-14"
+        },
+        {
+            "start": 16,
+            "end": 16,
+            "clustId": "0-2"
+        },
+        {
+            "start": 18,
+            "end": 18,
+            "clustId": "18-18"
+        },
+        {
+            "start": 20,
+            "end": 21,
+            "clustId": "20-21"
+        },
+        {
+            "start": 27,
+            "end": 27,
+            "clustId": "0-2"
+        },
+        {
+            "start": 29,
+            "end": 29,
+            "clustId": "29-29"
+        },
+        {
+            "start": 31,
+            "end": 31,
+            "clustId": "31-31"
+        },
+        {
+            "start": 32,
+            "end": 34,
+            "clustId": "32-34"
+        },
+        {
+            "start": 39,
+            "end": 39,
+            "clustId": "39-39"
+        },
+        {
+            "start": 44,
+            "end": 46,
+            "clustId": "44-46"
+        },
+        {
+            "start": 47,
+            "end": 47,
+            "clustId": "47-47"
+        },
+        {
+            "start": 48,
+            "end": 48,
+            "clustId": "48-48"
+        },
+        {
+            "start": 50,
+            "end": 50,
+            "clustId": "50-50"
+        },
+        {
+            "start": 52,
+            "end": 52,
+            "clustId": "52-52"
+        },
+        {
+            "start": 53,
+            "end": 53,
+            "clustId": "0-2"
+        },
+        {
+            "start": 55,
+            "end": 55,
+            "clustId": "18-18"
+        },
+        {
+            "start": 58,
+            "end": 58,
+            "clustId": "20-21"
+        },
+        {
+            "start": 60,
+            "end": 63,
+            "clustId": "60-63"
+        },
+        {
+            "start": 69,
+            "end": 69,
+            "clustId": "39-39"
+        },
+        {
+            "start": 71,
+            "end": 71,
+            "clustId": "71-71"
+        },
+        {
+            "start": 77,
+            "end": 77,
+            "clustId": "0-2"
+        },
+        {
+            "start": 79,
+            "end": 81,
+            "clustId": "79-81"
+        },
+        {
+            "start": 83,
+            "end": 83,
+            "clustId": "83-83"
+        },
+        {
+            "start": 84,
+            "end": 85,
+            "clustId": "84-85"
+        },
+        {
+            "start": 87,
+            "end": 87,
+            "clustId": "87-87"
+        },
+        {
+            "start": 89,
+            "end": 91,
+            "clustId": "44-46"
+        },
+        {
+            "start": 96,
+            "end": 96,
+            "clustId": "18-18"
+        },
+        {
+            "start": 98,
+            "end": 98,
+            "clustId": "52-52"
+        },
+        {
+            "start": 100,
+            "end": 100,
+            "clustId": "39-39"
+        },
+        {
+            "start": 103,
+            "end": 103,
+            "clustId": "103-103"
+        },
+        {
+            "start": 106,
+            "end": 106,
+            "clustId": "106-106"
+        },
+        {
+            "start": 108,
+            "end": 108,
+            "clustId": "108-108"
+        },
+        {
+            "start": 110,
+            "end": 110,
+            "clustId": "110-110"
+        },
+        {
+            "start": 114,
+            "end": 114,
+            "clustId": "18-18"
+        },
+        {
+            "start": 117,
+            "end": 117,
+            "clustId": "18-18"
+        },
+        {
+            "start": 120,
+            "end": 122,
+            "clustId": "120-122"
+        },
+        {
+            "start": 121,
+            "end": 121,
+            "clustId": "20-21"
+        },
+        {
+            "start": 125,
+            "end": 125,
+            "clustId": "106-106"
+        },
+        {
+            "start": 127,
+            "end": 127,
+            "clustId": "127-127"
+        },
+        {
+            "start": 128,
+            "end": 129,
+            "clustId": "128-129"
+        },
+        {
+            "start": 131,
+            "end": 132,
+            "clustId": "131-132"
+        },
+        {
+            "start": 135,
+            "end": 138,
+            "clustId": "135-138"
+        },
+        {
+            "start": 142,
+            "end": 142,
+            "clustId": "142-142"
+        },
+        {
+            "start": 144,
+            "end": 144,
+            "clustId": "0-2"
+        },
+        {
+            "start": 145,
+            "end": 145,
+            "clustId": "145-145"
+        },
+        {
+            "start": 150,
+            "end": 150,
+            "clustId": "150-150"
+        },
+        {
+            "start": 156,
+            "end": 156,
+            "clustId": "18-18"
+        },
+        {
+            "start": 160,
+            "end": 160,
+            "clustId": "160-160"
+        },
+        {
+            "start": 162,
+            "end": 162,
+            "clustId": "162-162"
+        },
+        {
+            "start": 165,
+            "end": 166,
+            "clustId": "106-106"
+        },
+        {
+            "start": 167,
+            "end": 167,
+            "clustId": "167-167"
+        },
+        {
+            "start": 171,
+            "end": 171,
+            "clustId": "171-171"
+        },
+        {
+            "start": 173,
+            "end": 177,
+            "clustId": "0-2"
+        },
+        {
+            "start": 179,
+            "end": 182,
+            "clustId": "179-182"
+        },
+        {
+            "start": 184,
+            "end": 184,
+            "clustId": "52-52"
+        },
+        {
+            "start": 185,
+            "end": 185,
+            "clustId": "0-2"
+        },
+        {
+            "start": 186,
+            "end": 186,
+            "clustId": "186-186"
+        },
+        {
+            "start": 188,
+            "end": 188,
+            "clustId": "188-188"
+        },
+        {
+            "start": 193,
+            "end": 197,
+            "clustId": "20-21"
+        },
+        {
+            "start": 201,
+            "end": 201
+        },
+        {
+            "start": 203,
+            "end": 203,
+            "clustId": "20-21"
+        },
+        {
+            "start": 205,
+            "end": 205,
+            "clustId": "205-205"
+        },
+        {
+            "start": 206,
+            "end": 206,
+            "clustId": "206-206"
+        },
+        {
+            "start": 212,
+            "end": 212,
+            "clustId": "212-212"
+        },
+        {
+            "start": 214,
+            "end": 214,
+            "clustId": "0-2"
+        },
+        {
+            "start": 217,
+            "end": 217,
+            "clustId": "217-217"
+        },
+        {
+            "start": 219,
+            "end": 219,
+            "clustId": "219-219"
+        },
+        {
+            "start": 222,
+            "end": 223,
+            "clustId": "39-39"
+        },
+        {
+            "start": 225,
+            "end": 225,
+            "clustId": "0-2"
+        },
+        {
+            "start": 226,
+            "end": 226,
+            "clustId": "226-226"
+        },
+        {
+            "start": 228,
+            "end": 228,
+            "clustId": "228-228"
+        },
+        {
+            "start": 232,
+            "end": 232,
+            "clustId": "20-21"
+        },
+        {
+            "start": 239,
+            "end": 239,
+            "clustId": "239-239"
+        },
+        {
+            "start": 241,
+            "end": 241,
+            "clustId": "241-241"
+        },
+        {
+            "start": 244,
+            "end": 244,
+            "clustId": "244-244"
+        },
+        {
+            "start": 245,
+            "end": 245,
+            "clustId": "52-52"
+        },
+        {
+            "start": 246,
+            "end": 246,
+            "clustId": "44-46"
+        },
+        {
+            "start": 249,
+            "end": 249
+        },
+        {
+            "start": 253,
+            "end": 253,
+            "clustId": "253-253"
+        },
+        {
+            "start": 258,
+            "end": 258,
+            "clustId": "258-258"
+        },
+        {
+            "start": 261,
+            "end": 261,
+            "clustId": "261-261"
+        },
+        {
+            "start": 262,
+            "end": 262,
+            "clustId": "0-2"
+        },
+        {
+            "start": 270,
+            "end": 270,
+            "clustId": "270-270"
+        },
+        {
+            "start": 273,
+            "end": 273,
+            "clustId": "128-129"
+        },
+        {
+            "start": 276,
+            "end": 276,
+            "clustId": "276-276"
+        },
+        {
+            "start": 279,
+            "end": 279,
+            "clustId": "279-279"
+        },
+        {
+            "start": 281,
+            "end": 281,
+            "clustId": "281-281"
+        },
+        {
+            "start": 285,
+            "end": 285,
+            "clustId": "18-18"
+        },
+        {
+            "start": 288,
+            "end": 295,
+            "clustId": "288-295"
+        },
+        {
+            "start": 289,
+            "end": 289,
+            "clustId": "288-295"
+        },
+        {
+            "start": 296,
+            "end": 296,
+            "clustId": "39-39"
+        },
+        {
+            "start": 299,
+            "end": 299,
+            "clustId": "299-299"
+        },
+        {
+            "start": 300,
+            "end": 301,
+            "clustId": "300-301"
+        },
+        {
+            "start": 308,
+            "end": 309,
+            "clustId": "308-309"
+        },
+        {
+            "start": 313,
+            "end": 313,
+            "clustId": "313-313"
+        },
+        {
+            "start": 314,
+            "end": 314,
+            "clustId": "314-314"
+        },
+        {
+            "start": 317,
+            "end": 317,
+            "clustId": "18-18"
+        },
+        {
+            "start": 321,
+            "end": 321,
+            "clustId": "321-321"
+        },
+        {
+            "start": 323,
+            "end": 323,
+            "clustId": "323-323"
+        },
+        {
+            "start": 326,
+            "end": 326,
+            "clustId": "244-244"
+        },
+        {
+            "start": 330,
+            "end": 330,
+            "clustId": "330-330"
+        },
+        {
+            "start": 333,
+            "end": 333,
+            "clustId": "333-333"
+        },
+        {
+            "start": 340,
+            "end": 340,
+            "clustId": "340-340"
+        },
+        {
+            "start": 345,
+            "end": 345,
+            "clustId": "18-18"
+        },
+        {
+            "start": 347,
+            "end": 347,
+            "clustId": "347-347"
+        },
+        {
+            "start": 348,
+            "end": 348,
+            "clustId": "348-348"
+        },
+        {
+            "start": 350,
+            "end": 350,
+            "clustId": "350-350"
+        },
+        {
+            "start": 352,
+            "end": 352,
+            "clustId": "20-21"
+        },
+        {
+            "start": 354,
+            "end": 354,
+            "clustId": "0-2"
+        },
+        {
+            "start": 356,
+            "end": 356,
+            "clustId": "356-356"
+        },
+        {
+            "start": 359,
+            "end": 359,
+            "clustId": "359-359"
+        },
+        {
+            "start": 362,
+            "end": 362,
+            "clustId": "347-347"
+        },
+        {
+            "start": 363,
+            "end": 363,
+            "clustId": "363-363"
+        },
+        {
+            "start": 366,
+            "end": 366,
+            "clustId": "366-366"
+        },
+        {
+            "start": 370,
+            "end": 370,
+            "clustId": "20-21"
+        },
+        {
+            "start": 375,
+            "end": 375,
+            "clustId": "375-375"
+        }
+    ],
+    "selectedCluster": "0-2",
+    "viewedMentions": [
+        {
+            "start": 0,
+            "end": 2,
+            "clustId": "0-2"
+        }
+    ],
+    "currentMention": {
+        "start": 4,
+        "end": 4,
+        "clustId": "0-2"
+    }
+}
