@@ -1,0 +1,871 @@
+{
+    "mode": "onboarding",
+    "tokens": [
+        {
+            "i": 0,
+            "document": 1,
+            "doc_name": "34_10ecbplus.xml",
+            "text": "Obama"
+        },
+        {
+            "i": 1,
+            "document": 1,
+            "doc_name": "34_10ecbplus.xml",
+            "text": "nominates"
+        },
+        {
+            "i": 2,
+            "document": 1,
+            "doc_name": "34_10ecbplus.xml",
+            "text": "new"
+        },
+        {
+            "i": 3,
+            "document": 1,
+            "doc_name": "34_10ecbplus.xml",
+            "text": "surgeon"
+        },
+        {
+            "i": 4,
+            "document": 1,
+            "doc_name": "34_10ecbplus.xml",
+            "text": "general"
+        },
+        {
+            "i": 5,
+            "document": 1,
+            "doc_name": "34_10ecbplus.xml",
+            "text": ":"
+        },
+        {
+            "i": 6,
+            "document": 1,
+            "doc_name": "34_10ecbplus.xml",
+            "text": "MacArthur"
+        },
+        {
+            "i": 7,
+            "document": 1,
+            "doc_name": "34_10ecbplus.xml",
+            "text": "\"genius"
+        },
+        {
+            "i": 8,
+            "document": 1,
+            "doc_name": "34_10ecbplus.xml",
+            "text": "grant\""
+        },
+        {
+            "i": 9,
+            "document": 1,
+            "doc_name": "34_10ecbplus.xml",
+            "text": "fellow"
+        },
+        {
+            "i": 10,
+            "document": 1,
+            "doc_name": "34_10ecbplus.xml",
+            "text": "Regina"
+        },
+        {
+            "i": 11,
+            "document": 1,
+            "doc_name": "34_10ecbplus.xml",
+            "text": "Benjamin"
+        },
+        {
+            "i": 12,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "Today"
+        },
+        {
+            "i": 13,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": ","
+        },
+        {
+            "i": 14,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "President"
+        },
+        {
+            "i": 15,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "Barack"
+        },
+        {
+            "i": 16,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "Obama"
+        },
+        {
+            "i": 17,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "announced"
+        },
+        {
+            "i": 18,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "his"
+        },
+        {
+            "i": 19,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "intent"
+        },
+        {
+            "i": 20,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "to"
+        },
+        {
+            "i": 21,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "nominate"
+        },
+        {
+            "i": 22,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "Regina"
+        },
+        {
+            "i": 23,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "M"
+        },
+        {
+            "i": 24,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "."
+        },
+        {
+            "i": 25,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "Benjamin"
+        },
+        {
+            "i": 26,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "as"
+        },
+        {
+            "i": 27,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "Surgeon"
+        },
+        {
+            "i": 28,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "General"
+        },
+        {
+            "i": 29,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": ","
+        },
+        {
+            "i": 30,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "Department"
+        },
+        {
+            "i": 31,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "of"
+        },
+        {
+            "i": 32,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "Health"
+        },
+        {
+            "i": 33,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "and"
+        },
+        {
+            "i": 34,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "Human"
+        },
+        {
+            "i": 35,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "Services"
+        },
+        {
+            "i": 36,
+            "document": 11,
+            "doc_name": "34_1ecbplus.xml",
+            "text": "."
+        },
+        {
+            "i": 37,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "News"
+        },
+        {
+            "i": 38,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "that"
+        },
+        {
+            "i": 39,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "Barack"
+        },
+        {
+            "i": 40,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "Obama"
+        },
+        {
+            "i": 41,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "may"
+        },
+        {
+            "i": 42,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "name"
+        },
+        {
+            "i": 43,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "Dr."
+        },
+        {
+            "i": 44,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "Sanjay"
+        },
+        {
+            "i": 45,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "Gupta"
+        },
+        {
+            "i": 46,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 47,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "Emory"
+        },
+        {
+            "i": 48,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "University"
+        },
+        {
+            "i": 49,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "and"
+        },
+        {
+            "i": 50,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "CNN"
+        },
+        {
+            "i": 51,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "as"
+        },
+        {
+            "i": 52,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "his"
+        },
+        {
+            "i": 53,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "Surgeon"
+        },
+        {
+            "i": 54,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "General"
+        },
+        {
+            "i": 55,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "has"
+        },
+        {
+            "i": 56,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "caused"
+        },
+        {
+            "i": 57,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "a"
+        },
+        {
+            "i": 58,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "spasm"
+        },
+        {
+            "i": 59,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "of"
+        },
+        {
+            "i": 60,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "celebrity"
+        },
+        {
+            "i": 61,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "reporting"
+        },
+        {
+            "i": 62,
+            "document": 14,
+            "doc_name": "34_3ecb.xml",
+            "text": "."
+        },
+        {
+            "i": 63,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "President"
+        },
+        {
+            "i": 64,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "Obama"
+        },
+        {
+            "i": 65,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "will"
+        },
+        {
+            "i": 66,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "name"
+        },
+        {
+            "i": 67,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "Dr"
+        },
+        {
+            "i": 68,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "."
+        },
+        {
+            "i": 69,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "Regina"
+        },
+        {
+            "i": 70,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "Benjamin"
+        },
+        {
+            "i": 71,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "as"
+        },
+        {
+            "i": 72,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "U"
+        },
+        {
+            "i": 73,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "."
+        },
+        {
+            "i": 74,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "S"
+        },
+        {
+            "i": 75,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "."
+        },
+        {
+            "i": 76,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "Surgeon"
+        },
+        {
+            "i": 77,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "General"
+        },
+        {
+            "i": 78,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "in"
+        },
+        {
+            "i": 79,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "a"
+        },
+        {
+            "i": 80,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "Rose"
+        },
+        {
+            "i": 81,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "Garden"
+        },
+        {
+            "i": 82,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "announcement"
+        },
+        {
+            "i": 83,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "late"
+        },
+        {
+            "i": 84,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "this"
+        },
+        {
+            "i": 85,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "morning"
+        },
+        {
+            "i": 86,
+            "document": 17,
+            "doc_name": "34_4ecbplus.xml",
+            "text": "."
+        }
+    ],
+    "candidateMentions": [
+        {
+            "start": 3,
+            "end": 4
+        },
+        {
+            "start": 6,
+            "end": 11
+        },
+        {
+            "start": 12,
+            "end": 12
+        },
+        {
+            "start": 15,
+            "end": 16
+        },
+        {
+            "start": 17,
+            "end": 17
+        },
+        {
+            "start": 18,
+            "end": 18
+        },
+        {
+            "start": 19,
+            "end": 19
+        },
+        {
+            "start": 21,
+            "end": 21
+        },
+        {
+            "start": 22,
+            "end": 25
+        },
+        {
+            "start": 27,
+            "end": 28
+        },
+        {
+            "start": 30,
+            "end": 35
+        },
+        {
+            "start": 37,
+            "end": 37
+        },
+        {
+            "start": 39,
+            "end": 40
+        },
+        {
+            "start": 42,
+            "end": 42
+        },
+        {
+            "start": 43,
+            "end": 45
+        },
+        {
+            "start": 47,
+            "end": 48
+        },
+        {
+            "start": 50,
+            "end": 50
+        },
+        {
+            "start": 53,
+            "end": 54
+        },
+        {
+            "start": 56,
+            "end": 56
+        },
+        {
+            "start": 61,
+            "end": 61
+        },
+        {
+            "start": 64,
+            "end": 64
+        },
+        {
+            "start": 66,
+            "end": 66
+        },
+        {
+            "start": 67,
+            "end": 70
+        },
+        {
+            "start": 72,
+            "end": 77
+        },
+        {
+            "start": 80,
+            "end": 81
+        },
+        {
+            "start": 82,
+            "end": 82
+        },
+        {
+            "start": 83,
+            "end": 85
+        }
+    ],
+    "selectedCluster": "0-0",
+    "viewedMentions": [
+        {
+            "start": 0,
+            "end": 0,
+            "clustId": "0-0"
+        }
+    ],
+    "currentMention": {
+        "start": 1,
+        "end": 1,
+        "clustId": "1-1"
+    },
+    "goldMentions": [
+        {
+            "start": 1,
+            "end": 1,
+            "clustId": "1-1",
+            "errorMessage": "Nominates does not refer to Obama.",
+            "validMessage": "Awesome!"
+        },
+        {
+            "start": 3,
+            "end": 4,
+            "clustId": "3-4",
+            "errorMessage": "Not Quite! Thats not quite right.",
+            "validMessage": "You're a star!"
+        },
+        {
+            "start": 6,
+            "end": 11,
+            "clustId": "6-11",
+            "errorMessage": "Be careful, this mention refers to the person itself, not to his title!",
+            "validMessage": "Kudos! A person (Regina Benjamin) does not refer to its title (surgeon general)"
+        },
+        {
+            "start": 12,
+            "end": 12,
+            "clustId": "12-12",
+            "errorMessage": "Thats not quite right.",
+            "validMessage": "Great work! Keep going!"
+        },
+        {
+            "start": 15,
+            "end": 16,
+            "clustId": "0-0",
+            "errorMessage": "Are you sure? Barack Obama was already mentioned in the first document!",
+            "validMessage": "Good job!"
+        },
+        {
+            "start": 17,
+            "end": 17,
+            "clustId": "17-17",
+            "errorMessage": "Thats not quite right.",
+            "validMessage": "Great job!"
+        },
+        {
+            "start": 18,
+            "end": 18,
+            "clustId": "0-0",
+            "errorMessage": "This refers to Obama",
+            "validMessage": "Excellent!"
+        },
+        {
+            "start": 19,
+            "end": 19,
+            "clustId": "19-19",
+            "errorMessage": "Thats not quite right.",
+            "validMessage": "Don't Stop Now!"
+        },
+        {
+            "start": 21,
+            "end": 21,
+            "clustId": "1-1",
+            "errorMessage": "Are you sure ? It was already mentioned in the first document!",
+            "validMessage": "Excellent!"
+        },
+        {
+            "start": 22,
+            "end": 25,
+            "clustId": "6-11",
+            "errorMessage": "She was already mentioned in the first text!",
+            "validMessage": "Very good!"
+        },
+        {
+            "start": 27,
+            "end": 28,
+            "clustId": "3-4",
+            "errorMessage": "No! This title was mentioned in the previous text!",
+            "validMessage": "Good job!"
+        },
+        {
+            "start": 30,
+            "end": 35,
+            "clustId": "30-35",
+            "errorMessage": "This should be a new mention!",
+            "validMessage": "Nice!"
+        },
+        {
+            "start": 37,
+            "end": 37,
+            "clustId": "37-37",
+            "errorMessage": "Thats not quite right.",
+            "validMessage": "You're unstopable!"
+        },
+        {
+            "start": 39,
+            "end": 40,
+            "clustId": "0-0",
+            "errorMessage": "Are you sure ? Barack Obama was already mentioned in the first document!",
+            "validMessage": "Good job!"
+        },
+        {
+            "start": 42,
+            "end": 42,
+            "clustId": "42-42",
+            "errorMessage": "Words can have the same meaning but they do not actually refer to the same nomination!",
+            "validMessage": "You are doing very well!! This is not the same nomination as in the first document!"
+        },
+        {
+            "start": 43,
+            "end": 45,
+            "clustId": "43-45",
+            "errorMessage": "Thats not quite right.",
+            "validMessage": "Way to Go!"
+        },
+        {
+            "start": 47,
+            "end": 48,
+            "clustId": "47-48",
+            "errorMessage": "Thats not quite right.",
+            "validMessage": "Amazing!"
+        },
+        {
+            "start": 50,
+            "end": 50,
+            "clustId": "50-50",
+            "errorMessage": "Thats not quite right.",
+            "validMessage": "Keep going!"
+        },
+        {
+            "start": 53,
+            "end": 54,
+            "clustId": "3-4",
+            "errorMessage": "This title was already mentioned twice in the previous documents! Find the correct cluster!",
+            "validMessage": "Excellent!! You find the correct cluster!"
+        },
+        {
+            "start": 56,
+            "end": 56,
+            "clustId": "56-56",
+            "errorMessage": "Thats not quite right.",
+            "validMessage": "You are almost done!"
+        },
+        {
+            "start": 61,
+            "end": 61,
+            "clustId": "61-61",
+            "errorMessage": "Thats not quite right.",
+            "validMessage": "You are getting the hang of this!"
+        },
+        {
+            "start": 64,
+            "end": 64,
+            "clustId": "0-0",
+            "errorMessage": "You seem unfocused, Obama was mentioned many times before!",
+            "validMessage": "Great!"
+        },
+        {
+            "start": 66,
+            "end": 66,
+            "clustId": "1-1",
+            "errorMessage": "Words can have the same meaning but they do not actually refer to the same nomination!",
+            "validMessage": "Kudos!! It was subtle but you got it!"
+        },
+        {
+            "start": 67,
+            "end": 70,
+            "clustId": "6-11",
+            "errorMessage": "Find correct occurrences of Regina Benjamin!",
+            "validMessage": "Just a few more left!"
+        },
+        {
+            "start": 72,
+            "end": 77,
+            "clustId": "3-4",
+            "errorMessage": "You seem not focused, this title was mentioned many times before!",
+            "validMessage": "Perfect just three more!"
+        },
+        {
+            "start": 80,
+            "end": 81,
+            "clustId": "80-81",
+            "errorMessage": "This is the first occurrence of Rose Garden",
+            "validMessage": "Valid"
+        },
+        {
+            "start": 82,
+            "end": 82,
+            "clustId": "17-17",
+            "errorMessage": "Look at the second document!",
+            "validMessage": "Last one!"
+        },
+        {
+            "start": 83,
+            "end": 85,
+            "clustId": "12-12",
+            "errorMessage": "Wrong! This case is subtle, it refers to ``Today'' in the second paragraph since both refer to the time of the nomination of Regina Benjamin",
+            "validMessage": "Correct! This was tricky but you got it, Kudos you annotated all the mentions!"
+        }
+    ],
+    "tourSteps": [
+        {
+            "target": "#dashboard",
+            "header": {
+                "title": "CDC Annotation Guided Training !"
+            },
+            "content": "This HIT will guide you through the CDC decision process. "
+        },
+        {
+            "target": "#dashboard",
+            "header": {
+                "title": "CDC Annotation Guided Training !"
+            },
+            "content": "Preform the task just as before, if you make a mistake the tool will guide you to the correct answer."
+        },
+        {
+            "target": "#dashboard",
+            "header": {
+                "title": "CDC Annotation Guided Training !"
+            },
+            "content": "Please pay careful attention as this will help you when you preform the full task in the next hit."
+        }
+    ]
+}
