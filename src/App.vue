@@ -34,8 +34,8 @@
         contain
       ></v-img>
       <v-spacer />
-      Mention: {{ viewedMentions.length }}/{{ viewedMentions.length + candidateMentions.length }} Document: {{ parseInt(currentDocument) + 1 }}
-      <span>--</span>
+      Mention: {{ viewedMentions.length }}/{{ viewedMentions.length + candidateMentions.length }} Document: {{ parseInt(currentDocument) }}
+      <!-- <span>--</span> -->
     </v-system-bar>
     <v-content>
       <v-container ref="documents" v-mutate="docsOnScreen" style="max-width:850px" fluid>
@@ -84,7 +84,6 @@
         </v-layout>
         <v-divider mx-4 />
       </v-container>
-
       <ClusterBank
         v-if="!clusterBarBottom"
         :clusters="clusters"
@@ -120,7 +119,7 @@
 </template>
 
 <script>
-import jsonData from "./data/ecb/topic_5_review.json";
+import jsonData from "./data/mentions.json";
 
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
@@ -442,7 +441,7 @@ export default {
 
     fixSpan() {
       let sel = document
-          .getElementsByTagName("cdc-tool")[0]
+          .getElementsByTagName("co-refi")[0]
           .shadowRoot.getSelection(), //super hacky but works
         newStart = sel.getRangeAt(0).startContainer.parentNode.id,
         newEnd = sel.getRangeAt(0).endContainer.parentNode.id;
