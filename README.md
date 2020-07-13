@@ -3,7 +3,7 @@
 <span style="display:block;text-align:center">![logo](https://cdn-images-1.medium.com/max/800/1*Q9bXCpOcpxlQ0olOZrcrDw.jpeg)</span>
 
 
-> CoRefi is an emebedable web component and stand alone tool for exaughstive coreference anntoation. 
+> CoRefi is an emebedable web component and stand alone suite for exaughstive Within Document and Cross Document Coreference Anntoation. 
 
 
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)  ![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)
@@ -16,21 +16,21 @@
 2. Features
 3. Installation
 4. Usage
-5. Contributing
-6. Team
-7. Support
+5. Team
+6. Support
+7. Contributing
 
 ## Intoduction 
 
 Coreference Resolution is the task of clustering words and names that refer to the same concept, entity or event. Coreference is an important NLP task for downstream applications such as abstractive summarization, reading comprehension, and information extraction. 
 
-![](https://cdn-images-1.medium.com/max/800/0*DqTwuASwM-JUgBoN)
+![Coreference Example from stanford.](https://nlp.stanford.edu/projects/corefexample.png)
 
 To ensure quality when crowdsourcing Coreference, an annotator must be trained to understand the nuances of co-reference and then be provided with all the information needed to accurately make coreference cluster assignments for every mention in a topic. The quality of an annotator's work must then be reviewable by a designated reviewer.
 
-When using please cite
+When using please cite:
 
-### PUT CitATION HERE
+#### Citation Pending
 
 ## Features
 
@@ -47,6 +47,8 @@ A trainee is provided with a sequence of mentions. For each mention the trainee 
 #### Configuration
 A sample configuration json file for onboarding can be found here for more information on tool configuration see the configuration section.
 
+#### Demo
+
 
 ### 2. Annotation 
 
@@ -58,6 +60,9 @@ The annotator is provided with a sequence of mentions. For each mention the anno
 #### Configuration
 A sample configuration json file for annotation can be found here for more information on tool configuration see the configuration section.
 
+#### Demo
+
+
 ### 3. Reviewing 
 
 The Reviewer is provided a sequential list of mentions as well as a highlighted list of clusters that the reviewer may have meant to assign them to. For each mention the reviewer is shown the potential clusters that the annotator believed the mention belongs to. The reviewer then  decides whether to update the mention’s span and then whether to agree or update the annotators assignment. 
@@ -66,6 +71,9 @@ The Reviewer is provided a sequential list of mentions as well as a highlighted 
 
 #### Configuration
 A sample configuration json file for reviewing can be found here for more information on tool configuration see the configuration section.
+
+#### Demo
+
 
 ## Installation
 
@@ -110,20 +118,26 @@ The app can then be embeded as a Web Component
 - Select Cluster: Click on a previously assigned mention or use the ↔ keys on the keyboard
 - Select Mention to Reassign: Ctrl + Click (Windows) or Alt + Click (MacOS) the mention
 
-### JSON Configuration
+### Configuration
+CoRefi can be configured with a simple JSON schema. Examples configuration files for Onboarding, Annotation, and Reviewing can be found in the ```src\data\mentions.json``` folder. 
 
-### Notebooks
+The Notebooks folder contains python example code for:
+    - Generating CoRefi JSON configuration files from Raw text,
+    - Converting JSON config files into HTML escaped embedable input.
+    - Preperation code for Mechanical Turk
+    - Converting JSON results to CONLL
+    - Converting Annotation results to a Reviewer Configurtation file.
+    
 
-### Extracting Annotation Data
+### Extracting Annotation Results
+
+The following is example code for extracting annotation results from CoRefi
 
 ```javascript
 let corefi = document.getElementsByTagName("co-refi")[0].vueComponent;
 let results = {tokens:corefi.tokens, mentions:corefi.viewedMentions}
 JSON.stringify(results);
 ```
-
-### Post Processing
-
 
 ## Team
 
