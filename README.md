@@ -37,6 +37,8 @@ When using please cite:
 CoRefi provides capabilites for the full end to end process for Exaughstive Coreference Annotation consisting of:
 ![E2E Process](https://cdn-images-1.medium.com/max/800/1*PkVBeqteVqxfljbqSY1qww.png)
 
+For a Full Walkthrough of CoRefi's features, check out our system demonstration video on [youtube](https://www.youtube.com/watch?v=DPx36Ps1CAk).
+
 ### 1. Onboarding
 
 A trainee is provided with a sequence of mentions. For each mention the trainee decides whether to update the mention’s span and then to either create a new mention or assign the mention to an existing cluster.  At any point of time, the trainee may view the mentions in any existing cluster. If the trainee incorrectly changes a mention span or assigns a mention to the wrong cluster they will be notified. Additionally after certain decisions an explanation of a specific important rule of co-reference will be explained. Once all mentions are clustered the annotator can submit the job.
