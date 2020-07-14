@@ -47,8 +47,7 @@ A trainee is provided with a sequence of mentions. For each mention the trainee 
 #### Configuration
 A sample configuration json file for onboarding can be found here for more information on tool configuration see the configuration section.
 
-#### Demo
-
+#### [Demo](https://aribornstein.github.io/corefidemo/)
 
 ### 2. Annotation 
 
@@ -96,7 +95,7 @@ Add the following code your html file.
 
 ```html
 <script src="https://unpkg.com/vue"></script>
-<script src="https://github.com/aribornstein/testAPPTOBedeleted/releases/download/0.0.1/cdc-tool.min.js"></script>
+<script src="https://github.com/aribornstein/CoRefi/releases/download/1.0.0/co-refi.min.js"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
@@ -157,7 +156,7 @@ JSON.stringify(results);
 
 Reach out to me at one of the following places!
 
-- Website at **TBI**
+- Website at https://aribornstein.github.io/corefidemo/
 - Twitter at BIUNLP
 - Insert more social links here.
 
@@ -173,7 +172,7 @@ Reach out to me at one of the following places!
     - 🍴 Fork this repo!
 
 - **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
+    - 👯 Clone this repo to your local machine using `https://github.com/aribornstein/CoRefi.git`
 
 ### Step 2
 
@@ -181,7 +180,7 @@ Reach out to me at one of the following places!
 
 ### Step 3
 
-- 🔃 Create a new pull request using <a href="https://github.com/joanaz/HireDot2/compare/" target="_blank">`https://github.com/joanaz/HireDot2/compare/`</a>.
+- 🔃 Create a new pull request using <a href="https://github.com/aribornstein/CoRefi/compare/" target="_blank">`https://github.com/aribornstein/CoRefi/compare/`</a>.
 
 ---
 
