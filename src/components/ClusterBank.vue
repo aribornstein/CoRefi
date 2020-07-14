@@ -6,7 +6,7 @@
       </v-chip>
       <v-chip-group
         id="review-bank"
-        v-bind:value="selectedCluster"
+        v-bind:value="currentCluster"
         active-class="primary--text"
         mandatory
         show-arrows
@@ -32,7 +32,7 @@
       </v-chip-group>
     </div>
     <v-divider v-if="mode=='reviewer'"></v-divider>
-    <v-chip-group v-model="selectedCluster" active-class="primary--text" mandatory show-arrows>
+    <v-chip-group active-class="primary--text" mandatory show-arrows v-model="currentCluster">
       <v-chip small @click="newCluster">
         <v-icon color="#2d9cdb" dark>mdi-plus</v-icon>
       </v-chip>
@@ -40,6 +40,7 @@
         v-for="cluster in clusters"
         :key="cluster.id"
         :value="cluster.id"
+        @click="candidateSelected(cluster.id)"
         label
         small
       >{{ cluster.text }}</v-chip>
@@ -63,6 +64,17 @@ export default {
     suggestedReviewerClusters: Set,
     selectedCluster: String,
     mode: String
+  },
+  data: function() {
+    return {
+      currentCluster: { ...this.selectedCluster }
+    };
+  },
+  watch: {
+    // whenever question changes, this function will run
+    selectedCluster: function(newCluster) {
+      this.currentCluster = newCluster;
+    }
   },
   methods: {
     newCluster: function() {
