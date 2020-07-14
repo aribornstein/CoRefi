@@ -22,7 +22,7 @@
 
 ## Intoduction 
 
-Coreference Resolution is the task of clustering words and names that refer to the same concept, entity or event. Coreference is an important NLP task for downstream applications such as abstractive summarization, reading comprehension, and information extraction. 
+Coreference Resolution is the task of clustering words and names that refer to the same concept, entity or event. Coreference is an important NLP task for downstream applications such as abstractive summarization, reading comprehension, and information extraction. See the following Coreference Example from Stanford NLP.
 
 ![Coreference Example from stanford.](https://nlp.stanford.edu/projects/corefexample.png)
 
@@ -36,6 +36,8 @@ When using please cite:
 
 CoRefi provides capabilites for the full end to end process for Exaughstive Coreference Annotation consisting of:
 ![E2E Process](https://cdn-images-1.medium.com/max/800/1*PkVBeqteVqxfljbqSY1qww.png)
+
+For a Full Walkthrough of CoRefi's features, check out our system demonstration video on [youtube](https://www.youtube.com/watch?v=DPx36Ps1CAk).
 
 ### 1. Onboarding
 
@@ -145,7 +147,7 @@ JSON.stringify(results);
 - Ari Bornstein and Arie Cattan - Core Team
 - Ido Dagan - Advisor
 - Uri Fried - Lead Designer
-- Ayal Klien & Paul Roit - Crowd Sourcing Review 
+- Ayal Klein & Paul Roit - Crowd Sourcing Review 
 - Amir Cohen - Architectural Review
 - Sharon Oren - Code Review
 - Chris Noring & Asaf Amrami
