@@ -22,7 +22,7 @@
 
 ## Intoduction 
 
-Coreference Resolution is the task of clustering words and names that refer to the same concept, entity or event. Coreference is an important NLP task for downstream applications such as abstractive summarization, reading comprehension, and information extraction. 
+Coreference Resolution is the task of clustering words and names that refer to the same concept, entity or event. Coreference is an important NLP task for downstream applications such as abstractive summarization, reading comprehension, and information extraction. See the following Coreference Example from Stanford NLP.
 
 ![Coreference Example from stanford.](https://nlp.stanford.edu/projects/corefexample.png)
 
