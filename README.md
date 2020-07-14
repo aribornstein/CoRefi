@@ -147,7 +147,7 @@ JSON.stringify(results);
 - Ari Bornstein and Arie Cattan - Core Team
 - Ido Dagan - Advisor
 - Uri Fried - Lead Designer
-- Ayal Klien & Paul Roit - Crowd Sourcing Review 
+- Ayal Klein & Paul Roit - Crowd Sourcing Review 
 - Amir Cohen - Architectural Review
 - Sharon Oren - Code Review
 - Chris Noring & Asaf Amrami
