@@ -119,7 +119,7 @@
 </template>
 
 <script>
-import jsonData from "./data/review_example.json";
+import jsonData from "./data/onboarding_example.json";
 
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
