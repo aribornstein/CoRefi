@@ -87,7 +87,7 @@
       <ClusterBank
         v-if="!clusterBarBottom"
         :clusters="clusters"
-        :selectedCluster.sync="selectedCluster"
+        :selectedCluster="selectedCluster"
         :suggestedReviewerClusters="suggestedReviewerClusters"
         :mode="mode"
         v-on:newCluster="assignMention(true)"
@@ -119,7 +119,7 @@
 </template>
 
 <script>
-import jsonData from "./data/onboarding_example.json";
+import jsonData from "./data/review_example.json";
 
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
