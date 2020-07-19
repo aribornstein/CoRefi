@@ -119,7 +119,7 @@
 </template>
 
 <script>
-import jsonData from "./data/review_example.json";
+import jsonData from "./data/onboarding_example.json";
 
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
@@ -134,6 +134,7 @@ import {
   VFooter,
   VSpacer,
   VContainer,
+  VImg,
   VIcon,
   VDialog,
   VCard,
@@ -164,6 +165,7 @@ export default {
     VSpacer,
     VFooter,
     VContainer,
+    VImg,
     VIcon,
     VDialog,
     VCard,
@@ -376,6 +378,18 @@ export default {
     window.removeEventListener("keydown", this.processInput);
     window.removeEventListener("resize", this.docsOnScreen);
   },
+  watch:{
+    // To Be Optimized
+    mode: function(newMode) {
+      this.$tours["myTour"].stop();
+      if (newMode == "onboarding") {
+        this.$tours["myTour"].start();
+      }
+      if (newMode == "reviewer") {
+        this.generatePreviousCoreferringWorkerTokens();
+      }
+    }
+  },
   mounted() {
     if (this.mode == "onboarding") {
       this.$tours["myTour"].start();
@@ -551,9 +565,7 @@ export default {
         this.goldMentions[0].start != this.currentMention.start ||
         this.goldMentions[0].end != this.currentMention.end
       ) {
-        this.notify(
-          "Incorrect Mention Span Message to be updated with gold mentions messages."
-        );
+        this.notify(this.goldMentions[0].fixSpanMessage);
         return false;
       }
       if (this.goldMentions[0].clustId != clusterAssignment) {
