@@ -1,573 +1,444 @@
 {
     "mode": "onboarding",
+    "fixableSpans": true,
     "tokens": [
         {
             "i": 0,
-            "document": 1,
-            "doc_name": "34_10ecbplus.xml",
-            "text": "Obama"
+            "pos": "PROPN",
+            "document": 0,
+            "text": "Prime",
+            "lemma": "Prime",
+            "noWhite": false
         },
         {
             "i": 1,
-            "document": 1,
-            "doc_name": "34_10ecbplus.xml",
-            "text": "nominates"
+            "pos": "PROPN",
+            "document": 0,
+            "text": "Minister",
+            "lemma": "Minister",
+            "noWhite": false
         },
         {
             "i": 2,
-            "document": 1,
-            "doc_name": "34_10ecbplus.xml",
-            "text": "new"
+            "pos": "PROPN",
+            "document": 0,
+            "text": "Hun",
+            "lemma": "Hun",
+            "noWhite": false
         },
         {
             "i": 3,
-            "document": 1,
-            "doc_name": "34_10ecbplus.xml",
-            "text": "surgeon"
+            "pos": "PROPN",
+            "document": 0,
+            "text": "Sen",
+            "lemma": "Sen",
+            "noWhite": false
         },
         {
             "i": 4,
-            "document": 1,
-            "doc_name": "34_10ecbplus.xml",
-            "text": "general"
+            "pos": "VERB",
+            "document": 0,
+            "text": "insisted",
+            "lemma": "insist",
+            "noWhite": false
         },
         {
             "i": 5,
-            "document": 1,
-            "doc_name": "34_10ecbplus.xml",
-            "text": ":"
+            "pos": "SCONJ",
+            "document": 0,
+            "text": "that",
+            "lemma": "that",
+            "noWhite": false
         },
         {
             "i": 6,
-            "document": 1,
-            "doc_name": "34_10ecbplus.xml",
-            "text": "MacArthur"
+            "pos": "NOUN",
+            "document": 0,
+            "text": "talks",
+            "lemma": "talk",
+            "noWhite": false
         },
         {
             "i": 7,
-            "document": 1,
-            "doc_name": "34_10ecbplus.xml",
-            "text": "\"genius"
+            "pos": "VERB",
+            "document": 0,
+            "text": "take",
+            "lemma": "take",
+            "noWhite": false
         },
         {
             "i": 8,
-            "document": 1,
-            "doc_name": "34_10ecbplus.xml",
-            "text": "grant\""
+            "pos": "NOUN",
+            "document": 0,
+            "text": "place",
+            "lemma": "place",
+            "noWhite": false
         },
         {
             "i": 9,
-            "document": 1,
-            "doc_name": "34_10ecbplus.xml",
-            "text": "fellow"
+            "pos": "ADP",
+            "document": 0,
+            "text": "in",
+            "lemma": "in",
+            "noWhite": false
         },
         {
             "i": 10,
-            "document": 1,
-            "doc_name": "34_10ecbplus.xml",
-            "text": "Regina"
+            "pos": "PROPN",
+            "document": 0,
+            "text": "Cambodia",
+            "lemma": "Cambodia",
+            "noWhite": false
         },
         {
             "i": 11,
-            "document": 1,
-            "doc_name": "34_10ecbplus.xml",
-            "text": "Benjamin"
+            "pos": "SCONJ",
+            "document": 0,
+            "text": "while",
+            "lemma": "while",
+            "noWhite": false
         },
         {
             "i": 12,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "Today"
+            "pos": "NOUN",
+            "document": 0,
+            "text": "opposition",
+            "lemma": "opposition",
+            "noWhite": false
         },
         {
             "i": 13,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": ","
+            "pos": "NOUN",
+            "document": 0,
+            "text": "leaders",
+            "lemma": "leader",
+            "noWhite": false
         },
         {
             "i": 14,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "President"
+            "pos": "PROPN",
+            "document": 0,
+            "text": "Ranariddh",
+            "lemma": "Ranariddh",
+            "noWhite": false
         },
         {
             "i": 15,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "Barack"
+            "pos": "CCONJ",
+            "document": 0,
+            "text": "and",
+            "lemma": "and",
+            "noWhite": false
         },
         {
             "i": 16,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "Obama"
+            "pos": "PROPN",
+            "document": 0,
+            "text": "Sam",
+            "lemma": "Sam",
+            "noWhite": false
         },
         {
             "i": 17,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "announced"
+            "pos": "PROPN",
+            "document": 0,
+            "text": "Rainsy",
+            "lemma": "Rainsy",
+            "noWhite": true
         },
         {
             "i": 18,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "his"
+            "pos": "PUNCT",
+            "document": 0,
+            "text": ",",
+            "lemma": ",",
+            "noWhite": false
         },
         {
             "i": 19,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "intent"
+            "pos": "VERB",
+            "document": 0,
+            "text": "fearing",
+            "lemma": "fear",
+            "noWhite": false
         },
         {
             "i": 20,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "to"
+            "pos": "NOUN",
+            "document": 0,
+            "text": "arrest",
+            "lemma": "arrest",
+            "noWhite": false
         },
         {
             "i": 21,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "nominate"
+            "pos": "ADP",
+            "document": 0,
+            "text": "at",
+            "lemma": "at",
+            "noWhite": false
         },
         {
             "i": 22,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "Regina"
+            "pos": "NOUN",
+            "document": 0,
+            "text": "home",
+            "lemma": "home",
+            "noWhite": false
         },
         {
             "i": 23,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "M"
+            "pos": "VERB",
+            "document": 0,
+            "text": "wanted",
+            "lemma": "want",
+            "noWhite": false
         },
         {
             "i": 24,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "."
+            "pos": "PRON",
+            "document": 0,
+            "text": "them",
+            "lemma": "-PRON-",
+            "noWhite": false
         },
         {
             "i": 25,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "Benjamin"
+            "pos": "ADV",
+            "document": 0,
+            "text": "abroad",
+            "lemma": "abroad",
+            "noWhite": true
         },
         {
             "i": 26,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "as"
+            "pos": "PUNCT",
+            "document": 0,
+            "text": ".",
+            "lemma": ".",
+            "noWhite": true
         },
         {
             "i": 27,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "Surgeon"
+            "pos": "ADJ",
+            "document": 1,
+            "text": "Cambodian",
+            "lemma": "cambodian",
+            "noWhite": false
         },
         {
             "i": 28,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "General"
+            "pos": "PROPN",
+            "document": 1,
+            "text": "Prime",
+            "lemma": "Prime",
+            "noWhite": false
         },
         {
             "i": 29,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": ","
+            "pos": "PROPN",
+            "document": 1,
+            "text": "Minister",
+            "lemma": "Minister",
+            "noWhite": false
         },
         {
             "i": 30,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "Department"
+            "pos": "PROPN",
+            "document": 1,
+            "text": "Hun",
+            "lemma": "Hun",
+            "noWhite": false
         },
         {
             "i": 31,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "of"
+            "pos": "PROPN",
+            "document": 1,
+            "text": "Sen",
+            "lemma": "Sen",
+            "noWhite": false
         },
         {
             "i": 32,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "Health"
+            "pos": "VERB",
+            "document": 1,
+            "text": "rejects",
+            "lemma": "reject",
+            "noWhite": false
         },
         {
             "i": 33,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "and"
+            "pos": "NOUN",
+            "document": 1,
+            "text": "demands",
+            "lemma": "demand",
+            "noWhite": false
         },
         {
             "i": 34,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "Human"
+            "pos": "ADP",
+            "document": 1,
+            "text": "of",
+            "lemma": "of",
+            "noWhite": false
         },
         {
             "i": 35,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "Services"
+            "pos": "SPACE",
+            "document": 1,
+            "text": " ",
+            "lemma": " ",
+            "noWhite": true
         },
         {
             "i": 36,
-            "document": 11,
-            "doc_name": "34_1ecbplus.xml",
-            "text": "."
+            "pos": "NOUN",
+            "document": 1,
+            "text": "opposition",
+            "lemma": "opposition",
+            "noWhite": false
         },
         {
             "i": 37,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "News"
+            "pos": "NOUN",
+            "document": 1,
+            "text": "parties",
+            "lemma": "party",
+            "noWhite": false
         },
         {
             "i": 38,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "that"
+            "pos": "ADP",
+            "document": 1,
+            "text": "for",
+            "lemma": "for",
+            "noWhite": false
         },
         {
             "i": 39,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "Barack"
+            "pos": "NOUN",
+            "document": 1,
+            "text": "talks",
+            "lemma": "talk",
+            "noWhite": false
         },
         {
             "i": 40,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "Obama"
+            "pos": "ADP",
+            "document": 1,
+            "text": "in",
+            "lemma": "in",
+            "noWhite": false
         },
         {
             "i": 41,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "may"
+            "pos": "PROPN",
+            "document": 1,
+            "text": "Beijing",
+            "lemma": "Beijing",
+            "noWhite": true
         },
         {
             "i": 42,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "name"
-        },
-        {
-            "i": 43,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "Dr."
-        },
-        {
-            "i": 44,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "Sanjay"
-        },
-        {
-            "i": 45,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "Gupta"
-        },
-        {
-            "i": 46,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "of"
-        },
-        {
-            "i": 47,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "Emory"
-        },
-        {
-            "i": 48,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "University"
-        },
-        {
-            "i": 49,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "and"
-        },
-        {
-            "i": 50,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "CNN"
-        },
-        {
-            "i": 51,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "as"
-        },
-        {
-            "i": 52,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "his"
-        },
-        {
-            "i": 53,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "Surgeon"
-        },
-        {
-            "i": 54,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "General"
-        },
-        {
-            "i": 55,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "has"
-        },
-        {
-            "i": 56,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "caused"
-        },
-        {
-            "i": 57,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "a"
-        },
-        {
-            "i": 58,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "spasm"
-        },
-        {
-            "i": 59,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "of"
-        },
-        {
-            "i": 60,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "celebrity"
-        },
-        {
-            "i": 61,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "reporting"
-        },
-        {
-            "i": 62,
-            "document": 14,
-            "doc_name": "34_3ecb.xml",
-            "text": "."
-        },
-        {
-            "i": 63,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "President"
-        },
-        {
-            "i": 64,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "Obama"
-        },
-        {
-            "i": 65,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "will"
-        },
-        {
-            "i": 66,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "name"
-        },
-        {
-            "i": 67,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "Dr"
-        },
-        {
-            "i": 68,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "."
-        },
-        {
-            "i": 69,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "Regina"
-        },
-        {
-            "i": 70,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "Benjamin"
-        },
-        {
-            "i": 71,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "as"
-        },
-        {
-            "i": 72,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "U"
-        },
-        {
-            "i": 73,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "."
-        },
-        {
-            "i": 74,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "S"
-        },
-        {
-            "i": 75,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "."
-        },
-        {
-            "i": 76,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "Surgeon"
-        },
-        {
-            "i": 77,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "General"
-        },
-        {
-            "i": 78,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "in"
-        },
-        {
-            "i": 79,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "a"
-        },
-        {
-            "i": 80,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "Rose"
-        },
-        {
-            "i": 81,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "Garden"
-        },
-        {
-            "i": 82,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "announcement"
-        },
-        {
-            "i": 83,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "late"
-        },
-        {
-            "i": 84,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "this"
-        },
-        {
-            "i": 85,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "morning"
-        },
-        {
-            "i": 86,
-            "document": 17,
-            "doc_name": "34_4ecbplus.xml",
-            "text": "."
+            "pos": "PUNCT",
+            "document": 1,
+            "text": ".",
+            "lemma": ".",
+            "noWhite": true
         }
     ],
     "candidateMentions": [
         {
+            "start": 2,
+            "end": 2
+        },
+        {
             "start": 3,
+            "end": 3
+        },
+        {
+            "start": 4,
             "end": 4
         },
         {
             "start": 6,
-            "end": 11
+            "end": 6
+        },
+        {
+            "start": 7,
+            "end": 7
+        },
+        {
+            "start": 8,
+            "end": 8
+        },
+        {
+            "start": 10,
+            "end": 10
         },
         {
             "start": 12,
             "end": 12
         },
         {
-            "start": 15,
-            "end": 16
+            "start": 13,
+            "end": 13
         },
         {
-            "start": 17,
+            "start": 14,
+            "end": 14
+        },
+        {
+            "start": 16,
             "end": 17
-        },
-        {
-            "start": 18,
-            "end": 18
         },
         {
             "start": 19,
             "end": 19
         },
         {
-            "start": 21,
-            "end": 21
+            "start": 20,
+            "end": 20
         },
         {
             "start": 22,
-            "end": 25
+            "end": 22
+        },
+        {
+            "start": 23,
+            "end": 23
+        },
+        {
+            "start": 24,
+            "end": 24
         },
         {
             "start": 27,
+            "end": 27
+        },
+        {
+            "start": 28,
             "end": 28
         },
         {
+            "start": 29,
+            "end": 29
+        },
+        {
             "start": 30,
-            "end": 35
+            "end": 31
+        },
+        {
+            "start": 32,
+            "end": 32
+        },
+        {
+            "start": 33,
+            "end": 33
+        },
+        {
+            "start": 36,
+            "end": 36
         },
         {
             "start": 37,
@@ -575,63 +446,11 @@
         },
         {
             "start": 39,
-            "end": 40
+            "end": 39
         },
         {
-            "start": 42,
-            "end": 42
-        },
-        {
-            "start": 43,
-            "end": 45
-        },
-        {
-            "start": 47,
-            "end": 48
-        },
-        {
-            "start": 50,
-            "end": 50
-        },
-        {
-            "start": 53,
-            "end": 54
-        },
-        {
-            "start": 56,
-            "end": 56
-        },
-        {
-            "start": 61,
-            "end": 61
-        },
-        {
-            "start": 64,
-            "end": 64
-        },
-        {
-            "start": 66,
-            "end": 66
-        },
-        {
-            "start": 67,
-            "end": 70
-        },
-        {
-            "start": 72,
-            "end": 77
-        },
-        {
-            "start": 80,
-            "end": 81
-        },
-        {
-            "start": 82,
-            "end": 82
-        },
-        {
-            "start": 83,
-            "end": 85
+            "start": 41,
+            "end": 41
         }
     ],
     "selectedCluster": "0-0",
@@ -644,228 +463,196 @@
     ],
     "currentMention": {
         "start": 1,
-        "end": 1,
-        "clustId": "1-1"
+        "end": 1
     },
     "goldMentions": [
         {
             "start": 1,
             "end": 1,
             "clustId": "1-1",
-            "errorMessage": "Nominates does not refer to Obama.",
-            "validMessage": "Awesome!"
+            "errorMessage": "Titles do not corefer with one another.",
+            "validMessage": "Great work! It's important to remeber that titles do not corefer with one another"
         },
         {
-            "start": 3,
+            "start": 2,
+            "end": 3,
+            "clustId": "2-3",
+            "fixSpanMessage":"Hun Sen is a named entity please select the full span and press the F key before assigning the current mention.",
+            "errorMessage": "Remeber titles don't corefer with their described entity.",
+            "validMessage": "Nice Job!"
+        },
+        {
+            "start": 4,
             "end": 4,
-            "clustId": "3-4",
-            "errorMessage": "Not Quite! Thats not quite right.",
-            "validMessage": "You're a star!"
+            "clustId": "4-4",
+            "errorMessage": "Does the current mention 'insisted' corefer with any of the existing clusters?",
+            "validMessage": "You're getting the hang of this!"
         },
         {
             "start": 6,
-            "end": 11,
-            "clustId": "6-11",
-            "errorMessage": "Be careful, this mention refers to the person itself, not to his title!",
-            "validMessage": "Kudos! A person (Regina Benjamin) does not refer to its title (surgeon general)"
+            "end": 6,
+            "clustId": "6-6",
+            "errorMessage": "That's not quite right!",
+            "validMessage": "Great work!"
+        },
+        {
+            "start": 7,
+            "end": 7,
+            "clustId": "7-7",
+            "fixSpanMessage":"Multiword expressions are represented by their root mention.",
+            "errorMessage": "Does the mention 'talked' share the same meaning in the described scenario as the selected cluster?",
+            "validMessage": "Way to go!"
+        },
+        {
+            "start": 8,
+            "end": 8,
+            "clustId": "8-8",
+            "errorMessage": "Multiword expressions are represented by their root mention.",
+            "validMessage": "Great work! Remeber that multiword expressions are represented by their root mention."
+        },
+        {
+            "start": 10,
+            "end": 10,
+            "clustId": "10-10",
+            "errorMessage": "Does the current mention belong to an existing cluster?",
+            "validMessage": "Nice!"
         },
         {
             "start": 12,
             "end": 12,
             "clustId": "12-12",
-            "errorMessage": "Thats not quite right.",
-            "validMessage": "Great work! Keep going!"
+            "errorMessage": "Does the current mention belong to an existing cluster?",
+            "validMessage": "Perfect!"
         },
         {
-            "start": 15,
-            "end": 16,
-            "clustId": "0-0",
-            "errorMessage": "Are you sure? Barack Obama was already mentioned in the first document!",
-            "validMessage": "Good job!"
+            "start": 13,
+            "end": 13,
+            "clustId": "13-13",
+            "errorMessage": "Thats not quite right",
+            "validMessage": "Amazing!"
         },
         {
-            "start": 17,
+            "start": 14,
+            "end": 14,
+            "clustId": "14-14",
+            "errorMessage": "Is that where Ranariddh belongs?",
+            "validMessage": "Great work!"
+        },
+        {
+            "start": 16,
             "end": 17,
-            "clustId": "17-17",
-            "errorMessage": "Thats not quite right.",
+            "clustId": "16-17",
+            "errorMessage": "Is that where Sam Rainsy belongs?",
             "validMessage": "Great job!"
-        },
-        {
-            "start": 18,
-            "end": 18,
-            "clustId": "0-0",
-            "errorMessage": "This refers to Obama",
-            "validMessage": "Excellent!"
         },
         {
             "start": 19,
             "end": 19,
             "clustId": "19-19",
-            "errorMessage": "Thats not quite right.",
-            "validMessage": "Don't Stop Now!"
+            "errorMessage": "Does the current mention fearing belong with the selected cluster?",
+            "validMessage": "Pefect!"
         },
         {
-            "start": 21,
-            "end": 21,
-            "clustId": "1-1",
-            "errorMessage": "Are you sure ? It was already mentioned in the first document!",
-            "validMessage": "Excellent!"
+            "start": 20,
+            "end": 20,
+            "clustId": "20-20",
+            "errorMessage": "That's not quite right.",
+            "validMessage": "Great work!"
         },
         {
             "start": 22,
-            "end": 25,
-            "clustId": "6-11",
-            "errorMessage": "She was already mentioned in the first text!",
-            "validMessage": "Very good!"
+            "end": 22,
+            "clustId": "10-10",
+            "errorMessage": "What does the current mention home refer to?",
+            "validMessage": "Awesome work you made your first coreference assignment!"
+        },
+        {
+            "start": 23,
+            "end": 23,
+            "clustId": "23-23",
+            "errorMessage": "Does the current mention wanted belong in the selected cluster?",
+            "validMessage": "You're a star!"
+        },
+        {
+            "start": 24,
+            "end": 24,
+            "clustId": "6-6",
+            "errorMessage": "Which cluster does the current mention 'them' refer to?",
+            "validMessage": "Great work!"
         },
         {
             "start": 27,
+            "end": 27,
+            "clustId": "10-10",
+            "errorMessage": "This is an error",
+            "validMessage": "Great work!"
+        },
+        {
+            "start": 28,
             "end": 28,
-            "clustId": "3-4",
-            "errorMessage": "No! This title was mentioned in the previous text!",
-            "validMessage": "Good job!"
+            "clustId": "28-28",
+            "errorMessage": "Can you think of a different way of expressing Camboidian?",
+            "validMessage": "Great work! Cambodian is equivlent to 'of Camboida' and therefore belongs in the Cambodia cluster"
+        },
+        {
+            "start": 29,
+            "end": 29,
+            "clustId": "29-29",
+            "errorMessage": "Remember that titles do not corefer!",
+            "validMessage": "Nice work! That was a tricky assignment."
         },
         {
             "start": 30,
-            "end": 35,
-            "clustId": "30-35",
-            "errorMessage": "This should be a new mention!",
-            "validMessage": "Nice!"
+            "end": 31,
+            "clustId": "2-3",
+            "errorMessage": "There is already a cluster for this mention, can you find it?",
+            "validMessage": "Perfect!"
+        },
+        {
+            "start": 32,
+            "end": 32,
+            "clustId": "4-4",
+            "errorMessage": "Two mentions may corefer even though they seemingly have two completly different meanings if they refer to the same event or action in the described scenario.",
+            "validMessage": "That was a very difficult assignment! Even though 'rejects' and 'insisted' seem different they both refer to the same action the described scenario. Keep an eye out for cases like this!"
+        },
+        {
+            "start": 33,
+            "end": 33,
+            "clustId": "23-23",
+            "errorMessage": "Two mentions may corefer even though they seemingly have two completly different meanings if they refer to the same event or action in the described scenario.",
+            "validMessage": "This was a very tricky decison. Even though 'wanted' and 'demands' are expressed differently they both refer to the same action the described scenario. Keep an eye out for cases like this!"
+        },
+        {
+            "start": 36,
+            "end": 36,
+            "clustId": "12-12",
+            "errorMessage": "Are you sure this mention belongs there?",
+            "validMessage": "Amazing work!"
         },
         {
             "start": 37,
             "end": 37,
             "clustId": "37-37",
-            "errorMessage": "Thats not quite right.",
-            "validMessage": "You're unstopable!"
+            "errorMessage": "Words may seem to be similar but not corefer in the described scenario.",
+            "validMessage": "Great job! Note that 'leaders' and 'parties' do not share the same meaning in the described scenario and therefore do not corefer."
         },
         {
             "start": 39,
-            "end": 40,
-            "clustId": "0-0",
-            "errorMessage": "Are you sure ? Barack Obama was already mentioned in the first document!",
-            "validMessage": "Good job!"
+            "end": 39,
+            "clustId": "6-6",
+            "errorMessage": "Is that were the current mention belongs?",
+            "validMessage": "Perfect!"
         },
         {
-            "start": 42,
-            "end": 42,
-            "clustId": "42-42",
-            "errorMessage": "Words can have the same meaning but they do not actually refer to the same nomination!",
-            "validMessage": "You are doing very well!! This is not the same nomination as in the first document!"
-        },
-        {
-            "start": 43,
-            "end": 45,
-            "clustId": "43-45",
-            "errorMessage": "Thats not quite right.",
-            "validMessage": "Way to Go!"
-        },
-        {
-            "start": 47,
-            "end": 48,
-            "clustId": "47-48",
-            "errorMessage": "Thats not quite right.",
-            "validMessage": "Amazing!"
-        },
-        {
-            "start": 50,
-            "end": 50,
-            "clustId": "50-50",
-            "errorMessage": "Thats not quite right.",
-            "validMessage": "Keep going!"
-        },
-        {
-            "start": 53,
-            "end": 54,
-            "clustId": "3-4",
-            "errorMessage": "This title was already mentioned twice in the previous documents! Find the correct cluster!",
-            "validMessage": "Excellent!! You find the correct cluster!"
-        },
-        {
-            "start": 56,
-            "end": 56,
-            "clustId": "56-56",
-            "errorMessage": "Thats not quite right.",
-            "validMessage": "You are almost done!"
-        },
-        {
-            "start": 61,
-            "end": 61,
-            "clustId": "61-61",
-            "errorMessage": "Thats not quite right.",
-            "validMessage": "You are getting the hang of this!"
-        },
-        {
-            "start": 64,
-            "end": 64,
-            "clustId": "0-0",
-            "errorMessage": "You seem unfocused, Obama was mentioned many times before!",
-            "validMessage": "Great!"
-        },
-        {
-            "start": 66,
-            "end": 66,
-            "clustId": "1-1",
-            "errorMessage": "Words can have the same meaning but they do not actually refer to the same nomination!",
-            "validMessage": "Kudos!! It was subtle but you got it!"
-        },
-        {
-            "start": 67,
-            "end": 70,
-            "clustId": "6-11",
-            "errorMessage": "Find correct occurrences of Regina Benjamin!",
-            "validMessage": "Just a few more left!"
-        },
-        {
-            "start": 72,
-            "end": 77,
-            "clustId": "3-4",
-            "errorMessage": "You seem not focused, this title was mentioned many times before!",
-            "validMessage": "Perfect just three more!"
-        },
-        {
-            "start": 80,
-            "end": 81,
-            "clustId": "80-81",
-            "errorMessage": "This is the first occurrence of Rose Garden",
-            "validMessage": "Valid"
-        },
-        {
-            "start": 82,
-            "end": 82,
-            "clustId": "17-17",
-            "errorMessage": "Look at the second document!",
-            "validMessage": "Last one!"
-        },
-        {
-            "start": 83,
-            "end": 85,
-            "clustId": "12-12",
-            "errorMessage": "Wrong! This case is subtle, it refers to ``Today'' in the second paragraph since both refer to the time of the nomination of Regina Benjamin",
-            "validMessage": "Correct! This was tricky but you got it, Kudos you annotated all the mentions!"
+            "start": 41,
+            "end": 41,
+            "clustId": "41-41",
+            "errorMessage": "That's not quite right!",
+            "validMessage": "There is no way from the described text to deterimne that Beijing and abroad have the same meaning therefore they do corefer!"
         }
     ],
-    "tourSteps": [
-        {
-            "target": "#dashboard",
-            "header": {
-                "title": "CDC Annotation Guided Training !"
-            },
-            "content": "This HIT will guide you through the CDC decision process. "
-        },
-        {
-            "target": "#dashboard",
-            "header": {
-                "title": "CDC Annotation Guided Training !"
-            },
-            "content": "Preform the task just as before, if you make a mistake the tool will guide you to the correct answer."
-        },
-        {
-            "target": "#dashboard",
-            "header": {
-                "title": "CDC Annotation Guided Training !"
-            },
-            "content": "Please pay careful attention as this will help you when you preform the full task in the next hit."
-        }
-    ]
+    "tourSteps": [],
+    "snackbar": false,
+    "snackbarText": "",
+    "snackbarTimeout": 3000
 }
