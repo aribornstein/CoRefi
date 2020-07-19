@@ -5,6 +5,7 @@
 
 > CoRefi is an emebedable web component and stand alone suite for exaughstive Within Document and Cross Document Coreference Anntoation. For a demo of the suite click [here](https://aribornstein.github.io/corefidemo/)
 
+
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)  ![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)
 
 ---
@@ -33,10 +34,10 @@ When using please cite:
 
 ## Features
 
-CoRefi provides capabilites for the full end to end process for Exaughstive Coreference Annotation consisting of:
+CoRefi provides capabilites for the full end to end process for Exhaustive Coreference Annotation consisting of:
 ![E2E Process](https://cdn-images-1.medium.com/max/800/1*PkVBeqteVqxfljbqSY1qww.png)
 
-For a Full Walkthrough of CoRefi's features, check out our system demonstration video on [youtube](https://www.youtube.com/watch?v=DPx36Ps1CAk).
+For a full walkthrough of CoRefi's features, check out our system demonstration video on [youtube](https://www.youtube.com/watch?v=DPx36Ps1CAk).
 
 ### 1. Onboarding
 
@@ -117,7 +118,7 @@ CoRefi can be configured with a simple JSON schema. Examples configuration files
 
 The Notebooks folder contains python example code for:
     - Generating CoRefi JSON configuration files from Raw text,
-    - Converting JSON config files into HTML escaped embedable input.
+    - Converting JSON config files into HTML escaped embeddable input.
     - Preperation code for Mechanical Turk
     - Converting JSON results to CONLL
     - Converting Annotation results to a Reviewer Configurtation file.
