@@ -3,8 +3,7 @@
 <span style="display:block;text-align:center">![logo](https://cdn-images-1.medium.com/max/800/1*Q9bXCpOcpxlQ0olOZrcrDw.jpeg)</span>
 
 
-> CoRefi is an emebedable web component and stand alone suite for exaughstive Within Document and Cross Document Coreference Anntoation. 
-
+> CoRefi is an emebedable web component and stand alone suite for exaughstive Within Document and Cross Document Coreference Anntoation. For a demo of the suite click [here](https://aribornstein.github.io/corefidemo/)
 
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)  ![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)
 
@@ -49,8 +48,6 @@ A trainee is provided with a sequence of mentions. For each mention the trainee 
 #### Configuration
 A sample configuration json file for onboarding can be found here for more information on tool configuration see the configuration section.
 
-#### [Demo](https://aribornstein.github.io/corefidemo/)
-
 ### 2. Annotation 
 
 The annotator is provided with a sequence of mentions. For each mention the annotator decides whether to update the mention’s span and then to either create a new mention or assign the mention to an existing cluster.  At any point in time the annotator can re-assign a previously assigned mention to another cluster or view the mentions in an existing cluster. Once all mentions are clustered the annotator can submit the job.
@@ -61,8 +58,6 @@ The annotator is provided with a sequence of mentions. For each mention the anno
 #### Configuration
 A sample configuration json file for annotation can be found here for more information on tool configuration see the configuration section.
 
-#### Demo
-
 
 ### 3. Reviewing 
 
@@ -72,8 +67,6 @@ The Reviewer is provided a sequential list of mentions as well as a highlighted 
 
 #### Configuration
 A sample configuration json file for reviewing can be found here for more information on tool configuration see the configuration section.
-
-#### Demo
 
 
 ## Installation
