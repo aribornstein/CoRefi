@@ -478,7 +478,7 @@
             "end": 3,
             "clustId": "2-3",
             "fixSpanMessage":"Hun Sen is a named entity please select the full span and press the F key before assigning the current mention.",
-            "errorMessage": "Remeber titles don't corefer with their described entity.",
+            "errorMessage": "Remember titles don't corefer with their described entity.",
             "validMessage": "Nice Job!"
         },
         {
@@ -500,7 +500,7 @@
             "end": 7,
             "clustId": "7-7",
             "fixSpanMessage":"Multiword expressions are represented by their root mention.",
-            "errorMessage": "Does the mention 'talked' share the same meaning in the described scenario as the selected cluster?",
+            "errorMessage": "Does the mention 'talks' share the same meaning in the described scenario as the selected cluster?",
             "validMessage": "Way to go!"
         },
         {
@@ -508,7 +508,7 @@
             "end": 8,
             "clustId": "8-8",
             "errorMessage": "Multiword expressions are represented by their root mention.",
-            "validMessage": "Great work! Remeber that multiword expressions are represented by their root mention."
+            "validMessage": "Great work! Remeber that multiword expressions are represented by their root mention. In this case, the root mention of the multi word expression 'take place' is take."
         },
         {
             "start": 10,
@@ -536,14 +536,14 @@
             "end": 14,
             "clustId": "14-14",
             "errorMessage": "Is that where Ranariddh belongs?",
-            "validMessage": "Great work!"
+            "validMessage": "Great work! Note: Ranariddh does not corefer with leaders because Ranariddh is only one of the leaders."
         },
         {
             "start": 16,
             "end": 17,
             "clustId": "16-17",
             "errorMessage": "Is that where Sam Rainsy belongs?",
-            "validMessage": "Great job!"
+            "validMessage": "Great job! Note: Sam Rainsy does not corefer with leaders because Sam Rainsy is only one of the leaders."
         },
         {
             "start": 19,
@@ -584,15 +584,14 @@
             "start": 27,
             "end": 27,
             "clustId": "10-10",
-            "errorMessage": "This is an error",
-            "validMessage": "Great work!"
-        },
+            "errorMessage": "Can you think of a different way of expressing Camboidian?",
+            "validMessage": "Great work! Cambodian is equivlent to 'of Camboida' and therefore belongs in the Cambodia cluster"        },
         {
             "start": 28,
             "end": 28,
             "clustId": "28-28",
-            "errorMessage": "Can you think of a different way of expressing Camboidian?",
-            "validMessage": "Great work! Cambodian is equivlent to 'of Camboida' and therefore belongs in the Cambodia cluster"
+            "errorMessage": "Remember titles don't corefer with their described entity.",
+            "validMessage": "Great work! That was tricky you should always be careful about assigning titles correctly."
         },
         {
             "start": 29,
@@ -612,7 +611,7 @@
             "start": 32,
             "end": 32,
             "clustId": "4-4",
-            "errorMessage": "Two mentions may corefer even though they seemingly have two completly different meanings if they refer to the same event or action in the described scenario.",
+            "errorMessage": "Two mentions may corefer even though they seemingly have two completly different meanings if they refer to the same event or action in the described scenario. In this case take a look at the insisted cluster.",
             "validMessage": "That was a very difficult assignment! Even though 'rejects' and 'insisted' seem different they both refer to the same action the described scenario. Keep an eye out for cases like this!"
         },
         {
