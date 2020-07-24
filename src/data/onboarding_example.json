@@ -107,35 +107,40 @@
             "start": 1,
             "end": 1,
             "clustId": "1-1",
-            "errorMessage": "Note that CoRefi's experiential learning features can be used to guide users to the correct annotation decision.",
-            "validMessage": "Great job you're a natrual now try with the next two mentions!"
+            "errorMessages": ["Note that CoRefi's experiential learning features can be used to guide users to the correct annotation decision."],
+            "defaultErrorMessage": "Assign the mention 'acquired' to a new cluster.",
+            "validMessage": "Great job you're a natural now try with the next two mentions!"
         },
         {
             "start": 2,
             "end": 2,
             "clustId": "2-2",
-            "errorMessage": "Are you sure this mention co-refers with the mentions in the selected cluster?",
+            "defaultErrorMessage": "Are you sure this mention co-refers with the mentions in the selected cluster?",
             "validMessage": "Now you are getting the hang of things try one more!"
         },
         {
             "start": 4,
             "end": 5,
             "clustId": "0-0",
-            "errorMessage": "Select the Intel cluster and assign the Intel Corp mention to it using the SPACE key",
+            "defaultErrorMessage": "Select the Intel cluster and assign the Intel Corp mention to it using the SPACE key",
             "validMessage": "Great work! Two more mentions left!"            
         },
         {
             "start": 6,
             "end": 6,
             "clustId": "1-1",
-            "errorMessage": "Are you sure about that?",
+            "defaultErrorMessage": "Are you sure about that?",
             "validMessage": "Now you are getting the hang of this! One more mention left!"        
         },
         {
             "start": 7,
             "end": 7,
             "clustId": "2-2",
-            "errorMessage": "That's not quite right! Choose the and assign the mention to the correct cluster!",
+            "clusterErrorMessages":{
+                "0-0": "The Mention MobileEye doesn't corefer with the Intel Cluster",
+                "1-1": "The Mention MobileEye coesn't Corefer with the Cluster 'purchased' "
+            },
+            "defaultErrorMessage": "That's not quite right! Choose the and assign the mention to the correct cluster!",
             "validMessage": "Amazing now click submit and you can move on to the next task!"
 
         }
@@ -146,7 +151,7 @@
             "header": {
                 "title": "CoRefi Onboarding!"
             },
-            "content": "This experience will walkthrough how to perform corference annotation."
+            "content": "This experience will walkthrough how to perform coreference annotation."
         },
         {
             "target": "#dashboard",
@@ -202,8 +207,17 @@
                 "title": "Assigning a New Cluster"
             },
             "content": "Since the current mention <span class=\"current\">acquired</span> does not co-refer with the only existing mention in the <span class=\"cluster\">Intel</span> cluster assign it to a new cluster with the Ctrl + SPACE (Windows) or ALT + SPACE (MacOS) shortcut."
+        },
+        {
+            "target": ".current",
+            "header": {
+                "title": "Finish The Annotation"
+            },
+            "content": "Now using what you've learned assign the remaining mentions to the correct clusters until they are all assigned. Don't worry if you make mistakes you'll be guided to the correct answers."
         }
-    ]
+    ],
+    "snackbarTimeout": 3000
+
 }
 
 
