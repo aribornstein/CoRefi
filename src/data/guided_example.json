@@ -470,7 +470,7 @@
             "start": 1,
             "end": 1,
             "clustId": "1-1",
-            "errorMessage": "Titles do not corefer with one another.",
+            "defaultErrorMessage": "Titles do not corefer with one another.",
             "validMessage": "Great work! It's important to remeber that titles do not corefer with one another"
         },
         {
@@ -478,21 +478,21 @@
             "end": 3,
             "clustId": "2-3",
             "fixSpanMessage":"Hun Sen is a named entity please select the full span and press the F key before assigning the current mention.",
-            "errorMessage": "Remember titles don't corefer with their described entity.",
+            "defaultErrorMessage": "Remember titles don't corefer with their described entity.",
             "validMessage": "Nice Job!"
         },
         {
             "start": 4,
             "end": 4,
             "clustId": "4-4",
-            "errorMessage": "Does the current mention 'insisted' corefer with any of the existing clusters?",
+            "defaultErrorMessage": "Does the current mention 'insisted' corefer with any of the existing clusters?",
             "validMessage": "You're getting the hang of this!"
         },
         {
             "start": 6,
             "end": 6,
             "clustId": "6-6",
-            "errorMessage": "That's not quite right!",
+            "defaultErrorMessage": "That's not quite right!",
             "validMessage": "Great work!"
         },
         {
@@ -500,158 +500,156 @@
             "end": 7,
             "clustId": "7-7",
             "fixSpanMessage":"Multiword expressions are represented by their root mention.",
-            "errorMessage": "Does the mention 'talks' share the same meaning in the described scenario as the selected cluster?",
+            "defaultErrorMessage": "Does the mention 'talks' share the same meaning in the described scenario as the selected cluster?",
             "validMessage": "Way to go!"
         },
         {
             "start": 8,
             "end": 8,
             "clustId": "8-8",
-            "errorMessage": "Multiword expressions are represented by their root mention.",
+            "defaultErrorMessage": "Multiword expressions are represented by their root mention.",
             "validMessage": "Great work! Remeber that multiword expressions are represented by their root mention. In this case, the root mention of the multi word expression 'take place' is take."
         },
         {
             "start": 10,
             "end": 10,
             "clustId": "10-10",
-            "errorMessage": "Does the current mention belong to an existing cluster?",
+            "defaultErrorMessage": "Does the current mention belong to an existing cluster?",
             "validMessage": "Nice!"
         },
         {
             "start": 12,
             "end": 12,
             "clustId": "12-12",
-            "errorMessage": "Does the current mention belong to an existing cluster?",
+            "defaultErrorMessage": "Does the current mention belong to an existing cluster?",
             "validMessage": "Perfect!"
         },
         {
             "start": 13,
             "end": 13,
             "clustId": "13-13",
-            "errorMessage": "Thats not quite right",
+            "defaultErrorMessage": "Thats not quite right",
             "validMessage": "Amazing!"
         },
         {
             "start": 14,
             "end": 14,
             "clustId": "14-14",
-            "errorMessage": "Is that where Ranariddh belongs?",
+            "defaultErrorMessage": "Is that where Ranariddh belongs?",
             "validMessage": "Great work! Note: Ranariddh does not corefer with leaders because Ranariddh is only one of the leaders."
         },
         {
             "start": 16,
             "end": 17,
             "clustId": "16-17",
-            "errorMessage": "Is that where Sam Rainsy belongs?",
+            "defaultErrorMessage": "Is that where Sam Rainsy belongs?",
             "validMessage": "Great job! Note: Sam Rainsy does not corefer with leaders because Sam Rainsy is only one of the leaders."
         },
         {
             "start": 19,
             "end": 19,
             "clustId": "19-19",
-            "errorMessage": "Does the current mention fearing belong with the selected cluster?",
+            "defaultErrorMessage": "Does the current mention fearing belong with the selected cluster?",
             "validMessage": "Pefect!"
         },
         {
             "start": 20,
             "end": 20,
             "clustId": "20-20",
-            "errorMessage": "That's not quite right.",
+            "defaultErrorMessage": "That's not quite right.",
             "validMessage": "Great work!"
         },
         {
             "start": 22,
             "end": 22,
             "clustId": "10-10",
-            "errorMessage": "What does the current mention home refer to?",
+            "defaultErrorMessage": "What does the current mention home refer to?",
             "validMessage": "Awesome work you made your first coreference assignment!"
         },
         {
             "start": 23,
             "end": 23,
             "clustId": "23-23",
-            "errorMessage": "Does the current mention wanted belong in the selected cluster?",
+            "defaultErrorMessage": "Does the current mention wanted belong in the selected cluster?",
             "validMessage": "You're a star!"
         },
         {
             "start": 24,
             "end": 24,
             "clustId": "6-6",
-            "errorMessage": "Which cluster does the current mention 'them' refer to?",
+            "defaultErrorMessage": "Which cluster does the current mention 'them' refer to?",
             "validMessage": "Great work!"
         },
         {
             "start": 27,
             "end": 27,
             "clustId": "10-10",
-            "errorMessage": "Can you think of a different way of expressing Camboidian?",
+            "defaultErrorMessage": "Can you think of a different way of expressing Camboidian?",
             "validMessage": "Great work! Cambodian is equivlent to 'of Camboida' and therefore belongs in the Cambodia cluster"        },
         {
             "start": 28,
             "end": 28,
             "clustId": "28-28",
-            "errorMessage": "Remember titles don't corefer with their described entity.",
+            "defaultErrorMessage": "Remember titles don't corefer with their described entity.",
             "validMessage": "Great work! That was tricky you should always be careful about assigning titles correctly."
         },
         {
             "start": 29,
             "end": 29,
             "clustId": "29-29",
-            "errorMessage": "Remember that titles do not corefer!",
+            "defaultErrorMessage": "Remember that titles do not corefer!",
             "validMessage": "Nice work! That was a tricky assignment."
         },
         {
             "start": 30,
             "end": 31,
             "clustId": "2-3",
-            "errorMessage": "There is already a cluster for this mention, can you find it?",
+            "defaultErrorMessage": "There is already a cluster for this mention, can you find it?",
             "validMessage": "Perfect!"
         },
         {
             "start": 32,
             "end": 32,
             "clustId": "4-4",
-            "errorMessage": "Two mentions may corefer even though they seemingly have two completly different meanings if they refer to the same event or action in the described scenario. In this case take a look at the insisted cluster.",
+            "defaultErrorMessage": "Two mentions may corefer even though they seemingly have two completly different meanings if they refer to the same event or action in the described scenario. In this case take a look at the insisted cluster.",
             "validMessage": "That was a very difficult assignment! Even though 'rejects' and 'insisted' seem different they both refer to the same action the described scenario. Keep an eye out for cases like this!"
         },
         {
             "start": 33,
             "end": 33,
             "clustId": "23-23",
-            "errorMessage": "Two mentions may corefer even though they seemingly have two completly different meanings if they refer to the same event or action in the described scenario.",
+            "defaultErrorMessage": "Two mentions may corefer even though they seemingly have two completly different meanings if they refer to the same event or action in the described scenario.",
             "validMessage": "This was a very tricky decison. Even though 'wanted' and 'demands' are expressed differently they both refer to the same action the described scenario. Keep an eye out for cases like this!"
         },
         {
             "start": 36,
             "end": 36,
             "clustId": "12-12",
-            "errorMessage": "Are you sure this mention belongs there?",
+            "defaultErrorMessage": "Are you sure this mention belongs there?",
             "validMessage": "Amazing work!"
         },
         {
             "start": 37,
             "end": 37,
             "clustId": "37-37",
-            "errorMessage": "Words may seem to be similar but not corefer in the described scenario.",
+            "defaultErrorMessage": "Words may seem to be similar but not corefer in the described scenario.",
             "validMessage": "Great job! Note that 'leaders' and 'parties' do not share the same meaning in the described scenario and therefore do not corefer."
         },
         {
             "start": 39,
             "end": 39,
             "clustId": "6-6",
-            "errorMessage": "Is that were the current mention belongs?",
+            "defaultErrorMessage": "Is that were the current mention belongs?",
             "validMessage": "Perfect!"
         },
         {
             "start": 41,
             "end": 41,
             "clustId": "41-41",
-            "errorMessage": "That's not quite right!",
+            "defaultErrorMessage": "That's not quite right!",
             "validMessage": "There is no way from the described text to deterimne that Beijing and abroad have the same meaning therefore they do corefer!"
         }
     ],
     "tourSteps": [],
-    "snackbar": false,
-    "snackbarText": "",
     "snackbarTimeout": 3000
 }

@@ -37,7 +37,7 @@
       Mention: {{ viewedMentions.length }}/{{ viewedMentions.length + candidateMentions.length }} Document: {{ parseInt(currentDocument) }}
       <!-- <span>--</span> -->
     </v-system-bar>
-    <v-content>
+    <v-main>
       <v-container ref="documents" v-mutate="docsOnScreen" style="max-width:850px" fluid>
         <v-layout
           v-for="(doc, docIndex) in docsViewModel"
@@ -93,7 +93,7 @@
         v-on:newCluster="assignMention(true)"
         v-on:candidateSelected="selectCluster"
       ></ClusterBank>
-    </v-content>
+    </v-main>
 
     <v-snackbar v-model="snackbar" :timeout="snackbarTimeout">
       {{ snackbarText }}
@@ -105,6 +105,7 @@
       <v-btn id="help" @click.stop="help = true" fab dark small icon color="blue">
         <v-icon>mdi-help</v-icon>
       </v-btn>
+
       <ClusterBank
         v-if="clusterBarBottom"
         :clusters="clusters"
@@ -125,7 +126,6 @@ import Vue from "vue";
 import Vuetify from "vuetify/lib";
 import {
   VApp,
-  VContent,
   VDivider,
   VBtn,
   VLayout,
@@ -138,7 +138,7 @@ import {
   VIcon,
   VDialog,
   VCard,
-  VCardTitle
+  VCardTitle,
 } from "vuetify/lib";
 
 Vue.use(Vuetify);
@@ -156,7 +156,6 @@ export default {
   VueTour,
   components: {
     VApp,
-    VContent,
     VDivider,
     VBtn,
     VLayout,
@@ -170,13 +169,13 @@ export default {
     VDialog,
     VCard,
     VCardTitle,
-    ClusterBank
+    ClusterBank,
   },
   props: {
     json: {
       type: String,
-      default: ""
-    }
+      default: "",
+    },
   },
   data() {
     const data =
@@ -193,34 +192,34 @@ export default {
     return data;
   },
   computed: {
-    documents: function() {
+    documents: function () {
       const documents = this.groupBy(this.tokens, "document");
-      Object.keys(documents).map(doc => {
+      Object.keys(documents).map((doc) => {
         documents[doc] = {
           start: documents[doc][0].i,
-          end: documents[doc][documents[doc].length - 1].i
+          end: documents[doc][documents[doc].length - 1].i,
         };
       });
       return documents;
     },
 
-    currentDocument: function() {
+    currentDocument: function () {
       return this.tokens[this.currentMention.start].document;
     },
 
-    documentsViewed: function() {
+    documentsViewed: function () {
       return this.tokens[
         this.viewedMentions[this.viewedMentions.length - 1].start
       ].document;
     },
 
-    tokens2Cluster: function() {
+    tokens2Cluster: function () {
       let tokens2Cluster = {},
         mentions = this.viewedMentions
           .concat([this.currentMention])
           .concat(this.candidateMentions);
 
-      mentions.forEach(mention => {
+      mentions.forEach((mention) => {
         for (let i = mention.start; i <= mention.end; i++) {
           tokens2Cluster[i] = mention.clustId;
         }
@@ -229,7 +228,7 @@ export default {
       return tokens2Cluster;
     },
 
-    suggestedReviewerClusters: function() {
+    suggestedReviewerClusters: function () {
       if (this.mode != "reviewer") {
         return new Set();
       }
@@ -241,18 +240,18 @@ export default {
         i++
       ) {
         if (this.previousCoreferringWorkerTokens[i] != undefined) {
-          this.previousCoreferringWorkerTokens[i].forEach(token => {
+          this.previousCoreferringWorkerTokens[i].forEach((token) => {
             coreferingTokens.add(this.tokens2Cluster[token]);
           });
         }
       }
-      coreferingTokens.forEach(token => {
+      coreferingTokens.forEach((token) => {
         suggestedClusters.add(token);
       });
       return suggestedClusters;
     },
 
-    clusters: function() {
+    clusters: function () {
       let clusters = this.groupBy(this.viewedMentions, "clustId");
       for (var clustId in clusters) {
         let clustSpan = clustId.split("-");
@@ -260,22 +259,22 @@ export default {
           id: clustId,
           text: this.tokens
             .slice(parseInt(clustSpan[0]), parseInt(clustSpan[1]) + 1)
-            .map(t => t.text + (t.noWhite ? "" : " "))
-            .join("")
+            .map((t) => t.text + (t.noWhite ? "" : " "))
+            .join(""),
         };
       }
       return clusters;
     },
 
-    clusterIds: function() {
+    clusterIds: function () {
       return Object.keys(this.clusters);
     },
 
-    selectedClusterIndex: function() {
-      return this.clusterIds.findIndex(cId => cId == this.selectedCluster);
+    selectedClusterIndex: function () {
+      return this.clusterIds.findIndex((cId) => cId == this.selectedCluster);
     },
 
-    viewedMentionIndex: function() {
+    viewedMentionIndex: function () {
       for (
         let mentionIndex = 0;
         mentionIndex < this.viewedMentions.length;
@@ -290,20 +289,20 @@ export default {
       return false;
     },
 
-    docsViewModel: function() {
+    docsViewModel: function () {
       let documentSpans = [];
       // For each doc up to the current doc
       for (let [doc_id, doc] of Object.entries(this.documents)) {
         const spans = [];
         let tokInd = doc.start,
           docViewedMentions = this.viewedMentions.filter(
-            m => m.start >= doc.start && m.end <= doc.end
+            (m) => m.start >= doc.start && m.end <= doc.end
           );
 
         //process viewedMentions
-        docViewedMentions.forEach(viewedMention => {
+        docViewedMentions.forEach((viewedMention) => {
           let viewedIndex = this.viewedMentions.findIndex(
-            m => m.start == viewedMention.start
+            (m) => m.start == viewedMention.start
           );
           while (tokInd < viewedMention.start) {
             spans.push(this.tokens[tokInd]);
@@ -319,7 +318,7 @@ export default {
               viewedMention.clustId == this.selectedCluster
                 ? "cluster"
                 : "viewed",
-            viewedIndex: viewedIndex
+            viewedIndex: viewedIndex,
           };
 
           if (
@@ -349,7 +348,7 @@ export default {
               this.currentMention.start,
               this.currentMention.end + 1
             ),
-            class: "current"
+            class: "current",
           };
           spans.push(mentionSpan);
           tokInd = this.currentMention.end + 1;
@@ -361,14 +360,14 @@ export default {
         }
         documentSpans.push({
           class: doc_id == this.currentDocument ? "" : "other-document",
-          docSpans: spans
+          docSpans: spans,
         });
         if (doc_id == Math.max(this.documentsViewed, this.currentDocument)) {
           break;
         }
       }
       return documentSpans;
-    }
+    },
   },
   created() {
     window.addEventListener("keydown", this.processInput);
@@ -378,9 +377,9 @@ export default {
     window.removeEventListener("keydown", this.processInput);
     window.removeEventListener("resize", this.docsOnScreen);
   },
-  watch:{
+  watch: {
     // To Be Optimized
-    mode: function(newMode) {
+    mode: function (newMode) {
       this.$tours["myTour"].stop();
       if (newMode == "onboarding") {
         this.$tours["myTour"].start();
@@ -388,7 +387,7 @@ export default {
       if (newMode == "reviewer") {
         this.generatePreviousCoreferringWorkerTokens();
       }
-    }
+    },
   },
   mounted() {
     if (this.mode == "onboarding") {
@@ -402,7 +401,7 @@ export default {
     docsOnScreen() {
       // if this needs to be fixed for mechanical turk look at freezing the component hight
       this.clusterBarBottom =
-        this.$refs.documents.offsetHeight > window.innerHeight;
+        this.$refs.documents.offsetHeight + 60 > window.innerHeight;
     },
 
     processInput(e) {
@@ -419,7 +418,7 @@ export default {
           e.preventDefault();
           this.assignMention(e.altKey || e.ctrlKey);
           this.$vuetify.goTo(
-            this.$refs.mentions.filter(s => s.className === "current")[0]
+            this.$refs.mentions.filter((s) => s.className === "current")[0]
           );
           break;
         case 37: // left arrow
@@ -447,7 +446,7 @@ export default {
     },
 
     groupBy(xs, key) {
-      return xs.reduce(function(rv, x) {
+      return xs.reduce(function (rv, x) {
         (rv[x[key]] = rv[x[key]] || []).push(x);
         return rv;
       }, {});
@@ -493,7 +492,7 @@ export default {
         if (this.currentMention.end > newEnd) {
           this.candidateMentions.unshift({
             start: newEnd + 1,
-            end: this.currentMention.end
+            end: this.currentMention.end,
           });
         }
         this.currentMention.start = newStart;
@@ -569,7 +568,21 @@ export default {
         return false;
       }
       if (this.goldMentions[0].clustId != clusterAssignment) {
-        this.notify(this.goldMentions[0].errorMessage);
+        if (
+          this.goldMentions[0].clusterErrorMessages &&
+          clusterAssignment in this.goldMentions[0].clusterErrorMessages
+        ) {
+          this.notify(
+            this.goldMentions[0].clusterErrorMessages[clusterAssignment]
+          );
+        } else if (
+          this.goldMentions[0].errorMessages &&
+          this.goldMentions[0].errorMessages.length > 0
+        ) {
+          this.notify(this.goldMentions[0].errorMessages.shift(0));
+        } else {
+          this.notify(this.goldMentions[0].defaultErrorMessage);
+        }
         return false;
       }
       this.notify(this.goldMentions[0].validMessage);
@@ -585,12 +598,12 @@ export default {
       let tokenClusters = this.groupBy(clusterTokens, "clustId");
       for (let clust in tokenClusters) {
         let prevToken;
-        tokenClusters[clust].forEach(token => {
+        tokenClusters[clust].forEach((token) => {
           if (prevToken != undefined) {
             this.previousCoreferringWorkerTokens[
               token["token"]
             ] = this.previousCoreferringWorkerTokens[prevToken].concat([
-              prevToken
+              prevToken,
             ]);
           } else {
             this.previousCoreferringWorkerTokens[token["token"]] = [];
@@ -602,8 +615,8 @@ export default {
     notify(text) {
       this.snackbarText = text;
       this.snackbar = true;
-    }
-  }
+    },
+  },
 };
 </script>
 

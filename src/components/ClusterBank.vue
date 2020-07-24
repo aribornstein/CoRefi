@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-main>
     <div v-if="mode=='reviewer'" class="d-flex .justify-center">
       <v-chip class="ma-2" disabled label color="white" font-weight="700" text-color="black">
         <strong>Annotator Clusters:</strong>
@@ -32,7 +32,13 @@
       </v-chip-group>
     </div>
     <v-divider v-if="mode=='reviewer'"></v-divider>
-    <v-chip-group active-class="primary--text" mandatory show-arrows v-model="currentCluster">
+
+    <v-chip-group
+      active-class="primary--text"
+      mandatory
+      show-arrows
+      v-model="currentCluster"
+    >
       <v-chip small @click="newCluster">
         <v-icon color="#2d9cdb" dark>mdi-plus</v-icon>
       </v-chip>
@@ -45,7 +51,7 @@
         small
       >{{ cluster.text }}</v-chip>
     </v-chip-group>
-  </div>
+  </v-main>
 </template>
 
 <script>
@@ -57,40 +63,40 @@ export default {
     VDivider,
     VChip,
     VChipGroup,
-    VIcon
+    VIcon,
   },
   props: {
     clusters: Object,
     suggestedReviewerClusters: Set,
     selectedCluster: String,
-    mode: String
+    mode: String,
   },
-  data: function() {
+  data: function () {
     return {
-      currentCluster: { ...this.selectedCluster }
+      currentCluster: { ...this.selectedCluster },
     };
   },
   watch: {
     // whenever question changes, this function will run
-    selectedCluster: function(newCluster) {
+    selectedCluster: function (newCluster) {
       this.currentCluster = newCluster;
-    }
+    },
   },
   methods: {
-    newCluster: function() {
+    newCluster: function () {
       this.$emit("newCluster");
     },
-    candidateSelected: function(cId) {
+    candidateSelected: function (cId) {
       this.$emit("candidateSelected", cId);
-    }
+    },
   },
   computed: {
-    reviewBankClusters: function() {
-      return Object.values(this.clusters).filter(c =>
+    reviewBankClusters: function () {
+      return Object.values(this.clusters).filter((c) =>
         this.suggestedReviewerClusters.has(c.id)
       );
-    }
-  }
+    },
+  },
 };
 </script>
 
