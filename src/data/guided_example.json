@@ -474,14 +474,14 @@
             "start": 4,
             "end": 4,
             "clustId": "4-4",
-            "defaultErrorMessage": "Not quite! The event ''insisted'' was not already mentioned!",
+            "defaultErrorMessage": "Not quite! The event ''insisted'' was not yet mentioned!",
             "validMessage": "Correct!"
         },
         {
             "start": 6,
             "end": 6,
             "clustId": "6-6",
-            "defaultErrorMessage": "That's not quite right! The ''talks'' were not already mentioned in the text.",
+            "defaultErrorMessage": "That's not quite right! The ''talks'' were not yet mentioned in the text.",
             "validMessage": "Correct!"
         },
         {
@@ -506,7 +506,8 @@
             "start": 10,
             "end": 10,
             "clustId": "10-10",
-            "defaultErrorMessage": "Not quite! ''Cambodia'' was not already mentioned!",
+            "errorMessages": ["Not quite! ''Cambodia'' was not yet mentioned!"],
+            "defaultErrorMessage": "You should assign it in a new cluster",
             "validMessage": "Correct!"
         },
         {
@@ -521,9 +522,9 @@
             "end": 13,
             "clustId": "13-13",
             "clusterErrorMessages": {
-                "12-12": "Not quite! The ''leaders'' are not the same as the entire group of ''opposition''."
+                "12-12": "The ''leaders'' are not the same as the entire ''opposition''."
             },
-            "defaultErrorMessage": "Not quite! ''opposition'' was not already mentioned!",
+            "defaultErrorMessage": "The opposition was not yet mentioned!",
             "validMessage": "Correct!"
         },
         {
@@ -533,7 +534,8 @@
             "clusterErrorMessages": {
                 "13-13": "Not quite! Ranaridh is only one of the leaders, it should not corefer with the leaders."
             },
-            "defaultErrorMessage": "Are you sure ? Ranaridth was not already mentioned in the text.",
+            "errorMessages": ["Are you sure ?"],
+            "defaultErrorMessage": "Ranaridh was not already mentioned in the text.",
             "validMessage": "Correct! Note: Ranariddh does not corefer with leaders because Ranariddh is only one of the leaders."
         },
         {
@@ -542,9 +544,10 @@
             "clustId": "16-17",
             "clusterErrorMessages": {
                 "13-13": "Not quite! Sam Rainsy is only one of the leaders, it should not corefer with the leaders.",
-                "14-14": "No! Sam Rainsy is not Ranaridh"
+                "14-14": "Not quite! Sam Rainsy is not Ranaridh"
             },
-            "defaultErrorMessage": "Are you sure ? Sam Rainsy was not already mentioned in the text.",
+            "errorMessages": ["Are you sure ?"],
+            "defaultErrorMessage": "Sam Rainsy was not already mentioned in the text.",
             "validMessage": "Correct! Note: Sam Rainsy does not corefer with leaders because he is only one of the leaders."
         },
         {
@@ -552,7 +555,7 @@
             "end": 19,
             "clustId": "19-19",
             "errorMessages": ["Does the current mention ''fearing'' belong with the selected cluster?"],
-            "defaultErrorMessage": "Not quite! This was not mentioned in the text so far",
+            "defaultErrorMessage": "Not quite! ''fearing'' was not mentioned in the text so far and therefore should be assigned to a new cluster.",
             "validMessage": "Correct!"
         },
         {
@@ -568,7 +571,7 @@
             "end": 22,
             "clustId": "10-10",
             "clusterErrorMessages": {
-                "22-22": "Think about what do they mean by ''home''. Do they refer to their house or rather the country they live in ? If so, you can find the correct cluster ..."
+                "22-22": "Think about what is meant by ''home'' in the text. Does it refer to a house or a country of origin? If so, you can find the correct cluster ..."
             },
             "defaultErrorMessage": "Hint: this word refers to the country which was already mentioned in the sentence.",
             "validMessage": "Correct! ''home'' here refers to the country Cambodia and not to their living house."
@@ -596,7 +599,7 @@
             "end": 27,
             "clustId": "10-10",
             "clusterErrorMessages": {
-                "2-3": "Not quite ! Even though Hun Sen is Cambodian, here this word do not refer directly to Hun Sen, instead it adds an additional description of Hun Sen."
+                "2-3": "Not quite ! Even though Hun Sen is Cambodian, here Cambodian does not refer directly to Hun Sen, rather it describes him."
             },
             "defaultErrorMessage": "Cambodian is equivalent to ''of Cambodia'' and the country was already mentioned in the previous document.",
             "validMessage": "Correct! Cambodian is equivalent to 'of Cambodia' and therefore belongs in the Cambodia cluster."
@@ -607,7 +610,7 @@
             "clustId": "28-29",
             "clusterErrorMessages": {
                 "2-3": "Remember titles don't corefer with their described entity.",
-                "0-1": "No! Titles do not refer to each other because different people can share the same title."
+                "0-1": "Be careful! Titles do not refer to each other because different people can share the same title."
             },
             "defaultErrorMessage": "Titles do not corefer with any other mentions.",
             "validMessage": "Correct! That was tricky, title do not refer nor to their described entity not to other occurrences of the title."
@@ -623,7 +626,7 @@
             "start": 32,
             "end": 32,
             "clustId": "4-4",
-            "defaultErrorMessage": "Remember that two mentions may corefer (refer to the same thing) even though they have different meanings. In this case, take a look at the insisted cluster.",
+            "defaultErrorMessage": "Remember that two mentions may corefer (refer to the same thing) even though they have different meanings. In this case, take a look at the ''insisted'' cluster.",
             "validMessage": "Correct! That was a very difficult assignment! Even though ''rejects'' and ''insisted'' seem different, they both mean the fact that Hun Sen wanted to maintain these talks in Cambodia and not abroad."
         },
         {
@@ -631,7 +634,7 @@
             "end": 33,
             "clustId": "23-23",
             "clusterErrorMessages": {
-                "33-33": "Not quite! This was already mentioned in the first document."
+                "33-33": "Not quite! Their demands were already mentioned in the first document.."
             },
             "defaultErrorMessage": "Not quite! Their demands can be expressed using different form, look at the end of the first document.",
             "validMessage": "This was a very tricky decision. The same wish of Ranaridh and Rainsy to make the talks abroad is expressed in the two documents using different form and words (''wanted'' and ''demands''), but they do refer to the same thing."
@@ -649,7 +652,7 @@
             "clustId": "37-37",
             "clusterErrorMessages": {
                 "12-12": "Not quite! The parties constitute the opposition but they do not refer to the opposition.",
-                "13-13": "No! The leaders are some individual persons while the parties are a group of politicians."
+                "13-13": "Be careful, the leaders are some individual persons while the parties are a group of politicians."
             },
             "defaultErrorMessage": "Not quite! Maybe it's the first time the parties are written in the documents ...",
             "validMessage": "Correct! Note that ''opposition'' and ''parties'' do not refer to the same entity and therefore do not corefer."
