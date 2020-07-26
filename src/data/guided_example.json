@@ -418,10 +418,6 @@
         },
         {
             "start": 28,
-            "end": 28
-        },
-        {
-            "start": 29,
             "end": 29
         },
         {
@@ -453,201 +449,227 @@
             "end": 41
         }
     ],
-    "selectedCluster": "0-0",
+    "selectedCluster": "0-1",
     "viewedMentions": [
         {
             "start": 0,
-            "end": 0,
-            "clustId": "0-0"
+            "end": 1,
+            "clustId": "0-1"
         }
     ],
     "currentMention": {
-        "start": 1,
-        "end": 1
+        "start": 2,
+        "end": 2
     },
     "goldMentions": [
-        {
-            "start": 1,
-            "end": 1,
-            "clustId": "1-1",
-            "defaultErrorMessage": "Titles do not corefer with one another.",
-            "validMessage": "Great work! It's important to remeber that titles do not corefer with one another"
-        },
         {
             "start": 2,
             "end": 3,
             "clustId": "2-3",
-            "fixSpanMessage":"Hun Sen is a named entity please select the full span and press the F key before assigning the current mention.",
-            "defaultErrorMessage": "Remember titles don't corefer with their described entity.",
-            "validMessage": "Nice Job!"
+            "fixSpanMessage":"Hun Sen is a named entity, please select the full span and press the F key before assigning the current mention.",
+            "defaultErrorMessage": "Titles (''Prime Minister'') don't corefer with their described entity (''Hun Sen''), it should be a new cluster.",
+            "validMessage": "Correct Assignment! Titles do not corefer with their titled entities."
         },
         {
             "start": 4,
             "end": 4,
             "clustId": "4-4",
-            "defaultErrorMessage": "Does the current mention 'insisted' corefer with any of the existing clusters?",
-            "validMessage": "You're getting the hang of this!"
+            "defaultErrorMessage": "Not quite! The event ''insisted'' was not yet mentioned!",
+            "validMessage": "Correct!"
         },
         {
             "start": 6,
             "end": 6,
             "clustId": "6-6",
-            "defaultErrorMessage": "That's not quite right!",
-            "validMessage": "Great work!"
+            "defaultErrorMessage": "That's not quite right! The ''talks'' were not yet mentioned in the text.",
+            "validMessage": "Correct!"
         },
         {
             "start": 7,
             "end": 7,
             "clustId": "7-7",
-            "fixSpanMessage":"Multiword expressions are represented by their root mention.",
-            "defaultErrorMessage": "Does the mention 'talks' share the same meaning in the described scenario as the selected cluster?",
-            "validMessage": "Way to go!"
+            "clusterErrorMessages": {
+                "6-6": "Not quite! There is a difference between the ''talks'' and the fact they ''take place'', they shouldn't be in the same cluster."
+            },
+            "fixSpanMessage":"Multiword expressions are represented by their head mention, in this case it's the word ''take''.",
+            "defaultErrorMessage": "That's not quite right! This should be a new cluster",
+            "validMessage": "Correct!"
         },
         {
             "start": 8,
             "end": 8,
             "clustId": "8-8",
-            "defaultErrorMessage": "Multiword expressions are represented by their root mention.",
-            "validMessage": "Great work! Remeber that multiword expressions are represented by their root mention. In this case, the root mention of the multi word expression 'take place' is take."
+            "defaultErrorMessage": "Multiword expressions (e.g take place, take over, open fire) are represented by their head mention, all other words should be ignored, so ''place'' needs to be in its own cluster.",
+            "validMessage": "Correct! Remember that multiword expressions are represented only by their head word. In this case, the head of the multi word expression ''take place'' is take."
         },
         {
             "start": 10,
             "end": 10,
             "clustId": "10-10",
-            "defaultErrorMessage": "Does the current mention belong to an existing cluster?",
-            "validMessage": "Nice!"
+            "errorMessages": ["Not quite! ''Cambodia'' was not yet mentioned!"],
+            "defaultErrorMessage": "You should assign it in a new cluster",
+            "validMessage": "Correct!"
         },
         {
             "start": 12,
             "end": 12,
             "clustId": "12-12",
-            "defaultErrorMessage": "Does the current mention belong to an existing cluster?",
-            "validMessage": "Perfect!"
+            "defaultErrorMessage": "Not quite! ''opposition'' was not already mentioned!",
+            "validMessage": "Correct!"
         },
         {
             "start": 13,
             "end": 13,
             "clustId": "13-13",
-            "defaultErrorMessage": "Thats not quite right",
-            "validMessage": "Amazing!"
+            "clusterErrorMessages": {
+                "12-12": "The ''leaders'' are not the same as the entire ''opposition''."
+            },
+            "defaultErrorMessage": "The opposition was not yet mentioned!",
+            "validMessage": "Correct!"
         },
         {
             "start": 14,
             "end": 14,
             "clustId": "14-14",
-            "defaultErrorMessage": "Is that where Ranariddh belongs?",
-            "validMessage": "Great work! Note: Ranariddh does not corefer with leaders because Ranariddh is only one of the leaders."
+            "clusterErrorMessages": {
+                "13-13": "Not quite! Ranaridh is only one of the leaders, it should not corefer with the leaders."
+            },
+            "errorMessages": ["Are you sure ?"],
+            "defaultErrorMessage": "Ranaridh was not already mentioned in the text.",
+            "validMessage": "Correct! Note: Ranariddh does not corefer with leaders because Ranariddh is only one of the leaders."
         },
         {
             "start": 16,
             "end": 17,
             "clustId": "16-17",
-            "defaultErrorMessage": "Is that where Sam Rainsy belongs?",
-            "validMessage": "Great job! Note: Sam Rainsy does not corefer with leaders because Sam Rainsy is only one of the leaders."
+            "clusterErrorMessages": {
+                "13-13": "Not quite! Sam Rainsy is only one of the leaders, it should not corefer with the leaders.",
+                "14-14": "Not quite! Sam Rainsy is not Ranaridh"
+            },
+            "errorMessages": ["Are you sure ?"],
+            "defaultErrorMessage": "Sam Rainsy was not already mentioned in the text.",
+            "validMessage": "Correct! Note: Sam Rainsy does not corefer with leaders because he is only one of the leaders."
         },
         {
             "start": 19,
             "end": 19,
             "clustId": "19-19",
-            "defaultErrorMessage": "Does the current mention fearing belong with the selected cluster?",
-            "validMessage": "Pefect!"
+            "errorMessages": ["Does the current mention ''fearing'' belong with the selected cluster?"],
+            "defaultErrorMessage": "Not quite! ''fearing'' was not mentioned in the text so far and therefore should be assigned to a new cluster.",
+            "validMessage": "Correct!"
         },
         {
             "start": 20,
             "end": 20,
             "clustId": "20-20",
-            "defaultErrorMessage": "That's not quite right.",
-            "validMessage": "Great work!"
+            "errorMessages": ["Does the current mention ''fearing'' belong with the selected cluster?"],
+            "defaultErrorMessage": "Not quite! This was not mentioned in the text so far",
+            "validMessage": "Correct!"
         },
         {
             "start": 22,
             "end": 22,
             "clustId": "10-10",
-            "defaultErrorMessage": "What does the current mention home refer to?",
-            "validMessage": "Awesome work you made your first coreference assignment!"
+            "clusterErrorMessages": {
+                "22-22": "Think about what is meant by ''home'' in the text. Does it refer to a house or a country of origin? If so, you can find the correct cluster ..."
+            },
+            "defaultErrorMessage": "Hint: this word refers to the country which was already mentioned in the sentence.",
+            "validMessage": "Correct! ''home'' here refers to the country Cambodia and not to their living house."
         },
         {
             "start": 23,
             "end": 23,
             "clustId": "23-23",
-            "defaultErrorMessage": "Does the current mention wanted belong in the selected cluster?",
-            "validMessage": "You're a star!"
+            "defaultErrorMessage": "Not quite! This was not mentioned in the text so far",
+            "validMessage": "Correct!"
         },
         {
             "start": 24,
             "end": 24,
             "clustId": "6-6",
-            "defaultErrorMessage": "Which cluster does the current mention 'them' refer to?",
-            "validMessage": "Great work!"
+            "clusterErrorMessages": {
+                "13-13": "Not quite! The leaders do not want to be abroad, they want something to happen abroad, which word do they refer to ?",
+                "24-24": "Not quite! This is not a new cluster, the actual object was already mentioned in the text."
+            },
+            "defaultErrorMessage": "Not quite! Hint: can you replace it with the word ''talks'' that appears just before ?",
+            "validMessage": "Correct!"
         },
         {
             "start": 27,
             "end": 27,
             "clustId": "10-10",
-            "defaultErrorMessage": "Can you think of a different way of expressing Camboidian?",
-            "validMessage": "Great work! Cambodian is equivlent to 'of Camboida' and therefore belongs in the Cambodia cluster"        },
-        {
-            "start": 28,
-            "end": 28,
-            "clustId": "28-28",
-            "defaultErrorMessage": "Remember titles don't corefer with their described entity.",
-            "validMessage": "Great work! That was tricky you should always be careful about assigning titles correctly."
+            "clusterErrorMessages": {
+                "2-3": "Not quite ! Even though Hun Sen is Cambodian, here Cambodian does not refer directly to Hun Sen, rather it describes him."
+            },
+            "defaultErrorMessage": "Cambodian is equivalent to ''of Cambodia'' and the country was already mentioned in the previous document.",
+            "validMessage": "Correct! Cambodian is equivalent to 'of Cambodia' and therefore belongs in the Cambodia cluster."
         },
         {
-            "start": 29,
+            "start": 28,
             "end": 29,
-            "clustId": "29-29",
-            "defaultErrorMessage": "Remember that titles do not corefer!",
-            "validMessage": "Nice work! That was a tricky assignment."
+            "clustId": "28-29",
+            "clusterErrorMessages": {
+                "2-3": "Remember titles don't corefer with their described entity.",
+                "0-1": "Be careful! Titles do not refer to each other because different people can share the same title."
+            },
+            "defaultErrorMessage": "Titles do not corefer with any other mentions.",
+            "validMessage": "Correct! That was tricky, title do not refer nor to their described entity not to other occurrences of the title."
         },
         {
             "start": 30,
             "end": 31,
             "clustId": "2-3",
-            "defaultErrorMessage": "There is already a cluster for this mention, can you find it?",
-            "validMessage": "Perfect!"
+            "defaultErrorMessage": "There is already a cluster for this person, can you find it?",
+            "validMessage": "Correct!"
         },
         {
             "start": 32,
             "end": 32,
             "clustId": "4-4",
-            "defaultErrorMessage": "Two mentions may corefer even though they seemingly have two completly different meanings if they refer to the same event or action in the described scenario. In this case take a look at the insisted cluster.",
-            "validMessage": "That was a very difficult assignment! Even though 'rejects' and 'insisted' seem different they both refer to the same action the described scenario. Keep an eye out for cases like this!"
+            "defaultErrorMessage": "Remember that two mentions may corefer (refer to the same thing) even though they have different meanings. In this case, take a look at the ''insisted'' cluster.",
+            "validMessage": "Correct! That was a very difficult assignment! Even though ''rejects'' and ''insisted'' seem different, they both mean the fact that Hun Sen wanted to maintain these talks in Cambodia and not abroad."
         },
         {
             "start": 33,
             "end": 33,
             "clustId": "23-23",
-            "defaultErrorMessage": "Two mentions may corefer even though they seemingly have two completly different meanings if they refer to the same event or action in the described scenario.",
-            "validMessage": "This was a very tricky decison. Even though 'wanted' and 'demands' are expressed differently they both refer to the same action the described scenario. Keep an eye out for cases like this!"
+            "clusterErrorMessages": {
+                "33-33": "Not quite! Their demands were already mentioned in the first document.."
+            },
+            "defaultErrorMessage": "Not quite! Their demands can be expressed using different form, look at the end of the first document.",
+            "validMessage": "This was a very tricky decision. The same wish of Ranaridh and Rainsy to make the talks abroad is expressed in the two documents using different form and words (''wanted'' and ''demands''), but they do refer to the same thing."
         },
         {
             "start": 36,
             "end": 36,
             "clustId": "12-12",
             "defaultErrorMessage": "Are you sure this mention belongs there?",
-            "validMessage": "Amazing work!"
+            "validMessage": "Correct!"
         },
         {
             "start": 37,
             "end": 37,
             "clustId": "37-37",
-            "defaultErrorMessage": "Words may seem to be similar but not corefer in the described scenario.",
-            "validMessage": "Great job! Note that 'leaders' and 'parties' do not share the same meaning in the described scenario and therefore do not corefer."
+            "clusterErrorMessages": {
+                "12-12": "Not quite! The parties constitute the opposition but they do not refer to the opposition.",
+                "13-13": "Be careful, the leaders are some individual persons while the parties are a group of politicians."
+            },
+            "defaultErrorMessage": "Not quite! Maybe it's the first time the parties are written in the documents ...",
+            "validMessage": "Correct! Note that ''opposition'' and ''parties'' do not refer to the same entity and therefore do not corefer."
         },
         {
             "start": 39,
             "end": 39,
             "clustId": "6-6",
-            "defaultErrorMessage": "Is that were the current mention belongs?",
-            "validMessage": "Perfect!"
+            "defaultErrorMessage": "There is already a cluster for the opposition, can you find it?",
+            "validMessage": "Correct!"
         },
         {
             "start": 41,
             "end": 41,
             "clustId": "41-41",
             "defaultErrorMessage": "That's not quite right!",
-            "validMessage": "There is no way from the described text to deterimne that Beijing and abroad have the same meaning therefore they do corefer!"
+            "validMessage": "Correct!"
         }
     ],
     "tourSteps": [],
