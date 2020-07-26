@@ -35,7 +35,6 @@
       ></v-img>
       <v-spacer />
       Mention: {{ viewedMentions.length }}/{{ viewedMentions.length + candidateMentions.length }} Document: {{ parseInt(currentDocument) }}
-      <!-- <span>--</span> -->
     </v-system-bar>
     <v-main>
       <v-container ref="documents" v-mutate="docsOnScreen" style="max-width:850px" fluid>
@@ -126,6 +125,7 @@ import Vue from "vue";
 import Vuetify from "vuetify/lib";
 import {
   VApp,
+  VMain,
   VDivider,
   VBtn,
   VLayout,
@@ -139,6 +139,9 @@ import {
   VDialog,
   VCard,
   VCardTitle,
+  VCardText,
+  VCardActions,
+  Mutate,
 } from "vuetify/lib";
 
 Vue.use(Vuetify);
@@ -156,6 +159,7 @@ export default {
   VueTour,
   components: {
     VApp,
+    VMain,
     VDivider,
     VBtn,
     VLayout,
@@ -169,7 +173,12 @@ export default {
     VDialog,
     VCard,
     VCardTitle,
+    VCardText,
+    VCardActions,
     ClusterBank,
+  },
+  directives: {
+    Mutate,
   },
   props: {
     json: {
@@ -388,6 +397,13 @@ export default {
         this.generatePreviousCoreferringWorkerTokens();
       }
     },
+    clusterBarBottom: function (isBottom) {
+      if (isBottom) {
+        this.$refs.documents.style.marginBottom = "100px";
+      } else {
+        this.$refs.documents.style.marginBottom = "0px";
+      }
+    },
   },
   mounted() {
     if (this.mode == "onboarding") {
@@ -401,7 +417,7 @@ export default {
     docsOnScreen() {
       // if this needs to be fixed for mechanical turk look at freezing the component hight
       this.clusterBarBottom =
-        this.$refs.documents.offsetHeight + 60 > window.innerHeight;
+        this.$refs.documents.offsetHeight + 100 > window.innerHeight;
     },
 
     processInput(e) {
