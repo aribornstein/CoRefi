@@ -211,6 +211,13 @@
         {
             "target": ".current",
             "header": {
+                "title": "Help and Controls"
+            },
+            "content": "If you ever forget any of the controls all of CoRefi's functionality can be found in the help menu. Just click on the blue <span style='color:blue'> '?'</span> in the bottom left of the screen."
+        },
+        {
+            "target": ".current",
+            "header": {
                 "title": "Finish The Annotation"
             },
             "content": "Now using what you've learned assign the remaining mentions to the correct clusters until they are all assigned. Don't worry if you make mistakes you'll be guided to the correct answers."
