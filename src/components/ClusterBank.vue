@@ -55,11 +55,12 @@
 </template>
 
 <script>
-import { VDivider, VChip, VChipGroup, VIcon } from "vuetify/lib";
+import { VMain, VDivider, VChip, VChipGroup, VIcon } from "vuetify/lib";
 
 export default {
   name: "ClusterBank",
   components: {
+    VMain,
     VDivider,
     VChip,
     VChipGroup,
