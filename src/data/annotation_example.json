@@ -1,5 +1,7 @@
 {
     "mode": "annotation",
+    "fixableSpans": true,
+    "newMentions": true,
     "tokens": [
         {
             "i": 0,
@@ -3129,7 +3131,8 @@
         {
             "start": 0,
             "end": 2,
-            "clustId": "0-2"
+            "clustId": "0-2",
+            "viewed":true
         }
     ],
     "currentMention": {

@@ -34,7 +34,7 @@
         contain
       ></v-img>
       <v-spacer />
-      Mention: {{ viewedMentions.length }}/{{ viewedMentions.length + candidateMentions.length }} Document: {{ parseInt(currentDocument) }}
+      Mention: {{ curMentionIndex + 1 }}/{{ mentions.length}} Document: {{ parseInt(curDocument) }}
     </v-system-bar>
     <v-main>
       <v-container ref="documents" v-mutate="docsOnScreen" style="max-width:850px" fluid>
@@ -104,7 +104,6 @@
       <v-btn id="help" @click.stop="help = true" fab dark small icon color="blue">
         <v-icon>mdi-help</v-icon>
       </v-btn>
-
       <ClusterBank
         v-if="clusterBarBottom"
         :clusters="clusters"
@@ -119,8 +118,7 @@
 </template>
 
 <script>
-import jsonData from "./data/onboarding_example.json";
-
+import jsonData from "./data/annotation_example.json";
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
 import {
@@ -192,6 +190,13 @@ export default {
         ? jsonData
         : JSON.parse(unescape(this.json).replace("\u00e2\u20ac\u2122", "'"));
     data.tourSteps = !data.tourSteps ? [] : data.tourSteps; // if not created
+    data.mentions = [
+      ...data.viewedMentions,
+      data.currentMention,
+      ...data.candidateMentions,
+    ];
+    data.curMentionIndex = 1;
+    data.mentionsViewed = 1;
     data.snackbar = false;
     data.snackbarText = "";
     data.snackbarTimeout = 2000;
@@ -212,23 +217,28 @@ export default {
       return documents;
     },
 
-    currentDocument: function () {
-      return this.tokens[this.currentMention.start].document;
+    curMention: function () {
+      return this.mentions[this.curMentionIndex];
+    },
+
+    curDocument: function () {
+      return this.tokens[this.curMention.start].document;
+    },
+
+    assignedMentions: function () {
+      return this.mentions.slice(0, this.mentionsViewed);
     },
 
     documentsViewed: function () {
       return this.tokens[
-        this.viewedMentions[this.viewedMentions.length - 1].start
+        this.assignedMentions[this.assignedMentions.length - 1].start
       ].document;
     },
 
     tokens2Cluster: function () {
-      let tokens2Cluster = {},
-        mentions = this.viewedMentions
-          .concat([this.currentMention])
-          .concat(this.candidateMentions);
+      let tokens2Cluster = {};
 
-      mentions.forEach((mention) => {
+      this.mentions.forEach((mention) => {
         for (let i = mention.start; i <= mention.end; i++) {
           tokens2Cluster[i] = mention.clustId;
         }
@@ -242,12 +252,8 @@ export default {
         return new Set();
       }
       const coreferingTokens = new Set(),
-        suggestedClusters = new Set([this.currentMention.clustId]);
-      for (
-        let i = this.currentMention.start;
-        i <= this.currentMention.end;
-        i++
-      ) {
+        suggestedClusters = new Set([this.curMention.clustId]);
+      for (let i = this.curMention.start; i <= this.curMention.end; i++) {
         if (this.previousCoreferringWorkerTokens[i] != undefined) {
           this.previousCoreferringWorkerTokens[i].forEach((token) => {
             coreferingTokens.add(this.tokens2Cluster[token]);
@@ -261,7 +267,7 @@ export default {
     },
 
     clusters: function () {
-      let clusters = this.groupBy(this.viewedMentions, "clustId");
+      let clusters = this.groupBy(this.assignedMentions, "clustId");
       for (var clustId in clusters) {
         let clustSpan = clustId.split("-");
         clusters[clustId] = {
@@ -283,95 +289,48 @@ export default {
       return this.clusterIds.findIndex((cId) => cId == this.selectedCluster);
     },
 
-    viewedMentionIndex: function () {
-      for (
-        let mentionIndex = 0;
-        mentionIndex < this.viewedMentions.length;
-        mentionIndex++
-      ) {
-        if (
-          this.viewedMentions[mentionIndex].start == this.currentMention.start
-        ) {
-          return mentionIndex;
-        }
-      }
-      return false;
-    },
-
     docsViewModel: function () {
-      let documentSpans = [];
+      let documentSpans = [],
+        mentInd = 0;
+
       // For each doc up to the current doc
       for (let [doc_id, doc] of Object.entries(this.documents)) {
         const spans = [];
-        let tokInd = doc.start,
-          docViewedMentions = this.viewedMentions.filter(
-            (m) => m.start >= doc.start && m.end <= doc.end
-          );
-
-        //process viewedMentions
-        docViewedMentions.forEach((viewedMention) => {
-          let viewedIndex = this.viewedMentions.findIndex(
-            (m) => m.start == viewedMention.start
-          );
-          while (tokInd < viewedMention.start) {
-            spans.push(this.tokens[tokInd]);
-            tokInd++;
-          }
-          let mentionSpan = {
-            tokens: this.tokens.slice(
-              viewedMention.start,
-              viewedMention.end + 1
-            ),
-            clustId: viewedMention.clustId,
-            class:
-              viewedMention.clustId == this.selectedCluster
-                ? "cluster"
-                : "viewed",
-            viewedIndex: viewedIndex,
-          };
-
-          if (
-            this.viewedMentionIndex &&
-            this.viewedMentions[this.viewedMentionIndex].start ==
-              viewedMention.start
-          ) {
-            mentionSpan["class"] = "current";
-          }
-          spans.push(mentionSpan);
-          tokInd = viewedMention.end + 1;
-        });
-
-        if (
-          this.currentMention.start >= doc.start &&
-          this.currentMention.end <= doc.end &&
-          !this.viewedMentionIndex
-        ) {
-          // add tokens between last viewed mention and current mention start
-          while (tokInd < this.currentMention.start) {
-            spans.push(this.tokens[tokInd]);
-            tokInd++;
-          }
-          // add current mention span
-          const mentionSpan = {
-            tokens: this.tokens.slice(
-              this.currentMention.start,
-              this.currentMention.end + 1
-            ),
-            class: "current",
-          };
-          spans.push(mentionSpan);
-          tokInd = this.currentMention.end + 1;
-        }
-        // add remaining doc tokens
+        let tokInd = doc.start;
         while (tokInd <= doc.end) {
-          spans.push(this.tokens[tokInd]);
-          tokInd++;
+          if (tokInd == this.mentions[mentInd].start) {
+            // process mention
+            let mentionSpan = {
+              tokens: this.tokens.slice(
+                this.mentions[mentInd].start,
+                this.mentions[mentInd].end + 1
+              ),
+              index: mentInd
+            };
+            // mention type
+            if (mentInd == this.curMentionIndex) {
+              mentionSpan.class = "current";
+            } else if (this.mentions[mentInd].clustId == this.selectedCluster) {
+              mentionSpan.class = "cluster";
+            } else {
+              mentionSpan.class = "viewed";
+            }
+            spans.push(mentionSpan);
+            // increment indexes
+            tokInd += mentionSpan.tokens.length;
+            if (mentInd < this.mentionsViewed) {
+              mentInd += 1;
+            }
+          } else {
+            spans.push(this.tokens[tokInd]);
+            tokInd += 1;
+          }
         }
-        documentSpans.push({
-          class: doc_id == this.currentDocument ? "" : "other-document",
-          docSpans: spans,
-        });
-        if (doc_id == Math.max(this.documentsViewed, this.currentDocument)) {
+        //process document type
+        if (doc_id != this.curDocument) {
+          documentSpans.push({ class: "other-document", docSpans: spans });
+        } else {
+          documentSpans.push({ class: "", docSpans: spans });
           break;
         }
       }
@@ -414,6 +373,13 @@ export default {
     }
   },
   methods: {
+    groupBy(xs, key) {
+      return xs.reduce(function (rv, x) {
+        (rv[x[key]] = rv[x[key]] || []).push(x);
+        return rv;
+      }, {});
+    },
+
     docsOnScreen() {
       // if this needs to be fixed for mechanical turk look at freezing the component hight
       this.clusterBarBottom =
@@ -430,6 +396,12 @@ export default {
             this.fixSpan();
           }
           break;
+        case 78: //N
+          if (!(e.altKey || e.ctrlKey) && this.newMentions) {
+            e.preventDefault();
+            this.newMention();
+          }
+          break;        
         case 32: // space
           e.preventDefault();
           this.assignMention(e.altKey || e.ctrlKey);
@@ -450,70 +422,85 @@ export default {
     viewedMentionClicked(e, mention) {
       if (e.altKey || e.ctrlKey) {
         e.preventDefault();
-        if (
-          mention.viewedIndex &&
-          (this.mode == "annotation" || this.mode == "reviewer")
-        ) {
-          this.reassignMention(mention.viewedIndex);
+        if (this.mode == "annotation" || this.mode == "reviewer") {
+          this.reassignMention(mention.index);
         }
       } else {
-        this.selectCluster(mention.clustId);
+        if (mention.index && mention.index != this.curMentionIndex){
+            this.selectCluster(this.mentions[mention.index].clustId);
+        }
       }
     },
 
-    groupBy(xs, key) {
-      return xs.reduce(function (rv, x) {
-        (rv[x[key]] = rv[x[key]] || []).push(x);
-        return rv;
-      }, {});
-    },
-
-    fixSpan() {
+    getSelection() {
       let sel = document
           .getElementsByTagName("co-refi")[0]
           .shadowRoot.getSelection(), //super hacky but works
-        newStart = sel.getRangeAt(0).startContainer.parentNode.id,
-        newEnd = sel.getRangeAt(0).endContainer.parentNode.id;
-
-      if (newStart.startsWith("token-") && newEnd.startsWith("token-")) {
-        //extract token index
-        newStart = Math.max(
-          this.viewedMentions[this.viewedMentions.length - 1].end + 1,
-          parseInt(newStart.replace("token-", ""))
+        start = parseInt(
+          sel.getRangeAt(0).startContainer.parentNode.id.replace("token-", "")
+        ),
+        end = parseInt(
+          sel.getRangeAt(0).endContainer.parentNode.id.replace("token-", "")
         );
-        newEnd = parseInt(newEnd.replace("token-", ""));
-        if (
-          newStart > this.currentMention.end ||
-          newEnd < this.currentMention.start
-        ) {
-          return; // if new mention span doesn't overlap with current mention
-        }
+      return [start, end];
+    },
 
-        // pop remaining fully covered mentions
-        while (
-          this.candidateMentions.length > 0 &&
-          this.candidateMentions[0].end <= newEnd
-        ) {
-          this.candidateMentions.shift();
-        }
+    fixSpan() {
+      let [newStart, newEnd] = this.getSelection();
 
-        // If next mention partly covered - split it
-        if (
-          this.candidateMentions.length > 0 &&
-          this.candidateMentions[0].start <= newEnd
-        ) {
-          this.candidateMentions[0].start = newEnd + 1;
-        }
-        // If the current mention span is longer than the new end split the mention
-        if (this.currentMention.end > newEnd) {
-          this.candidateMentions.unshift({
-            start: newEnd + 1,
-            end: this.currentMention.end,
-          });
-        }
-        this.currentMention.start = newStart;
-        this.currentMention.end = newEnd;
+      if (this.curMentionIndex > 0 && newStart <= this.mentions[this.curMentionIndex - 1].end){
+          newStart = this.mentions[this.curMentionIndex - 1].end + 1;
+      } 
+
+      if (newStart > this.curMention.end || newEnd < this.curMention.start) {
+        return; // if new mention span doesn't overlap with current mention
       }
+
+      // filter fully covered mentions
+      this.mentions = this.mentions.filter(
+        (m, m_ind) =>
+          !(
+            m.start >= newStart &&
+            m.end <= newEnd &&
+            m_ind != this.curMentionIndex
+          )
+      );
+      // If new mention partly covered update start of next mention
+      if (
+        this.curMentionIndex < this.mentions.length &&
+        newEnd > this.mentions[this.curMentionIndex + 1].start
+      ) {
+        this.mentions[this.curMentionIndex + 1].start = newEnd + 1;
+      }
+
+      // If the current mention span is longer than the new end split the mention
+      if (this.curMention.end > newEnd) {
+        let newMention = {...this.curMention};
+        newMention.start = newEnd + 1;
+        this.mentions.splice(this.curMentionIndex + 1, 0, newMention);
+      }
+
+      this.mentions[this.curMentionIndex].start = newStart;
+      this.mentions[this.curMentionIndex].end = newEnd;
+    },
+
+    newMention() {
+       let [newStart, newEnd] = this.getSelection();
+       if ( !this.mentions.includes(m=> m.start <= newEnd && newStart <= m.end)){
+        const insertionIndex = this.mentions.length - this.mentions.slice().reverse().findIndex(m => m.start < newStart);
+        if (this.mentionsViewed >= insertionIndex) {
+          let newMention = {
+            start:newStart,
+            end:newEnd
+          };
+          this.mentions.splice(insertionIndex, 0, newMention);
+          this.curMentionIndex = insertionIndex;
+        }
+      }   
+    },
+
+    selectCluster(clustId) {
+      this.selectedCluster = clustId;
     },
 
     nextCluster() {
@@ -532,23 +519,13 @@ export default {
       );
     },
 
-    reassignMention(viewedIndex) {
-      if (
-        this.currentMention.start >
-        this.viewedMentions[this.viewedMentions.length - 1].start
-      ) {
-        this.candidateMentions.unshift(this.currentMention);
-      }
-      this.currentMention = this.viewedMentions[viewedIndex];
-    },
-
-    selectCluster(clustId) {
-      this.selectedCluster = clustId;
+    reassignMention(index) {
+      this.curMentionIndex = index;
     },
 
     assignMention(isNewCluster) {
       let clusterAssignment = isNewCluster
-        ? this.currentMention.start + "-" + this.currentMention.end
+        ? this.curMention.start + "-" + this.curMention.end
         : this.selectedCluster;
 
       if (
@@ -558,27 +535,17 @@ export default {
         return;
       }
 
-      this.currentMention.clustId = clusterAssignment;
-      // prevent duplicate mentions
-      if (this.viewedMentionIndex) {
-        this.viewedMentions.splice(
-          this.viewedMentionIndex,
-          1,
-          this.currentMention
-        );
-      } else {
-        this.viewedMentions.push(this.currentMention);
+      this.mentions[this.curMentionIndex].clustId = clusterAssignment;
+      if (this.curMentionIndex == this.mentionsViewed) {
+        this.mentionsViewed += 1;
       }
-
-      if (this.candidateMentions.length) {
-        this.currentMention = this.candidateMentions.shift();
-      }
+      this.curMentionIndex = this.mentionsViewed;
     },
 
     isValidAssignment(clusterAssignment) {
       if (
-        this.goldMentions[0].start != this.currentMention.start ||
-        this.goldMentions[0].end != this.currentMention.end
+        this.goldMentions[0].start != this.curMention.start ||
+        this.goldMentions[0].end != this.curMention.end
       ) {
         this.notify(this.goldMentions[0].fixSpanMessage);
         return false;
@@ -628,6 +595,7 @@ export default {
         });
       }
     },
+
     notify(text) {
       this.snackbarText = text;
       this.snackbar = true;
