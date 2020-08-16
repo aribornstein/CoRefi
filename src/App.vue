@@ -120,7 +120,7 @@
 </template>
 
 <script>
-import jsonData from "./data/annotation_example.json";
+import jsonData from "./data/onboarding_example.json";
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
 import {
@@ -192,11 +192,6 @@ export default {
         ? jsonData
         : JSON.parse(unescape(this.json).replace("\u00e2\u20ac\u2122", "'"));
     data.tourSteps = !data.tourSteps ? [] : data.tourSteps; // if not created
-    data.mentions = [
-      ...data.viewedMentions,
-      data.currentMention,
-      ...data.candidateMentions,
-    ];
     data.curMentionIndex = 1;
     data.mentionsViewed = 1;
     data.snackbar = false;
@@ -424,10 +419,8 @@ export default {
     viewedMentionClicked(e, mention) {
       if (e.altKey || e.ctrlKey) {
         e.preventDefault();
-        if (this.mode == "annotation" || this.mode == "reviewer") {
+        if (this.reassignable) {
           this.reassignMention(mention.index);
-        } else {
-          // check if the mention is previous mention 
         }
       } else {
         if (mention.index && mention.index != this.curMentionIndex){
@@ -488,11 +481,30 @@ export default {
       this.mentions[this.curMentionIndex].end = newEnd;
     },
 
+    validateInsertion(newStart, newEnd){
+      /*
+      If mention is valid returns insertion index otherwise returns -1 
+      */
+      if (this.mode == "onboarding" && (
+          this.goldMentions[0].start != newStart ||
+          this.goldMentions[0].end != newEnd)){
+          return -1;
+      }
+      
+      if ( !this.mentions.includes(m=> m.start <= newEnd && newStart <= m.end)){
+        const insertionIndex = this.mentions.length - this.mentions.slice().reverse().findIndex(m => m.start < newStart);
+        if (this.mentionsViewed >= insertionIndex) {
+          return insertionIndex;
+        }
+      }
+      return -1;
+    },
+
     newMention() {
        let [newStart, newEnd] = this.getSelection();
        if ( !this.mentions.includes(m=> m.start <= newEnd && newStart <= m.end)){
-        const insertionIndex = this.mentions.length - this.mentions.slice().reverse().findIndex(m => m.start < newStart);
-        if (this.mentionsViewed >= insertionIndex) {
+        const insertionIndex = this.validateInsertion(newStart, newEnd);
+        if (insertionIndex > -1) {
           let newMention = {
             start:newStart,
             end:newEnd
@@ -551,11 +563,19 @@ export default {
     },
 
     isValidAssignment(clusterAssignment) {
+      // don't validate ressignments 
+      if (this.curMentionIndex != this.mentionsViewed){
+        return true;
+      }
       if (
         this.goldMentions[0].start != this.curMention.start ||
         this.goldMentions[0].end != this.curMention.end
       ) {
-        this.notify(this.goldMentions[0].fixSpanMessage);
+        if (this.goldMentions[0].insertionErrorMessage){
+          this.notify(this.goldMentions[0].insertionErrorMessage);
+        } else {
+          this.notify(this.goldMentions[0].fixSpanMessage);
+        }
         return false;
       }
       if (this.goldMentions[0].clustId != clusterAssignment) {

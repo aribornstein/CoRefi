@@ -2,6 +2,7 @@
     "mode": "annotation",
     "fixableSpans": true,
     "newMentions": true,
+    "reassignable":true,
     "tokens": [
         {
             "i": 0,
@@ -2512,7 +2513,16 @@
             "text": "."
         }
     ],
-    "candidateMentions": [
+    "mentions": [
+        {
+            "start": 0,
+            "end": 2,
+            "clustId": "0-2"
+        },
+        {
+            "start": 3,
+            "end": 3
+        },
         {
             "start": 5,
             "end": 5
@@ -3126,17 +3136,6 @@
             "end": 416
         }
     ],
-    "selectedCluster": "0-2",
-    "viewedMentions": [
-        {
-            "start": 0,
-            "end": 2,
-            "clustId": "0-2",
-            "viewed":true
-        }
-    ],
-    "currentMention": {
-        "start": 3,
-        "end": 3
-    }
+    "selectedCluster": "0-2"
+ 
 }
