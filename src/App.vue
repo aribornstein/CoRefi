@@ -17,6 +17,8 @@
             <li>Assign Mention to New Cluster: Ctrl + SPACE (Windows) or Alt + SPACE (MacOS)</li>
             <li>Select Cluster: Click on a previously assigned mention or use the ↔ keys on the keyboard</li>
             <li>Select Mention to Reassign: Ctrl + Click (Windows) or Alt + Click (MacOS) the mention</li>
+            <li>Fix Mention Span: Highlight the correct mention span length and press the F key</li>
+            <li>Insert New Mention: Highlight text preceeding the current mention that does not belong to another mention and press the N key</li>
           </ul>
         </v-card-text>
         <v-card-actions>
@@ -424,6 +426,8 @@ export default {
         e.preventDefault();
         if (this.mode == "annotation" || this.mode == "reviewer") {
           this.reassignMention(mention.index);
+        } else {
+          // check if the mention is previous mention 
         }
       } else {
         if (mention.index && mention.index != this.curMentionIndex){
@@ -535,7 +539,11 @@ export default {
         return;
       }
 
-      this.mentions[this.curMentionIndex].clustId = clusterAssignment;
+      // this assignment forces the computed clusters property to be recalculated
+      let newAssignment = {...this.mentions[this.curMentionIndex]};
+      newAssignment.clustId = clusterAssignment;
+      this.$set(this.mentions, this.curMentionIndex, newAssignment)
+
       if (this.curMentionIndex == this.mentionsViewed) {
         this.mentionsViewed += 1;
       }
