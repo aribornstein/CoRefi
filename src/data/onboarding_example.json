@@ -182,7 +182,7 @@
             "header": {
                 "title": "Selecting Clusters"
             },
-            "content": "Clusters can be selected with the arrow keys, or by clicking on a previously asigned mention.",
+            "content": "Clusters can be selected with the arrow keys, or by clicking on a previously assigned mention.",
             "params": {
                 "placement": "right"
               }
