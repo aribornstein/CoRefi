@@ -1,6 +1,7 @@
 {
     "mode": "onboarding",
     "fixableSpans":false,
+    "reassignable":true,
     "tokens": [
         {
             "i": 0,
@@ -66,7 +67,17 @@
             "lemma": "."
         }
     ],
-    "candidateMentions": [
+    "mentions": [
+        {
+            "start": 0,
+            "end": 0,
+            "clustId": "0-0"
+        },
+        {
+            "start": 1,
+            "end": 1,
+            "clustId":"1-1"
+        },
         {
             "start": 2,
             "end": 2,
@@ -90,18 +101,6 @@
 
     ],
     "selectedCluster": "0-0",
-    "viewedMentions": [
-        {
-            "start": 0,
-            "end": 0,
-            "clustId": "0-0"
-        }
-    ],
-    "currentMention": {
-        "start": 1,
-        "end": 1,
-        "clustId":"1-1"
-    },
     "goldMentions": [
         {
             "start": 1,
@@ -206,21 +205,35 @@
             "header": {
                 "title": "Assigning a New Cluster"
             },
-            "content": "Since the current mention <span class=\"current\">acquired</span> does not co-refer with the only existing mention in the <span class=\"cluster\">Intel</span> cluster assign it to a new cluster with the Ctrl + SPACE (Windows) or ALT + SPACE (MacOS) shortcut."
+            "content": "If the current mention does not belong to any cluster in the cluster bank it can be assigned to new cluster with Ctrl + SPACE (Windows) or ALT + SPACE (MacOS)."
+        },
+        {
+            "target": ".current",
+            "header": {
+                "title": "Assigning a New Cluster"
+            },
+            "content": "If the current mention does not belong to any cluster in the cluster bank it can be assigned to new cluster with Ctrl + SPACE (Windows) or ALT + SPACE (MacOS)."
+        },
+        {
+            "target": ".current",
+            "header": {
+                "title": "Reassigning a Mention"
+            },
+            "content": "If a mention was assigned incorrectly assigned it can be selected for reassignment at any point with Ctrl + Click on Mention (Windows) or Alt + Click on Mention (MacOS)."
         },
         {
             "target": ".current",
             "header": {
                 "title": "Help and Controls"
             },
-            "content": "If you ever forget any of the controls all of CoRefi's functionality can be found in the help menu. Just click on the blue <span style='color:blue'> '?'</span> in the bottom left of the screen."
+            "content": "If you ever forget any of the controls all of CoRefi's functionality can be found in the help menu. Just click on the blue <span style='color:#2196f3'> '?'</span> in the bottom left corner of the screen."
         },
         {
             "target": ".current",
             "header": {
                 "title": "Finish The Annotation"
             },
-            "content": "Now using what you've learned assign the remaining mentions to the correct clusters until they are all assigned. Don't worry if you make mistakes you'll be guided to the correct answers."
+            "content": "Now using what you've learned assign the remaining mentions to the correct clusters until they are all assigned. Don't worry if you make mistakes CoRefi will guided to the correct answers."
         }
     ],
     "snackbarTimeout": 3000

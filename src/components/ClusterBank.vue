@@ -32,13 +32,7 @@
       </v-chip-group>
     </div>
     <v-divider v-if="mode=='reviewer'"></v-divider>
-
-    <v-chip-group
-      active-class="primary--text"
-      mandatory
-      show-arrows
-      v-model="currentCluster"
-    >
+    <v-chip-group active-class="primary--text" mandatory show-arrows v-model="currentCluster">
       <v-chip small @click="newCluster">
         <v-icon color="#2d9cdb" dark>mdi-plus</v-icon>
       </v-chip>
@@ -74,7 +68,7 @@ export default {
   },
   data: function () {
     return {
-      currentCluster: { ...this.selectedCluster },
+      currentCluster: this.selectedCluster.toString()
     };
   },
   watch: {
