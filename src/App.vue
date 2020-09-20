@@ -102,7 +102,7 @@
     </v-snackbar>
 
     <v-tour name="myTour" :steps="tourSteps" />
-    <v-footer fixed>
+    <v-footer :fixed="fixedFooter">
       <v-btn id="help" @click.stop="help = true" fab dark small icon color="blue">
         <v-icon>mdi-help</v-icon>
       </v-btn>
@@ -120,7 +120,7 @@
 </template>
 
 <script>
-import jsonData from "./data/onboarding_example.json";
+import jsonData from "data/onboarding_example.json";
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
 import {
@@ -197,6 +197,7 @@ export default {
     data.snackbar = false;
     data.snackbarText = "";
     data.snackbarTimeout = 2000;
+    data.fixedFooter = !data.fixedFooter ? false: true;
     data.help = false;
     data.previousCoreferringWorkerTokens = {};
     data.clusterBarBottom = false;
@@ -417,13 +418,16 @@ export default {
     },
 
     viewedMentionClicked(e, mention) {
+      if (!mention.class){
+        return; // just a token not a mention
+      }
       if (e.altKey || e.ctrlKey) {
         e.preventDefault();
         if (this.reassignable) {
           this.reassignMention(mention.index);
         }
       } else {
-        if (mention.index && mention.index != this.curMentionIndex){
+        if (mention.index > -1 && mention.index != this.curMentionIndex){
             this.selectCluster(this.mentions[mention.index].clustId);
         }
       }
@@ -557,7 +561,8 @@ export default {
       this.$set(this.mentions, this.curMentionIndex, newAssignment)
 
       if (this.curMentionIndex == this.mentionsViewed) {
-        this.mentionsViewed += 1;
+        this.mentionsViewed = Math.min(this.mentions.length -1 , this.mentionsViewed + 1);
+        // this.mentionsViewed += 1;
       }
       this.curMentionIndex = this.mentionsViewed;
     },
