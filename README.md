@@ -30,13 +30,14 @@ To ensure quality when crowdsourcing Coreference, an annotator must be trained t
 
 If you use this tool in your research, please kindly cite our [EMNLP 2020 CoRefi system demo paper](https://arxiv.org/abs/2010.02588):
 
-bibtex
-@inproceedings{bornstein-etal-2020-corefi,
-    title={CoRefi: A Crowd Sourcing Suite for Coreference Annotation},
-    author={Aaron Bornstein and Arie Cattan and Ido Dagan},
-    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
-    year={2020}
-}
+```
+    @inproceedings{bornstein-etal-2020-corefi,
+        title={CoRefi: A Crowd Sourcing Suite for Coreference Annotation},
+        author={Aaron Bornstein and Arie Cattan and Ido Dagan},
+        booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+        year={2020}
+    }
+```
 
 ## Features
 
