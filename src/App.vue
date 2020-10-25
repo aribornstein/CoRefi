@@ -36,7 +36,7 @@
         contain
       ></v-img>
       <v-spacer />
-      Mention: {{ curMentionIndex + 1 }}/{{ mentions.length}} Document: {{ parseInt(curDocument) }}
+      Mention: {{ curMentionIndex + 1 }}/{{ mentions.length}} Document: {{parseInt(curDocument)}} / {{ documents.length }}}
     </v-system-bar>
     <v-main>
       <v-container ref="documents" v-mutate="docsOnScreen" style="max-width:850px" fluid>
@@ -120,7 +120,7 @@
 </template>
 
 <script>
-import jsonData from "data/onboarding_example.json";
+import jsonData from "./data/onboarding_example.json";
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
 import {
@@ -427,7 +427,7 @@ export default {
           this.reassignMention(mention.index);
         }
       } else {
-        if (mention.index > -1 && mention.index != this.curMentionIndex){
+        if (mention.index != undefined && mention.index != this.curMentionIndex){
             this.selectCluster(this.mentions[mention.index].clustId);
         }
       }
