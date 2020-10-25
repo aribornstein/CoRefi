@@ -28,7 +28,9 @@ Coreference Resolution is the task of clustering words and names that refer to t
 
 To ensure quality when crowdsourcing Coreference, an annotator must be trained to understand the nuances of co-reference and then be provided with all the information needed to accurately make coreference cluster assignments for every mention in a topic. The quality of an annotator's work must then be reviewable by a designated reviewer.
 
-If you use this tool in your research, please kindly cite our [EMNLP 2020 CoRefi system demo paper](https://arxiv.org/abs/2010.02588):
+## Citation
+
+If you use this tool in your research, please kindly cite our [EMNLP 2020 CoRefi system demo paper](https://arxiv.org/abs/2010.02588).
 
 ```
     @inproceedings{bornstein-etal-2020-corefi,
