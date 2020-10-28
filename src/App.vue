@@ -36,7 +36,7 @@
         contain
       ></v-img>
       <v-spacer />
-      Mention: {{ curMentionIndex + 1 }}/{{ mentions.length}} Document: {{parseInt(curDocument)}} / {{ documents.length }}}
+      Mention: {{ curMentionIndex + 1 }}/{{ mentions.length}} Document: {{parseInt(curDocument)}} / {{ tokens[tokens.length - 1].document }}
     </v-system-bar>
     <v-main>
       <v-container ref="documents" v-mutate="docsOnScreen" style="max-width:850px" fluid>
