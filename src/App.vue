@@ -97,6 +97,7 @@
         :selectedCluster="selectedCluster"
         :suggestedReviewerClusters="suggestedReviewerClusters"
         :mode="mode"
+        :withHyponym="this.hyponym"
         :lastMention="isFinalMention()"
         v-on:newCluster="assignMention(true)"
         v-on:candidateSelected="selectCluster"
@@ -122,6 +123,7 @@
         :selectedCluster.sync="selectedCluster"
         :suggestedReviewerClusters="suggestedReviewerClusters"
         :mode="mode"
+        :withHyponym="this.hyponym"
         :lastMention="isFinalMention()"
         v-on:candidateSelected="selectCluster"
         v-on:newCluster="assignMention(true)"
@@ -225,8 +227,8 @@ export default {
     data.previousCoreferringWorkerTokens = {};
     data.clusterBarBottom = false;
     data.clusterTree = new Object();
-    data.documents = this.prepareDocument(data.tokens, data.mentions)
-
+    data.documents = this.prepareDocument(data.tokens, data.mentions);
+    data.hyponym = data.hyponym ? data.hyponym : false;
     return data;
   },
   computed: {

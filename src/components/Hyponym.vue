@@ -25,7 +25,7 @@
   import { VueTreeList, Tree, TreeNode } from 'vue-tree-list'
   import jsonData from '../data/clusters.json'
   export default {
-    name: "TreeTest",
+    name: "Hyponym",
     components: {
       VueTreeList
     },

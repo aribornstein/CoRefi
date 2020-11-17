@@ -45,25 +45,28 @@
         small
       >{{ cluster.text }}</v-chip>
     </v-chip-group>
-    <v-divider></v-divider>
-  
+    
+
+    <div v-if="withHyponym">
+      <v-divider></v-divider>
     <v-btn block v-on:click="finished=!finished" id="done" disabled v-if="!lastMention" color="#B0BEC5">Move to Hypernym Annotation</v-btn>
     <v-btn block v-on:click="finished=!finished" id="done" v-if="lastMention" color="#B0BEC5">Move to Hypernym Annotation</v-btn>
     <!-- <v-divider v-if="mode=='reviewer'"></v-divider> -->
     
     <div id="treetest">
-       <TreeTest :clusterList="createTree()" 
+       <Hyponym :clusterList="createTree()" 
        v-if="finished" 
        @updateTree="updateTree($event)">
-       </TreeTest>
+       </Hyponym>
       </div>
+    </div>
   </v-main>
 </template>
 
 
 <script>
 import { VMain, VDivider, VChip, VChipGroup, VIcon } from "vuetify/lib";
-import TreeTest from './Tree.vue'
+import Hyponym from './Hyponym.vue'
 import { Tree } from 'vue-tree-list'
 
 
@@ -75,14 +78,15 @@ export default {
     VChip,
     VChipGroup,
     VIcon,
-    TreeTest
+    Hyponym
   },
   props: {
     clusters: Object,
     suggestedReviewerClusters: Set,
     selectedCluster: String,
     mode: String,
-    lastMention: Boolean
+    lastMention: Boolean,
+    withHyponym: Boolean
   },
   data: function () {
     return {
@@ -126,4 +130,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+
+
 </style>
