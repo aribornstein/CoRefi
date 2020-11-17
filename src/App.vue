@@ -97,7 +97,7 @@
         :selectedCluster="selectedCluster"
         :suggestedReviewerClusters="suggestedReviewerClusters"
         :mode="mode"
-        :withHyponym="this.hyponym"
+        :withHypernym="this.hypernym"
         :lastMention="isFinalMention()"
         v-on:newCluster="assignMention(true)"
         v-on:candidateSelected="selectCluster"
@@ -123,7 +123,7 @@
         :selectedCluster.sync="selectedCluster"
         :suggestedReviewerClusters="suggestedReviewerClusters"
         :mode="mode"
-        :withHyponym="this.hyponym"
+        :withHypernym="this.hypernym"
         :lastMention="isFinalMention()"
         v-on:candidateSelected="selectCluster"
         v-on:newCluster="assignMention(true)"
@@ -139,7 +139,7 @@
 </template>
 
 <script>
-import jsonData from  "./data/sentiment_examples.json" //"../../coref-hypernym/data/scirex2/135.json" //"./data/sentiment_examples.json" //"./data/scirex_example_.json"; 
+import jsonData from  "./data/onboarding_example.json"// "./data/sentiment_examples.json" //"../../coref-hypernym/data/scirex2/135.json" //"./data/sentiment_examples.json" //"./data/scirex_example_.json"; 
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
 import VueTreeList from 'vue-tree-list'
@@ -228,7 +228,7 @@ export default {
     data.clusterBarBottom = false;
     data.clusterTree = new Object();
     data.documents = this.prepareDocument(data.tokens, data.mentions);
-    data.hyponym = data.hyponym ? data.hyponym : false;
+    data.hypernym = data.hypernym ? data.hypernym : false;
     return data;
   },
   computed: {
@@ -304,7 +304,7 @@ export default {
       return this.clusterIds.findIndex((cId) => cId == this.selectedCluster);
     },
     docsViewModel: function () {
-      const start = Date.now();
+      // const start = Date.now();
 
       let documentSpans = [];
       let mentInd = 0;
@@ -360,8 +360,8 @@ export default {
         }
       }
 
-      const millis = Date.now() - start;
-      console.log(`Milli seconds elapsed = ${Math.floor(millis)}`);
+      // const millis = Date.now() - start;
+      // console.log(`Milli seconds elapsed = ${Math.floor(millis)}`);
       return documentSpans;
     },
   },
@@ -406,7 +406,6 @@ export default {
     },
 
     prepareDocument(tokens, mentions) {
-      console.log("Prepare Document!")
       const documents = this.groupBy(tokens, "document");
       Object.keys(documents).map((doc) => {
         var paragraphs = this.groupBy(documents[doc], "paragraph")
