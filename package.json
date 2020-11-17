@@ -13,6 +13,8 @@
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
     "vue-tour": "git+https://github.com/aribornstein/vue-tour.git",
+    "vue-tree-list": "^1.4.6",
+    "vued3tree": "^5.1.0",
     "vuetify": "^2.3.6"
   },
   "devDependencies": {
@@ -23,6 +25,8 @@
     "eslint": "^6.8.0",
     "eslint-plugin-vue": "^6.2.2",
     "jest": "^26.0.1",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.2",
     "sass": "^1.19.0",
     "sass-loader": "^8.0.0",
     "vue-cli-plugin-vuetify": "~2.0.5",

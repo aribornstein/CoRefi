@@ -1,0 +1,20 @@
+[
+    {
+        "id": "2-4",
+        "name": "neural machine translation",
+        "children": [
+            {
+                "id": "2-8",
+                "name": "blabla"
+            }
+        ]
+    },
+    {
+        "id": "10-12",
+        "name": "statistical machine translation"
+    },
+    {
+        "id": "35-38",
+        "name": "machine translation"
+    }
+]

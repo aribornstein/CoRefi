@@ -45,11 +45,27 @@
         small
       >{{ cluster.text }}</v-chip>
     </v-chip-group>
+    <v-divider></v-divider>
+  
+    <v-btn block v-on:click="finished=!finished" id="done" disabled v-if="!lastMention" color="#B0BEC5">Move to Hypernym Annotation</v-btn>
+    <v-btn block v-on:click="finished=!finished" id="done" v-if="lastMention" color="#B0BEC5">Move to Hypernym Annotation</v-btn>
+    <!-- <v-divider v-if="mode=='reviewer'"></v-divider> -->
+    
+    <div id="treetest">
+       <TreeTest :clusterList="createTree()" 
+       v-if="finished" 
+       @updateTree="updateTree($event)">
+       </TreeTest>
+      </div>
   </v-main>
 </template>
 
+
 <script>
 import { VMain, VDivider, VChip, VChipGroup, VIcon } from "vuetify/lib";
+import TreeTest from './Tree.vue'
+import { Tree } from 'vue-tree-list'
+
 
 export default {
   name: "ClusterBank",
@@ -59,17 +75,31 @@ export default {
     VChip,
     VChipGroup,
     VIcon,
+    TreeTest
   },
   props: {
     clusters: Object,
     suggestedReviewerClusters: Set,
     selectedCluster: String,
     mode: String,
+    lastMention: Boolean
   },
   data: function () {
     return {
-      currentCluster: this.selectedCluster.toString()
+      currentCluster: this.selectedCluster.toString(),
+      finished: false,
+      treeClusters: Tree,
     };
+  },
+  computed: {
+    reviewBankClusters: function () {
+      return Object.values(this.clusters).filter((c) =>
+        this.suggestedReviewerClusters.has(c.id)
+      );
+    }
+    // treeClusters: function() {
+    //   return new Tree(this.reviewBankClusters); 
+    // }
   },
   watch: {
     // whenever question changes, this function will run
@@ -78,20 +108,19 @@ export default {
     },
   },
   methods: {
+    createTree: function() {
+      return Object.values(this.clusters);
+    },
     newCluster: function () {
       this.$emit("newCluster");
     },
     candidateSelected: function (cId) {
       this.$emit("candidateSelected", cId);
     },
-  },
-  computed: {
-    reviewBankClusters: function () {
-      return Object.values(this.clusters).filter((c) =>
-        this.suggestedReviewerClusters.has(c.id)
-      );
-    },
-  },
+    updateTree: function(tree) {
+      this.$emit("updateTree", tree)
+    }
+  }
 };
 </script>
 

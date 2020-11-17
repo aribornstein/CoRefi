@@ -1,0 +1,2775 @@
+{
+    "clusterName": "Machine_Translation",
+    "mode": "reviewer",
+    "fixableSpans": false,
+    "newMentions": false,
+    "reassignable": true,
+    "tokens": [
+        {
+            "i": 0,
+            "document": 0,
+            "doc_name": "071b16f25117fb6133480c6259227d54fc2a5ea0",
+            "text": "document"
+        },
+        {
+            "i": 1,
+            "document": 0,
+            "doc_name": "071b16f25117fb6133480c6259227d54fc2a5ea0",
+            "text": ":"
+        },
+        {
+            "i": 2,
+            "document": 0,
+            "doc_name": "071b16f25117fb6133480c6259227d54fc2a5ea0",
+            "text": "Neural"
+        },
+        {
+            "i": 3,
+            "document": 0,
+            "doc_name": "071b16f25117fb6133480c6259227d54fc2a5ea0",
+            "text": "Machine"
+        },
+        {
+            "i": 4,
+            "document": 0,
+            "doc_name": "071b16f25117fb6133480c6259227d54fc2a5ea0",
+            "text": "Translation"
+        },
+        {
+            "i": 5,
+            "document": 0,
+            "doc_name": "071b16f25117fb6133480c6259227d54fc2a5ea0",
+            "text": "by"
+        },
+        {
+            "i": 6,
+            "document": 0,
+            "doc_name": "071b16f25117fb6133480c6259227d54fc2a5ea0",
+            "text": "Jointly"
+        },
+        {
+            "i": 7,
+            "document": 0,
+            "doc_name": "071b16f25117fb6133480c6259227d54fc2a5ea0",
+            "text": "Learning"
+        },
+        {
+            "i": 8,
+            "document": 0,
+            "doc_name": "071b16f25117fb6133480c6259227d54fc2a5ea0",
+            "text": "to"
+        },
+        {
+            "i": 9,
+            "document": 0,
+            "doc_name": "071b16f25117fb6133480c6259227d54fc2a5ea0",
+            "text": "Align"
+        },
+        {
+            "i": 10,
+            "document": 0,
+            "doc_name": "071b16f25117fb6133480c6259227d54fc2a5ea0",
+            "text": "and"
+        },
+        {
+            "i": 11,
+            "document": 0,
+            "doc_name": "071b16f25117fb6133480c6259227d54fc2a5ea0",
+            "text": "Translate"
+        },
+        {
+            "i": 12,
+            "document": 1,
+            "doc_name": "07c4fc48ad7b7d1a417b0bb72d0ae2d4efc5aa83",
+            "text": "document"
+        },
+        {
+            "i": 13,
+            "document": 1,
+            "doc_name": "07c4fc48ad7b7d1a417b0bb72d0ae2d4efc5aa83",
+            "text": ":"
+        },
+        {
+            "i": 14,
+            "document": 1,
+            "doc_name": "07c4fc48ad7b7d1a417b0bb72d0ae2d4efc5aa83",
+            "text": "Depthwise"
+        },
+        {
+            "i": 15,
+            "document": 1,
+            "doc_name": "07c4fc48ad7b7d1a417b0bb72d0ae2d4efc5aa83",
+            "text": "Separable"
+        },
+        {
+            "i": 16,
+            "document": 1,
+            "doc_name": "07c4fc48ad7b7d1a417b0bb72d0ae2d4efc5aa83",
+            "text": "Convolutions"
+        },
+        {
+            "i": 17,
+            "document": 1,
+            "doc_name": "07c4fc48ad7b7d1a417b0bb72d0ae2d4efc5aa83",
+            "text": "for"
+        },
+        {
+            "i": 18,
+            "document": 1,
+            "doc_name": "07c4fc48ad7b7d1a417b0bb72d0ae2d4efc5aa83",
+            "text": "Neural"
+        },
+        {
+            "i": 19,
+            "document": 1,
+            "doc_name": "07c4fc48ad7b7d1a417b0bb72d0ae2d4efc5aa83",
+            "text": "Machine"
+        },
+        {
+            "i": 20,
+            "document": 1,
+            "doc_name": "07c4fc48ad7b7d1a417b0bb72d0ae2d4efc5aa83",
+            "text": "Translation"
+        },
+        {
+            "i": 21,
+            "document": 2,
+            "doc_name": "0a49b4de21363d86599d4a058aaf4f5aed019495",
+            "text": "document"
+        },
+        {
+            "i": 22,
+            "document": 2,
+            "doc_name": "0a49b4de21363d86599d4a058aaf4f5aed019495",
+            "text": ":"
+        },
+        {
+            "i": 23,
+            "document": 2,
+            "doc_name": "0a49b4de21363d86599d4a058aaf4f5aed019495",
+            "text": "A"
+        },
+        {
+            "i": 24,
+            "document": 2,
+            "doc_name": "0a49b4de21363d86599d4a058aaf4f5aed019495",
+            "text": "Character"
+        },
+        {
+            "i": 25,
+            "document": 2,
+            "doc_name": "0a49b4de21363d86599d4a058aaf4f5aed019495",
+            "text": "-"
+        },
+        {
+            "i": 26,
+            "document": 2,
+            "doc_name": "0a49b4de21363d86599d4a058aaf4f5aed019495",
+            "text": "Level"
+        },
+        {
+            "i": 27,
+            "document": 2,
+            "doc_name": "0a49b4de21363d86599d4a058aaf4f5aed019495",
+            "text": "Decoder"
+        },
+        {
+            "i": 28,
+            "document": 2,
+            "doc_name": "0a49b4de21363d86599d4a058aaf4f5aed019495",
+            "text": "without"
+        },
+        {
+            "i": 29,
+            "document": 2,
+            "doc_name": "0a49b4de21363d86599d4a058aaf4f5aed019495",
+            "text": "Explicit"
+        },
+        {
+            "i": 30,
+            "document": 2,
+            "doc_name": "0a49b4de21363d86599d4a058aaf4f5aed019495",
+            "text": "Segmentation"
+        },
+        {
+            "i": 31,
+            "document": 2,
+            "doc_name": "0a49b4de21363d86599d4a058aaf4f5aed019495",
+            "text": "for"
+        },
+        {
+            "i": 32,
+            "document": 2,
+            "doc_name": "0a49b4de21363d86599d4a058aaf4f5aed019495",
+            "text": "Neural"
+        },
+        {
+            "i": 33,
+            "document": 2,
+            "doc_name": "0a49b4de21363d86599d4a058aaf4f5aed019495",
+            "text": "Machine"
+        },
+        {
+            "i": 34,
+            "document": 2,
+            "doc_name": "0a49b4de21363d86599d4a058aaf4f5aed019495",
+            "text": "Translation"
+        },
+        {
+            "i": 35,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "Experiments"
+        },
+        {
+            "i": 36,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "on"
+        },
+        {
+            "i": 37,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "two"
+        },
+        {
+            "i": 38,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "machine"
+        },
+        {
+            "i": 39,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "translation"
+        },
+        {
+            "i": 40,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "tasks"
+        },
+        {
+            "i": 41,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "show"
+        },
+        {
+            "i": 42,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "these"
+        },
+        {
+            "i": 43,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "models"
+        },
+        {
+            "i": 44,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "to"
+        },
+        {
+            "i": 45,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "be"
+        },
+        {
+            "i": 46,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "superior"
+        },
+        {
+            "i": 47,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "in"
+        },
+        {
+            "i": 48,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "quality"
+        },
+        {
+            "i": 49,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "while"
+        },
+        {
+            "i": 50,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "being"
+        },
+        {
+            "i": 51,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "more"
+        },
+        {
+            "i": 52,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "parallelizable"
+        },
+        {
+            "i": 53,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "and"
+        },
+        {
+            "i": 54,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "requiring"
+        },
+        {
+            "i": 55,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "significantly"
+        },
+        {
+            "i": 56,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "less"
+        },
+        {
+            "i": 57,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "time"
+        },
+        {
+            "i": 58,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "to"
+        },
+        {
+            "i": 59,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "train"
+        },
+        {
+            "i": 60,
+            "document": 3,
+            "doc_name": "0b0cf7e00e7532e38238a9164f0a8db2574be2ea",
+            "text": "."
+        },
+        {
+            "i": 61,
+            "document": 4,
+            "doc_name": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "text": "document"
+        },
+        {
+            "i": 62,
+            "document": 4,
+            "doc_name": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "text": ":"
+        },
+        {
+            "i": 63,
+            "document": 4,
+            "doc_name": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "text": "Learning"
+        },
+        {
+            "i": 64,
+            "document": 4,
+            "doc_name": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "text": "Phrase"
+        },
+        {
+            "i": 65,
+            "document": 4,
+            "doc_name": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "text": "Representations"
+        },
+        {
+            "i": 66,
+            "document": 4,
+            "doc_name": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "text": "using"
+        },
+        {
+            "i": 67,
+            "document": 4,
+            "doc_name": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "text": "RNN"
+        },
+        {
+            "i": 68,
+            "document": 4,
+            "doc_name": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "text": "Encoder"
+        },
+        {
+            "i": 69,
+            "document": 4,
+            "doc_name": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "text": "–"
+        },
+        {
+            "i": 70,
+            "document": 4,
+            "doc_name": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "text": "Decoder"
+        },
+        {
+            "i": 71,
+            "document": 4,
+            "doc_name": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "text": "for"
+        },
+        {
+            "i": 72,
+            "document": 4,
+            "doc_name": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "text": "Statistical"
+        },
+        {
+            "i": 73,
+            "document": 4,
+            "doc_name": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "text": "Machine"
+        },
+        {
+            "i": 74,
+            "document": 4,
+            "doc_name": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "text": "Translation"
+        },
+        {
+            "i": 75,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "Our"
+        },
+        {
+            "i": 76,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "analysis"
+        },
+        {
+            "i": 77,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "paves"
+        },
+        {
+            "i": 78,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "the"
+        },
+        {
+            "i": 79,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "way"
+        },
+        {
+            "i": 80,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "for"
+        },
+        {
+            "i": 81,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "such"
+        },
+        {
+            "i": 82,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "methods"
+        },
+        {
+            "i": 83,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "to"
+        },
+        {
+            "i": 84,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "be"
+        },
+        {
+            "i": 85,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "applied"
+        },
+        {
+            "i": 86,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "in"
+        },
+        {
+            "i": 87,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "natural"
+        },
+        {
+            "i": 88,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "language"
+        },
+        {
+            "i": 89,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "generation"
+        },
+        {
+            "i": 90,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "tasks"
+        },
+        {
+            "i": 91,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": ","
+        },
+        {
+            "i": 92,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "such"
+        },
+        {
+            "i": 93,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "as"
+        },
+        {
+            "i": 94,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "machine"
+        },
+        {
+            "i": 95,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "translation"
+        },
+        {
+            "i": 96,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": ","
+        },
+        {
+            "i": 97,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "caption"
+        },
+        {
+            "i": 98,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "generation"
+        },
+        {
+            "i": 99,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": ","
+        },
+        {
+            "i": 100,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "and"
+        },
+        {
+            "i": 101,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "dialogue"
+        },
+        {
+            "i": 102,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "modelling"
+        },
+        {
+            "i": 103,
+            "document": 5,
+            "doc_name": "0d24a0695c9fc669e643bad51d4e14f056329dec",
+            "text": "."
+        },
+        {
+            "i": 104,
+            "document": 6,
+            "doc_name": "1518039b5001f1836565215eb047526b3ac7f462",
+            "text": "Neural"
+        },
+        {
+            "i": 105,
+            "document": 6,
+            "doc_name": "1518039b5001f1836565215eb047526b3ac7f462",
+            "text": "Machine"
+        },
+        {
+            "i": 106,
+            "document": 6,
+            "doc_name": "1518039b5001f1836565215eb047526b3ac7f462",
+            "text": "Translation"
+        },
+        {
+            "i": 107,
+            "document": 6,
+            "doc_name": "1518039b5001f1836565215eb047526b3ac7f462",
+            "text": "of"
+        },
+        {
+            "i": 108,
+            "document": 6,
+            "doc_name": "1518039b5001f1836565215eb047526b3ac7f462",
+            "text": "Rare"
+        },
+        {
+            "i": 109,
+            "document": 6,
+            "doc_name": "1518039b5001f1836565215eb047526b3ac7f462",
+            "text": "Words"
+        },
+        {
+            "i": 110,
+            "document": 6,
+            "doc_name": "1518039b5001f1836565215eb047526b3ac7f462",
+            "text": "with"
+        },
+        {
+            "i": 111,
+            "document": 6,
+            "doc_name": "1518039b5001f1836565215eb047526b3ac7f462",
+            "text": "Subword"
+        },
+        {
+            "i": 112,
+            "document": 6,
+            "doc_name": "1518039b5001f1836565215eb047526b3ac7f462",
+            "text": "Units"
+        },
+        {
+            "i": 113,
+            "document": 7,
+            "doc_name": "15e81c8d1c21f9e928c72721ac46d458f3341454",
+            "text": "document"
+        },
+        {
+            "i": 114,
+            "document": 7,
+            "doc_name": "15e81c8d1c21f9e928c72721ac46d458f3341454",
+            "text": ":"
+        },
+        {
+            "i": 115,
+            "document": 7,
+            "doc_name": "15e81c8d1c21f9e928c72721ac46d458f3341454",
+            "text": "Non"
+        },
+        {
+            "i": 116,
+            "document": 7,
+            "doc_name": "15e81c8d1c21f9e928c72721ac46d458f3341454",
+            "text": "-"
+        },
+        {
+            "i": 117,
+            "document": 7,
+            "doc_name": "15e81c8d1c21f9e928c72721ac46d458f3341454",
+            "text": "Autoregressive"
+        },
+        {
+            "i": 118,
+            "document": 7,
+            "doc_name": "15e81c8d1c21f9e928c72721ac46d458f3341454",
+            "text": "Neural"
+        },
+        {
+            "i": 119,
+            "document": 7,
+            "doc_name": "15e81c8d1c21f9e928c72721ac46d458f3341454",
+            "text": "Machine"
+        },
+        {
+            "i": 120,
+            "document": 7,
+            "doc_name": "15e81c8d1c21f9e928c72721ac46d458f3341454",
+            "text": "Translation"
+        },
+        {
+            "i": 121,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "Experiments"
+        },
+        {
+            "i": 122,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "show"
+        },
+        {
+            "i": 123,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "the"
+        },
+        {
+            "i": 124,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "compression"
+        },
+        {
+            "i": 125,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "rate"
+        },
+        {
+            "i": 126,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "achieves"
+        },
+        {
+            "i": 127,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "in"
+        },
+        {
+            "i": 128,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "a"
+        },
+        {
+            "i": 129,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "sentiment"
+        },
+        {
+            "i": 130,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "analysis"
+        },
+        {
+            "i": 131,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "task"
+        },
+        {
+            "i": 132,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "and"
+        },
+        {
+            "i": 133,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "in"
+        },
+        {
+            "i": 134,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "machine"
+        },
+        {
+            "i": 135,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "translation"
+        },
+        {
+            "i": 136,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "tasks"
+        },
+        {
+            "i": 137,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "without"
+        },
+        {
+            "i": 138,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "performance"
+        },
+        {
+            "i": 139,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "loss"
+        },
+        {
+            "i": 140,
+            "document": 8,
+            "doc_name": "1713d05f9d5861cac4d5ec73151667cb03a42bfc",
+            "text": "."
+        },
+        {
+            "i": 141,
+            "document": 9,
+            "doc_name": "1a5ea605111eb3403868d4b679315e944beee8c6",
+            "text": "document"
+        },
+        {
+            "i": 142,
+            "document": 9,
+            "doc_name": "1a5ea605111eb3403868d4b679315e944beee8c6",
+            "text": ":"
+        },
+        {
+            "i": 143,
+            "document": 9,
+            "doc_name": "1a5ea605111eb3403868d4b679315e944beee8c6",
+            "text": "Edinburgh"
+        },
+        {
+            "i": 144,
+            "document": 9,
+            "doc_name": "1a5ea605111eb3403868d4b679315e944beee8c6",
+            "text": "Neural"
+        },
+        {
+            "i": 145,
+            "document": 9,
+            "doc_name": "1a5ea605111eb3403868d4b679315e944beee8c6",
+            "text": "Machine"
+        },
+        {
+            "i": 146,
+            "document": 9,
+            "doc_name": "1a5ea605111eb3403868d4b679315e944beee8c6",
+            "text": "Translation"
+        },
+        {
+            "i": 147,
+            "document": 9,
+            "doc_name": "1a5ea605111eb3403868d4b679315e944beee8c6",
+            "text": "Systems"
+        },
+        {
+            "i": 148,
+            "document": 9,
+            "doc_name": "1a5ea605111eb3403868d4b679315e944beee8c6",
+            "text": "for"
+        },
+        {
+            "i": 149,
+            "document": 9,
+            "doc_name": "1a5ea605111eb3403868d4b679315e944beee8c6",
+            "text": "WMT"
+        },
+        {
+            "i": 150,
+            "document": 9,
+            "doc_name": "1a5ea605111eb3403868d4b679315e944beee8c6",
+            "text": "16"
+        },
+        {
+            "i": 151,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "We"
+        },
+        {
+            "i": 152,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "show"
+        },
+        {
+            "i": 153,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "that"
+        },
+        {
+            "i": 154,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "our"
+        },
+        {
+            "i": 155,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "system"
+        },
+        {
+            "i": 156,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "outperforms"
+        },
+        {
+            "i": 157,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "a"
+        },
+        {
+            "i": 158,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "highly"
+        },
+        {
+            "i": 159,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "-"
+        },
+        {
+            "i": 160,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "optimized"
+        },
+        {
+            "i": 161,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "attention"
+        },
+        {
+            "i": 162,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "-"
+        },
+        {
+            "i": 163,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "based"
+        },
+        {
+            "i": 164,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "seq2seq"
+        },
+        {
+            "i": 165,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "system"
+        },
+        {
+            "i": 166,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "and"
+        },
+        {
+            "i": 167,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "other"
+        },
+        {
+            "i": 168,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "baselines"
+        },
+        {
+            "i": 169,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "on"
+        },
+        {
+            "i": 170,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "three"
+        },
+        {
+            "i": 171,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "different"
+        },
+        {
+            "i": 172,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "sequence"
+        },
+        {
+            "i": 173,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "to"
+        },
+        {
+            "i": 174,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "sequence"
+        },
+        {
+            "i": 175,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "tasks"
+        },
+        {
+            "i": 176,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": ":"
+        },
+        {
+            "i": 177,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "word"
+        },
+        {
+            "i": 178,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "ordering"
+        },
+        {
+            "i": 179,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": ","
+        },
+        {
+            "i": 180,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "parsing"
+        },
+        {
+            "i": 181,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": ","
+        },
+        {
+            "i": 182,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "and"
+        },
+        {
+            "i": 183,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "machine"
+        },
+        {
+            "i": 184,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "translation"
+        },
+        {
+            "i": 185,
+            "document": 10,
+            "doc_name": "28703eef8fe505e8bd592ced3ce52a597097b031",
+            "text": "."
+        },
+        {
+            "i": 186,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "RNNs"
+        },
+        {
+            "i": 187,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "are"
+        },
+        {
+            "i": 188,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "also"
+        },
+        {
+            "i": 189,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "commonly"
+        },
+        {
+            "i": 190,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "the"
+        },
+        {
+            "i": 191,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "basic"
+        },
+        {
+            "i": 192,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "building"
+        },
+        {
+            "i": 193,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "block"
+        },
+        {
+            "i": 194,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "for"
+        },
+        {
+            "i": 195,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "more"
+        },
+        {
+            "i": 196,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "complex"
+        },
+        {
+            "i": 197,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "models"
+        },
+        {
+            "i": 198,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "for"
+        },
+        {
+            "i": 199,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "tasks"
+        },
+        {
+            "i": 200,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "such"
+        },
+        {
+            "i": 201,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "as"
+        },
+        {
+            "i": 202,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "machine"
+        },
+        {
+            "i": 203,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "translation"
+        },
+        {
+            "i": 204,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "Bahdanau2015"
+        },
+        {
+            "i": 205,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": ","
+        },
+        {
+            "i": 206,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "Luong2015"
+        },
+        {
+            "i": 207,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": ","
+        },
+        {
+            "i": 208,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "Bradbury2016"
+        },
+        {
+            "i": 209,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "or"
+        },
+        {
+            "i": 210,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "question"
+        },
+        {
+            "i": 211,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "answering"
+        },
+        {
+            "i": 212,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "Kumar2016"
+        },
+        {
+            "i": 213,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": ","
+        },
+        {
+            "i": 214,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "Xiong2016"
+        },
+        {
+            "i": 215,
+            "document": 11,
+            "doc_name": "2d876ed1dd2c58058d7197b734a8e4d349b8f231",
+            "text": "."
+        },
+        {
+            "i": 216,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "Neural"
+        },
+        {
+            "i": 217,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "machine"
+        },
+        {
+            "i": 218,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "translation"
+        },
+        {
+            "i": 219,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "("
+        },
+        {
+            "i": 220,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "NMT"
+        },
+        {
+            "i": 221,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": ")"
+        },
+        {
+            "i": 222,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "offers"
+        },
+        {
+            "i": 223,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "a"
+        },
+        {
+            "i": 224,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "novel"
+        },
+        {
+            "i": 225,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "alternative"
+        },
+        {
+            "i": 226,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "formulation"
+        },
+        {
+            "i": 227,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "of"
+        },
+        {
+            "i": 228,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "translation"
+        },
+        {
+            "i": 229,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "that"
+        },
+        {
+            "i": 230,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "is"
+        },
+        {
+            "i": 231,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "potentially"
+        },
+        {
+            "i": 232,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "simpler"
+        },
+        {
+            "i": 233,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "than"
+        },
+        {
+            "i": 234,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "statistical"
+        },
+        {
+            "i": 235,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "approaches"
+        },
+        {
+            "i": 236,
+            "document": 12,
+            "doc_name": "32a93598e8a338496f04a0ace81b0768c2ef059d",
+            "text": "."
+        },
+        {
+            "i": 237,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "A"
+        },
+        {
+            "i": 238,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "wide"
+        },
+        {
+            "i": 239,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "variety"
+        },
+        {
+            "i": 240,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "of"
+        },
+        {
+            "i": 241,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "applications"
+        },
+        {
+            "i": 242,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "rely"
+        },
+        {
+            "i": 243,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "on"
+        },
+        {
+            "i": 244,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "text"
+        },
+        {
+            "i": 245,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "generation"
+        },
+        {
+            "i": 246,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": ","
+        },
+        {
+            "i": 247,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "including"
+        },
+        {
+            "i": 248,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "machine"
+        },
+        {
+            "i": 249,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "translation"
+        },
+        {
+            "i": 250,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": ","
+        },
+        {
+            "i": 251,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "video"
+        },
+        {
+            "i": 252,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "/"
+        },
+        {
+            "i": 253,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "text"
+        },
+        {
+            "i": 254,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "summarization"
+        },
+        {
+            "i": 255,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": ","
+        },
+        {
+            "i": 256,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "question"
+        },
+        {
+            "i": 257,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "answering"
+        },
+        {
+            "i": 258,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": ","
+        },
+        {
+            "i": 259,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "among"
+        },
+        {
+            "i": 260,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "others"
+        },
+        {
+            "i": 261,
+            "document": 13,
+            "doc_name": "35c1668dc64d24a28c6041978e5fcca754eb2f4b",
+            "text": "."
+        },
+        {
+            "i": 262,
+            "document": 14,
+            "doc_name": "3861ae2a6bdd2a759c2d901a6583e63a216bc2fc",
+            "text": "document"
+        },
+        {
+            "i": 263,
+            "document": 14,
+            "doc_name": "3861ae2a6bdd2a759c2d901a6583e63a216bc2fc",
+            "text": ":"
+        },
+        {
+            "i": 264,
+            "document": 14,
+            "doc_name": "3861ae2a6bdd2a759c2d901a6583e63a216bc2fc",
+            "text": "Weighted"
+        },
+        {
+            "i": 265,
+            "document": 14,
+            "doc_name": "3861ae2a6bdd2a759c2d901a6583e63a216bc2fc",
+            "text": "Transformer"
+        },
+        {
+            "i": 266,
+            "document": 14,
+            "doc_name": "3861ae2a6bdd2a759c2d901a6583e63a216bc2fc",
+            "text": "Network"
+        },
+        {
+            "i": 267,
+            "document": 14,
+            "doc_name": "3861ae2a6bdd2a759c2d901a6583e63a216bc2fc",
+            "text": "for"
+        },
+        {
+            "i": 268,
+            "document": 14,
+            "doc_name": "3861ae2a6bdd2a759c2d901a6583e63a216bc2fc",
+            "text": "Machine"
+        },
+        {
+            "i": 269,
+            "document": 14,
+            "doc_name": "3861ae2a6bdd2a759c2d901a6583e63a216bc2fc",
+            "text": "Translation"
+        },
+        {
+            "i": 270,
+            "document": 15,
+            "doc_name": "39dba6f22d72853561a4ed684be265e179a39e4f",
+            "text": "For"
+        },
+        {
+            "i": 271,
+            "document": 15,
+            "doc_name": "39dba6f22d72853561a4ed684be265e179a39e4f",
+            "text": "example"
+        },
+        {
+            "i": 272,
+            "document": 15,
+            "doc_name": "39dba6f22d72853561a4ed684be265e179a39e4f",
+            "text": ","
+        },
+        {
+            "i": 273,
+            "document": 15,
+            "doc_name": "39dba6f22d72853561a4ed684be265e179a39e4f",
+            "text": "speech"
+        },
+        {
+            "i": 274,
+            "document": 15,
+            "doc_name": "39dba6f22d72853561a4ed684be265e179a39e4f",
+            "text": "recognition"
+        },
+        {
+            "i": 275,
+            "document": 15,
+            "doc_name": "39dba6f22d72853561a4ed684be265e179a39e4f",
+            "text": "and"
+        },
+        {
+            "i": 276,
+            "document": 15,
+            "doc_name": "39dba6f22d72853561a4ed684be265e179a39e4f",
+            "text": "machine"
+        },
+        {
+            "i": 277,
+            "document": 15,
+            "doc_name": "39dba6f22d72853561a4ed684be265e179a39e4f",
+            "text": "translation"
+        },
+        {
+            "i": 278,
+            "document": 15,
+            "doc_name": "39dba6f22d72853561a4ed684be265e179a39e4f",
+            "text": "are"
+        },
+        {
+            "i": 279,
+            "document": 15,
+            "doc_name": "39dba6f22d72853561a4ed684be265e179a39e4f",
+            "text": "sequential"
+        },
+        {
+            "i": 280,
+            "document": 15,
+            "doc_name": "39dba6f22d72853561a4ed684be265e179a39e4f",
+            "text": "problems"
+        },
+        {
+            "i": 281,
+            "document": 15,
+            "doc_name": "39dba6f22d72853561a4ed684be265e179a39e4f",
+            "text": "."
+        },
+        {
+            "i": 282,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "Sequence"
+        },
+        {
+            "i": 283,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "to"
+        },
+        {
+            "i": 284,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "sequence"
+        },
+        {
+            "i": 285,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "learning"
+        },
+        {
+            "i": 286,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "has"
+        },
+        {
+            "i": 287,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "been"
+        },
+        {
+            "i": 288,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "successful"
+        },
+        {
+            "i": 289,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "in"
+        },
+        {
+            "i": 290,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "many"
+        },
+        {
+            "i": 291,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "tasks"
+        },
+        {
+            "i": 292,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "such"
+        },
+        {
+            "i": 293,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "as"
+        },
+        {
+            "i": 294,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "machine"
+        },
+        {
+            "i": 295,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "translation"
+        },
+        {
+            "i": 296,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": ","
+        },
+        {
+            "i": 297,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "speech"
+        },
+        {
+            "i": 298,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "recognition"
+        },
+        {
+            "i": 299,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "["
+        },
+        {
+            "i": 300,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "reference"
+        },
+        {
+            "i": 301,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "]"
+        },
+        {
+            "i": 302,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "and"
+        },
+        {
+            "i": 303,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "text"
+        },
+        {
+            "i": 304,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "summarization"
+        },
+        {
+            "i": 305,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "["
+        },
+        {
+            "i": 306,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "reference"
+        },
+        {
+            "i": 307,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "]["
+        },
+        {
+            "i": 308,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "reference"
+        },
+        {
+            "i": 309,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "]["
+        },
+        {
+            "i": 310,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "reference"
+        },
+        {
+            "i": 311,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "]"
+        },
+        {
+            "i": 312,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "amongst"
+        },
+        {
+            "i": 313,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "others"
+        },
+        {
+            "i": 314,
+            "document": 16,
+            "doc_name": "43428880d75b3a14257c3ee9bda054e61eb869c0",
+            "text": "."
+        },
+        {
+            "i": 315,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "The"
+        },
+        {
+            "i": 316,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "ByteNet"
+        },
+        {
+            "i": 317,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "also"
+        },
+        {
+            "i": 318,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "achieves"
+        },
+        {
+            "i": 319,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "state"
+        },
+        {
+            "i": 320,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "-"
+        },
+        {
+            "i": 321,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "of"
+        },
+        {
+            "i": 322,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "-"
+        },
+        {
+            "i": 323,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "the"
+        },
+        {
+            "i": 324,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "-"
+        },
+        {
+            "i": 325,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "art"
+        },
+        {
+            "i": 326,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "performance"
+        },
+        {
+            "i": 327,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "on"
+        },
+        {
+            "i": 328,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "character"
+        },
+        {
+            "i": 329,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "-"
+        },
+        {
+            "i": 330,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "to"
+        },
+        {
+            "i": 331,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "-"
+        },
+        {
+            "i": 332,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "character"
+        },
+        {
+            "i": 333,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "machine"
+        },
+        {
+            "i": 334,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "translation"
+        },
+        {
+            "i": 335,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "on"
+        },
+        {
+            "i": 336,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "the"
+        },
+        {
+            "i": 337,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "English"
+        },
+        {
+            "i": 338,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "-"
+        },
+        {
+            "i": 339,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "to"
+        },
+        {
+            "i": 340,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "-"
+        },
+        {
+            "i": 341,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "German"
+        },
+        {
+            "i": 342,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "WMT"
+        },
+        {
+            "i": 343,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "translation"
+        },
+        {
+            "i": 344,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "task"
+        },
+        {
+            "i": 345,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": ","
+        },
+        {
+            "i": 346,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "surpassing"
+        },
+        {
+            "i": 347,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "comparable"
+        },
+        {
+            "i": 348,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "neural"
+        },
+        {
+            "i": 349,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "translation"
+        },
+        {
+            "i": 350,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "models"
+        },
+        {
+            "i": 351,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "that"
+        },
+        {
+            "i": 352,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "are"
+        },
+        {
+            "i": 353,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "based"
+        },
+        {
+            "i": 354,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "on"
+        },
+        {
+            "i": 355,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "recurrent"
+        },
+        {
+            "i": 356,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "networks"
+        },
+        {
+            "i": 357,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "with"
+        },
+        {
+            "i": 358,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "attentional"
+        },
+        {
+            "i": 359,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "pooling"
+        },
+        {
+            "i": 360,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "and"
+        },
+        {
+            "i": 361,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "run"
+        },
+        {
+            "i": 362,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "in"
+        },
+        {
+            "i": 363,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "quadratic"
+        },
+        {
+            "i": 364,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "time"
+        },
+        {
+            "i": 365,
+            "document": 17,
+            "doc_name": "4508f81033c9a7cec785ce4d16f1193920c1b341",
+            "text": "."
+        },
+        {
+            "i": 366,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "For"
+        },
+        {
+            "i": 367,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "example"
+        },
+        {
+            "i": 368,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": ","
+        },
+        {
+            "i": 369,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "direct"
+        },
+        {
+            "i": 370,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "loss"
+        },
+        {
+            "i": 371,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "optimization"
+        },
+        {
+            "i": 372,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "has"
+        },
+        {
+            "i": 373,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "been"
+        },
+        {
+            "i": 374,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "popularized"
+        },
+        {
+            "i": 375,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "in"
+        },
+        {
+            "i": 376,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "machine"
+        },
+        {
+            "i": 377,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "translation"
+        },
+        {
+            "i": 378,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "with"
+        },
+        {
+            "i": 379,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "the"
+        },
+        {
+            "i": 380,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "Minimum"
+        },
+        {
+            "i": 381,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "Error"
+        },
+        {
+            "i": 382,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "Rate"
+        },
+        {
+            "i": 383,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "Training"
+        },
+        {
+            "i": 384,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "algorithm"
+        },
+        {
+            "i": 385,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "("
+        },
+        {
+            "i": 386,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "MERT"
+        },
+        {
+            "i": 387,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": ";"
+        },
+        {
+            "i": 388,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "Och"
+        },
+        {
+            "i": 389,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "2003"
+        },
+        {
+            "i": 390,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": ")"
+        },
+        {
+            "i": 391,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "and"
+        },
+        {
+            "i": 392,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "expected"
+        },
+        {
+            "i": 393,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "risk"
+        },
+        {
+            "i": 394,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "minimization"
+        },
+        {
+            "i": 395,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "has"
+        },
+        {
+            "i": 396,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "an"
+        },
+        {
+            "i": 397,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "extensive"
+        },
+        {
+            "i": 398,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "history"
+        },
+        {
+            "i": 399,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "in"
+        },
+        {
+            "i": 400,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "NLP"
+        },
+        {
+            "i": 401,
+            "document": 18,
+            "doc_name": "3fc5ed18c2294596af072df929c8ee12c71f96a2",
+            "text": "."
+        },
+        {
+            "i": 402,
+            "document": 19,
+            "doc_name": "44fcb91c6c436902edb35b4c453c34fb353b14ad",
+            "text": "A"
+        },
+        {
+            "i": 403,
+            "document": 19,
+            "doc_name": "44fcb91c6c436902edb35b4c453c34fb353b14ad",
+            "text": "Convolutional"
+        },
+        {
+            "i": 404,
+            "document": 19,
+            "doc_name": "44fcb91c6c436902edb35b4c453c34fb353b14ad",
+            "text": "Encoder"
+        },
+        {
+            "i": 405,
+            "document": 19,
+            "doc_name": "44fcb91c6c436902edb35b4c453c34fb353b14ad",
+            "text": "Model"
+        },
+        {
+            "i": 406,
+            "document": 19,
+            "doc_name": "44fcb91c6c436902edb35b4c453c34fb353b14ad",
+            "text": "for"
+        },
+        {
+            "i": 407,
+            "document": 19,
+            "doc_name": "44fcb91c6c436902edb35b4c453c34fb353b14ad",
+            "text": "Neural"
+        },
+        {
+            "i": 408,
+            "document": 19,
+            "doc_name": "44fcb91c6c436902edb35b4c453c34fb353b14ad",
+            "text": "Machine"
+        },
+        {
+            "i": 409,
+            "document": 19,
+            "doc_name": "44fcb91c6c436902edb35b4c453c34fb353b14ad",
+            "text": "Translation"
+        },
+        {
+            "i": 410,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "We"
+        },
+        {
+            "i": 411,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "apply"
+        },
+        {
+            "i": 412,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "the"
+        },
+        {
+            "i": 413,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "MoE"
+        },
+        {
+            "i": 414,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "to"
+        },
+        {
+            "i": 415,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "the"
+        },
+        {
+            "i": 416,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "tasks"
+        },
+        {
+            "i": 417,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "of"
+        },
+        {
+            "i": 418,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "language"
+        },
+        {
+            "i": 419,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "modeling"
+        },
+        {
+            "i": 420,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "and"
+        },
+        {
+            "i": 421,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "machine"
+        },
+        {
+            "i": 422,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "translation"
+        },
+        {
+            "i": 423,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": ","
+        },
+        {
+            "i": 424,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "where"
+        },
+        {
+            "i": 425,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "model"
+        },
+        {
+            "i": 426,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "capacity"
+        },
+        {
+            "i": 427,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "is"
+        },
+        {
+            "i": 428,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "critical"
+        },
+        {
+            "i": 429,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "for"
+        },
+        {
+            "i": 430,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "absorbing"
+        },
+        {
+            "i": 431,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "the"
+        },
+        {
+            "i": 432,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "vast"
+        },
+        {
+            "i": 433,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "quantities"
+        },
+        {
+            "i": 434,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "of"
+        },
+        {
+            "i": 435,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "knowledge"
+        },
+        {
+            "i": 436,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "available"
+        },
+        {
+            "i": 437,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "in"
+        },
+        {
+            "i": 438,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "the"
+        },
+        {
+            "i": 439,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "training"
+        },
+        {
+            "i": 440,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "corpora"
+        },
+        {
+            "i": 441,
+            "document": 20,
+            "doc_name": "436b07bebaa1d1f05ef85415e10374048d25334d",
+            "text": "."
+        }
+    ],
+    "mentions": [
+        {
+            "start": 2,
+            "end": 4,
+            "clustId": "2-4"
+        },
+        {
+            "start": 18,
+            "end": 20,
+            "clustId": "2-4"
+        },
+        {
+            "start": 32,
+            "end": 34,
+            "clustId": "2-4"
+        },
+        {
+            "start": 38,
+            "end": 40,
+            "clustId": "2-4"
+        },
+        {
+            "start": 72,
+            "end": 74,
+            "clustId": "2-4"
+        },
+        {
+            "start": 94,
+            "end": 95,
+            "clustId": "2-4"
+        },
+        {
+            "start": 104,
+            "end": 109,
+            "clustId": "2-4"
+        },
+        {
+            "start": 115,
+            "end": 120,
+            "clustId": "2-4"
+        },
+        {
+            "start": 134,
+            "end": 136,
+            "clustId": "2-4"
+        },
+        {
+            "start": 143,
+            "end": 147,
+            "clustId": "2-4"
+        },
+        {
+            "start": 183,
+            "end": 184,
+            "clustId": "2-4"
+        },
+        {
+            "start": 202,
+            "end": 203,
+            "clustId": "2-4"
+        },
+        {
+            "start": 216,
+            "end": 218,
+            "clustId": "2-4"
+        },
+        {
+            "start": 248,
+            "end": 249,
+            "clustId": "2-4"
+        },
+        {
+            "start": 268,
+            "end": 269,
+            "clustId": "2-4"
+        },
+        {
+            "start": 276,
+            "end": 277,
+            "clustId": "2-4"
+        },
+        {
+            "start": 294,
+            "end": 295,
+            "clustId": "2-4"
+        },
+        {
+            "start": 328,
+            "end": 334,
+            "clustId": "2-4"
+        },
+        {
+            "start": 376,
+            "end": 377,
+            "clustId": "2-4"
+        },
+        {
+            "start": 407,
+            "end": 409,
+            "clustId": "2-4"
+        },
+        {
+            "start": 421,
+            "end": 422,
+            "clustId": "2-4"
+        }
+    ],
+    "selectedCluster": "2-4",
+    "clustersDesc": [
+        {
+            "clustId": "2-4",
+            "text": "Neural Machine Translation"
+        }
+    ]
+}

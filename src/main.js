@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import wrap from '@vue/web-component-wrapper';
 
+
 // new Vue({
 //   vuetify,
 //   VueTour,
