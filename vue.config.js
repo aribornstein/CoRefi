@@ -34,7 +34,8 @@ function enableShadowCss(config) {
 
 module.exports = {
   "transpileDependencies": [
-    "vuetify"
+    "vuetify",
+    "vue-tree-list"
   ],
   // https://cli.vuejs.org/guide/webpack.html#chaining-advanced
   chainWebpack: config => {
