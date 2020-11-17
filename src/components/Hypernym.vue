@@ -4,7 +4,6 @@
         <strong>Hierarchy:</strong>
       </v-chip>
     <vue-tree-list
-      @click="onClick"
       @drop="updateTree()"
       :model="clusterTree"
       default-tree-node-name="new node"
@@ -45,12 +44,6 @@
         this.clusterTree = new Tree(this.clusterList);
     },
     methods: {
-      onClick(params) {
-        console.log(params)
-      },
-      onDropAfter(params) {
-          console.log(params)
-      },
       addNode() {
         var node = new TreeNode({ name: 'new node', isLeaf: false })
         if (!this.clusterTree.children) this.clusterTree.children = []
@@ -82,7 +75,6 @@
 
       updateTree() {
           this.getNewTree()
-          console.log(this.newTree)
           return this.$emit('updateTree', this.newTree);
       }
     }

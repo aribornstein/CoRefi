@@ -17,8 +17,8 @@
             <li>Assign Mention to New Cluster: Ctrl + SPACE (Windows) or Alt + SPACE (MacOS)</li>
             <li>Select Cluster: Click on a previously assigned mention or use the ↔ keys on the keyboard</li>
             <li>Select Mention to Reassign: Ctrl + Click (Windows) or Alt + Click (MacOS) the mention</li>
-            <!-- <li>Fix Mention Span: Highlight the correct mention span length and press the F key</li>
-            <li>Insert New Mention: Highlight text preceeding the current mention that does not belong to another mention and press the N key</li> -->
+            <li>Fix Mention Span: Highlight the correct mention span length and press the F key</li>
+            <li>Insert New Mention: Highlight text preceeding the current mention that does not belong to another mention and press the N key</li>
           </ul>
         </v-card-text>
         <v-card-actions>
@@ -139,7 +139,7 @@
 </template>
 
 <script>
-import jsonData from  "./data/onboarding_example.json"// "./data/sentiment_examples.json" //"../../coref-hypernym/data/scirex2/135.json" //"./data/sentiment_examples.json" //"./data/scirex_example_.json"; 
+import jsonData from  "./data/onboarding_example.json"
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
 import VueTreeList from 'vue-tree-list'

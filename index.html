@@ -1,0 +1,54 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+<script src="https://unpkg.com/vue"></script>
+<script src="https://github.com/aribornstein/CoRefi/releases/download/1.1/co-refi.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Material+Icons"
+      rel="stylesheet">
+
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+
+<crowd-form answer-format="flatten-objects" answer-format="flatten-objects">
+  <div data-app>
+    <co-refi json="${data}"></co-refi>
+  </div>
+  <crowd-input id="result" name="result" style="display: none;"></crowd-input>
+
+</crowd-form>
+
+<script>
+  import jsonData from "./data/sentiment_examples.json" //"../../coref-hypernym/data/scirex2/135.json" //"./data/sentiment_examples.json" //"./data/scirex_example_.json"; 
+let coRefi = document.getElementsByTagName("co-refi")[0].vueComponent;
+
+document.querySelector('crowd-form').onsubmit = function (){
+    let resultFeild = document.getElementById("result");
+    let results = {tokens:coRefi.tokens, mentions:coRefi.mentions}
+    result.value = JSON.stringify(results);
+}
+
+function disableSubmit(){
+    window.setInterval(isHITComplete, 200); // disables the submit key until hit is complete it is hacky but works
+}
+
+function isHITComplete() {
+    let crowdButton = document.getElementsByTagName("crowd-button")[0];
+    // if all clusterIds assigned then show submit button
+    if (coRefi){
+        if (coRefi.mentionsViewed == coRefi.mentions.length-1) {
+          crowdButton.style.display = "block";
+        } else {
+        //   console.log((coRefi.mentionsViewed,coRefi.mentions.length));
+          crowdButton.style.display = "none";
+        }        
+    }
+}
+
+window.onload = disableSubmit;
+</script>

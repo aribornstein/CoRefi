@@ -101,9 +101,6 @@ export default {
         this.suggestedReviewerClusters.has(c.id)
       );
     }
-    // treeClusters: function() {
-    //   return new Tree(this.reviewBankClusters); 
-    // }
   },
   watch: {
     // whenever question changes, this function will run
