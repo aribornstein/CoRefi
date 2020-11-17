@@ -1,4 +1,5 @@
 {
+    "hypernym": true,
     "clusterName": "Sentiment Analysis",
     "mode": "annotation",
     "fixableSpans": false,
