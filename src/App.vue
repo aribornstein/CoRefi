@@ -38,51 +38,57 @@
       <v-spacer />
       Mention: {{ curMentionIndex + 1 }}/{{ mentions.length}} Document: {{parseInt(curDocument)}} / {{ tokens[tokens.length - 1].document }}
     </v-system-bar>
-    <v-main>
+
+       <v-main>
       <v-container ref="documents" v-mutate="docsOnScreen" style="max-width:850px" fluid>
-        <v-layout
-          v-for="(doc, docIndex) in docsViewModel"
-          :key="docIndex"
-          align-center
-          fluid
-          row
-          grid
-          body-1
-          mb-3
-          mt-3
+         <v-layout
+    v-for="(doc, docIndex) in docsViewModel"
+    :key="docIndex"
+  >
+    <v-container :class="doc.class">
+      <v-layout row>
+        <span mb-2 class="title">Document {{ docIndex + 1 }}:</span>
+      </v-layout>
+      <v-layout row mt-3>
+        <v-container 
+        v-for="para in doc.docSpans"
+        :key="para.start"
+        align-center
+        fluid
+        row
+        grid
+        body-1
+        mb-3
+        mt-3
         >
-          <v-container :class="doc.class">
-            <v-layout row>
-              <span mb-2 class="title">Document {{ docIndex + 1 }}:</span>
-            </v-layout>
-            <v-layout row mt-2>
-              <span
-                v-for="(tokenSpan, spanIndex) in doc.docSpans"
-                :key="spanIndex"
-                ref="mentions"
-                :class="tokenSpan.class"
-                @click="viewedMentionClicked($event, tokenSpan)"
-              >
-                <span
-                  v-if="!tokenSpan.tokens"
-                  :id="'token-' + tokenSpan.i"
-                  class="token"
-                  :class="{'no-white':tokenSpan.noWhite}"
-                  v-text="tokenSpan.text"
-                />
-                <span
-                  v-for="token in tokenSpan.tokens"
-                  v-else
-                  :id="'token-' + token.i"
-                  :key="token.i"
-                  class="token"
-                  :class="{ 'no-white':token.noWhite }"
-                  v-text="token.text"
-                />
-              </span>
-            </v-layout>
-          </v-container>
-        </v-layout>
+          <span
+          v-for="(tokenSpan, spanIndex) in para"
+          :key="spanIndex"
+          ref="mentions"
+          :class="tokenSpan.class"
+          @click="viewedMentionClicked($event, tokenSpan)"
+        >
+          <span
+            v-if="!tokenSpan.tokens"
+            :id="'token-' + tokenSpan.i"
+            class="token"
+            :class="{'no-white':tokenSpan.noWhite}"
+            v-text="tokenSpan.text"
+          />
+          <span
+            v-for="token in tokenSpan.tokens"
+            v-else
+            :id="'token-' + token.i"
+            :key="token.i"
+            class="mention"
+            :class="{ 'no-white':token.noWhite }"
+            v-text="token.text"
+          />
+        </span>
+        </v-container>
+      </v-layout>
+    </v-container>
+  </v-layout>
         <v-divider mx-4 />
       </v-container>
       <ClusterBank
@@ -95,6 +101,70 @@
         v-on:candidateSelected="selectCluster"
       ></ClusterBank>
     </v-main>
+
+    <!-- <v-main>
+      <v-container ref="documents" v-mutate="docsOnScreen" style="max-width:850px" fluid>
+  <v-layout
+    v-for="(doc, docIndex) in docsViewModel"
+    :key="docIndex"
+    mb-3
+    mt-3
+  >
+    <v-container :class="doc.class">
+      <v-layout row>
+        <span mb-2 class="title">Document {{ docIndex + 1 }}:</span>
+      </v-layout>
+      <v-layout row mt-3>
+        <v-container 
+        v-for="para in doc.docSpans"
+        :key="para.start"
+        align-center
+        fluid
+        row
+        grid
+        body-1
+        >
+          <span
+          v-for="(tokenSpan, spanIndex) in para"
+          :key="spanIndex"
+          ref="mentions"
+          :class="tokenSpan.class"
+          @click="viewedMentionClicked($event, tokenSpan)"
+        >
+          <span
+            v-if="!tokenSpan.tokens"
+            :id="'token-' + tokenSpan.i"
+            class="token"
+            :class="{'no-white':tokenSpan.noWhite}"
+            v-text="tokenSpan.text"
+          />
+          <span
+            v-for="token in tokenSpan.tokens"
+            v-else
+            :id="'token-' + token.i"
+            :key="token.i"
+            class="mention"
+            :class="{ 'no-white':token.noWhite }"
+            v-text="token.text"
+          />
+        </span>
+        </v-container>
+      </v-layout>
+    </v-container>
+  </v-layout>
+  <v-divider mx-4 />
+  <v-btn block color="#B0BEC5" v-if="this.hypernym" @click="showHideHypernym()">{{hypernymMessage}} Hypernyms </v-btn>
+  <ClusterBank
+        v-if="!clusterBarBottom"
+        :clusters="clusters"
+        :selectedCluster="selectedCluster"
+        :suggestedReviewerClusters="suggestedReviewerClusters"
+        :mode="mode"
+        v-on:newCluster="assignMention(true)"
+        v-on:candidateSelected="selectCluster"
+      ></ClusterBank>
+</v-container>
+    </v-main> -->
 
     <v-snackbar v-model="snackbar" :timeout="snackbarTimeout">
       {{ snackbarText }}
@@ -120,7 +190,7 @@
 </template>
 
 <script>
-import jsonData from "./data/onboarding_example.json";
+import jsonData from "./data/hit_data.json";
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
 import {
@@ -207,11 +277,21 @@ export default {
     documents: function () {
       const documents = this.groupBy(this.tokens, "document");
       Object.keys(documents).map((doc) => {
+        var paragraphs = this.groupBy(documents[doc], "paragraph")
+        Object.keys(paragraphs).map((para) => {
+            paragraphs[para] = {
+              start: paragraphs[para][0].i,
+              end: paragraphs[para][paragraphs[para].length - 1].i,
+              mentions: this.getParagraphMentions(paragraphs[para][0].i, paragraphs[para][paragraphs[para].length - 1].i)
+            }
+        })
         documents[doc] = {
           start: documents[doc][0].i,
           end: documents[doc][documents[doc].length - 1].i,
+          paragraphs: paragraphs,
         };
       });
+
       return documents;
     },
 
@@ -288,24 +368,31 @@ export default {
     },
 
     docsViewModel: function () {
-      let documentSpans = [],
-        mentInd = 0;
+      const start = Date.now();
+      let documentSpans = [];
+      let mentInd = 0;
 
       // For each doc up to the current doc
       for (let [doc_id, doc] of Object.entries(this.documents)) {
+
         const spans = [];
-        let tokInd = doc.start;
-        while (tokInd <= doc.end) {
-          if (tokInd == this.mentions[mentInd].start) {
-            // process mention
+        // let tokInd = doc.start;
+
+        //for each paragraph in the document 
+        for (let para of Object.values(doc.paragraphs)) {
+          let paragraph_spans = [];
+
+          paragraph_spans.push(...this.tokens.slice(para.start, para.mentions[0].start));
+          for (var i=0; i<para.mentions.length; i++) {
+            let mention = para.mentions[i];
             let mentionSpan = {
               tokens: this.tokens.slice(
-                this.mentions[mentInd].start,
-                this.mentions[mentInd].end + 1
+                mention.start,
+                mention.end + 1
               ),
               index: mentInd
             };
-            // mention type
+
             if (mentInd == this.curMentionIndex) {
               mentionSpan.class = "current";
             } else if (this.mentions[mentInd].clustId == this.selectedCluster) {
@@ -313,17 +400,22 @@ export default {
             } else {
               mentionSpan.class = "viewed";
             }
-            spans.push(mentionSpan);
-            // increment indexes
-            tokInd += mentionSpan.tokens.length;
-            if (mentInd < this.mentionsViewed) {
-              mentInd += 1;
+
+            paragraph_spans.push(mentionSpan);
+            mentInd += 1;
+
+            if (i < para.mentions.length - 1) {
+              paragraph_spans.push(...this.tokens.slice(mention.end + 1, para.mentions[i+1].start));
             }
-          } else {
-            spans.push(this.tokens[tokInd]);
-            tokInd += 1;
           }
+          
+          paragraph_spans.push(...this.tokens.slice(para.mentions[para.mentions.length - 1].end + 1, para.end + 1));
+          spans.push(paragraph_spans)
         }
+        
+        
+
+        //process document type
         //process document type
         if (doc_id != this.curDocument) {
           documentSpans.push({ class: "other-document", docSpans: spans });
@@ -332,8 +424,62 @@ export default {
           break;
         }
       }
+      const millis = Date.now() - start;
+      console.log(`Milli seconds elapsed = ${Math.floor(millis)}`);
+
       return documentSpans;
     },
+
+  //   docsViewModel: function () {
+  //     const start = Date.now();
+  //     let documentSpans = [],
+  //       mentInd = 0;
+
+  //     // For each doc up to the current doc
+  //     for (let [doc_id, doc] of Object.entries(this.documents)) {
+  //       const spans = [];
+  //       let tokInd = doc.start;
+  //       while (tokInd <= doc.end) {
+  //         if (tokInd == this.mentions[mentInd].start) {
+  //           // process mention
+  //           let mentionSpan = {
+  //             tokens: this.tokens.slice(
+  //               this.mentions[mentInd].start,
+  //               this.mentions[mentInd].end + 1
+  //             ),
+  //             index: mentInd
+  //           };
+  //           // mention type
+  //           if (mentInd == this.curMentionIndex) {
+  //             mentionSpan.class = "current";
+  //           } else if (this.mentions[mentInd].clustId == this.selectedCluster) {
+  //             mentionSpan.class = "cluster";
+  //           } else {
+  //             mentionSpan.class = "viewed";
+  //           }
+  //           spans.push(mentionSpan);
+  //           // increment indexes
+  //           tokInd += mentionSpan.tokens.length;
+  //           if (mentInd < this.mentionsViewed) {
+  //             mentInd += 1;
+  //           }
+  //         } else {
+  //           spans.push(this.tokens[tokInd]);
+  //           tokInd += 1;
+  //         }
+  //       }
+  //       //process document type
+  //       if (doc_id != this.curDocument) {
+  //         documentSpans.push({ class: "other-document", docSpans: spans });
+  //       } else {
+  //         documentSpans.push({ class: "", docSpans: spans });
+  //         break;
+  //       }
+  //     }
+  //     const millis = Date.now() - start;
+  //     console.log(`Milli seconds elapsed = ${Math.floor(millis)}`);
+  //     return documentSpans;
+  //   },
   },
   created() {
     window.addEventListener("keydown", this.processInput);
@@ -371,6 +517,10 @@ export default {
     }
   },
   methods: {
+    getParagraphMentions(start, end) {
+      return this.mentions.filter(mention => mention.start >= start && mention.end <= end)
+    },
+
     groupBy(xs, key) {
       return xs.reduce(function (rv, x) {
         (rv[x[key]] = rv[x[key]] || []).push(x);
