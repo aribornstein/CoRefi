@@ -181,7 +181,7 @@
             "header": {
                 "title": "Selecting Clusters"
             },
-            "content": "Clusters can be selected with the arrow keys, or by clicking on a previously assigned mention.",
+            "content": "Clusters can be selected with the arrow keys, or by clicking on a previously asigned mention.",
             "params": {
                 "placement": "right"
               }
@@ -219,7 +219,7 @@
             "header": {
                 "title": "Reassigning a Mention"
             },
-            "content": "If a mention was assigned incorrectly assigned it can be selected for reassignment at any point with Ctrl + Click on Mention (Windows) or Alt + Click on Mention (MacOS)."
+            "content": "If a mention was assigned incorrectly it can be selected for reassignment at any point with Ctrl + Click on Mention (Windows) or Alt + Click on Mention (MacOS)."
         },
         {
             "target": ".current",
@@ -233,7 +233,7 @@
             "header": {
                 "title": "Finish The Annotation"
             },
-            "content": "Now using what you've learned assign the remaining mentions to the correct clusters until they are all assigned. Don't worry if you make mistakes CoRefi will guided to the correct answers."
+            "content": "Now using what you've learned assign the remaining mentions to the correct clusters until they are all assigned. Don't worry if you make mistakes CoRefi will guide you to the correct answers."
         }
     ],
     "snackbarTimeout": 3000

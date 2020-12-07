@@ -14,11 +14,26 @@
         <v-card-text>
           <ul>
             <li>Assign Mention to Current Cluster: SPACE</li>
-            <li>Assign Mention to New Cluster: Ctrl + SPACE (Windows) or Alt + SPACE (MacOS)</li>
-            <li>Select Cluster: Click on a previously assigned mention or use the ↔ keys on the keyboard</li>
-            <li>Select Mention to Reassign: Ctrl + Click (Windows) or Alt + Click (MacOS) the mention</li>
-            <li>Fix Mention Span: Highlight the correct mention span length and press the F key</li>
-            <li>Insert New Mention: Highlight text preceeding the current mention that does not belong to another mention and press the N key</li>
+            <li>
+              Assign Mention to New Cluster: Ctrl + SPACE (Windows) or Alt +
+              SPACE (MacOS)
+            </li>
+            <li>
+              Select Cluster: Click on a previously assigned mention or use the
+              ↔ keys on the keyboard
+            </li>
+            <li>
+              Select Mention to Reassign: Ctrl + Click (Windows) or Alt + Click
+              (MacOS) the mention
+            </li>
+            <li>
+              Fix Mention Span: Highlight the correct mention span length and
+              press the F key
+            </li>
+            <li>
+              Insert New Mention: Highlight text preceeding the current mention
+              that does not belong to another mention and press the N key
+            </li>
           </ul>
         </v-card-text>
         <v-card-actions>
@@ -36,59 +51,62 @@
         contain
       ></v-img>
       <v-spacer />
-      Mention: {{ curMentionIndex + 1 }}/{{ mentions.length}} Document: {{parseInt(curDocument)}} / {{ tokens[tokens.length - 1].document }}
+      Mention: {{ curMentionIndex + 1 }}/{{ mentions.length }} Document:
+      {{ parseInt(curDocument) }} / {{ tokens[tokens.length - 1].document }}
     </v-system-bar>
 
-       <v-main>
-      <v-container ref="documents" v-mutate="docsOnScreen" style="max-width:850px" fluid>
-         <v-layout
-    v-for="(doc, docIndex) in docsViewModel"
-    :key="docIndex"
-  >
-    <v-container :class="doc.class">
-      <v-layout row>
-        <span mb-2 class="title">Document {{ docIndex + 1 }}:</span>
-      </v-layout>
-      <v-layout row mt-3>
-        <v-container 
-        v-for="para in doc.docSpans"
-        :key="para.start"
-        align-center
+    <v-main>
+      <v-container
+        ref="documents"
+        v-mutate="docsOnScreen"
+        style="max-width: 850px"
         fluid
-        row
-        grid
-        body-1
-        mb-3
-        mt-3
-        >
-          <span
-          v-for="(tokenSpan, spanIndex) in para"
-          :key="spanIndex"
-          ref="mentions"
-          :class="tokenSpan.class"
-          @click="viewedMentionClicked($event, tokenSpan)"
-        >
-          <span
-            v-if="!tokenSpan.tokens"
-            :id="'token-' + tokenSpan.i"
-            class="token"
-            :class="{'no-white':tokenSpan.noWhite}"
-            v-text="tokenSpan.text"
-          />
-          <span
-            v-for="token in tokenSpan.tokens"
-            v-else
-            :id="'token-' + token.i"
-            :key="token.i"
-            class="mention"
-            :class="{ 'no-white':token.noWhite }"
-            v-text="token.text"
-          />
-        </span>
-        </v-container>
-      </v-layout>
-    </v-container>
-  </v-layout>
+      >
+        <v-layout v-for="(doc, docIndex) in docsViewModel" :key="docIndex">
+          <v-container :class="doc.class">
+            <v-layout row>
+              <span mb-2 class="title">Document {{ docIndex + 1 }}:</span>
+            </v-layout>
+            <v-layout row mt-3>
+              <v-container
+                v-for="para in doc.docSpans"
+                :key="para.start"
+                align-center
+                fluid
+                row
+                grid
+                body-1
+                mb-3
+                mt-3
+              >
+                <span
+                  v-for="(tokenSpan, spanIndex) in para"
+                  :key="spanIndex"
+                  ref="mentions"
+                  :class="tokenSpan.class"
+                  @click="viewedMentionClicked($event, tokenSpan)"
+                >
+                  <span
+                    v-if="!tokenSpan.tokens"
+                    :id="'token-' + tokenSpan.i"
+                    class="token"
+                    :class="{ 'no-white': tokenSpan.noWhite }"
+                    v-text="tokenSpan.text"
+                  />
+                  <span
+                    v-for="token in tokenSpan.tokens"
+                    v-else
+                    :id="'token-' + token.i"
+                    :key="token.i"
+                    class="mention"
+                    :class="{ 'no-white': token.noWhite }"
+                    v-text="token.text"
+                  />
+                </span>
+              </v-container>
+            </v-layout>
+          </v-container>
+        </v-layout>
         <v-divider mx-4 />
       </v-container>
       <ClusterBank
@@ -102,70 +120,6 @@
       ></ClusterBank>
     </v-main>
 
-    <!-- <v-main>
-      <v-container ref="documents" v-mutate="docsOnScreen" style="max-width:850px" fluid>
-  <v-layout
-    v-for="(doc, docIndex) in docsViewModel"
-    :key="docIndex"
-    mb-3
-    mt-3
-  >
-    <v-container :class="doc.class">
-      <v-layout row>
-        <span mb-2 class="title">Document {{ docIndex + 1 }}:</span>
-      </v-layout>
-      <v-layout row mt-3>
-        <v-container 
-        v-for="para in doc.docSpans"
-        :key="para.start"
-        align-center
-        fluid
-        row
-        grid
-        body-1
-        >
-          <span
-          v-for="(tokenSpan, spanIndex) in para"
-          :key="spanIndex"
-          ref="mentions"
-          :class="tokenSpan.class"
-          @click="viewedMentionClicked($event, tokenSpan)"
-        >
-          <span
-            v-if="!tokenSpan.tokens"
-            :id="'token-' + tokenSpan.i"
-            class="token"
-            :class="{'no-white':tokenSpan.noWhite}"
-            v-text="tokenSpan.text"
-          />
-          <span
-            v-for="token in tokenSpan.tokens"
-            v-else
-            :id="'token-' + token.i"
-            :key="token.i"
-            class="mention"
-            :class="{ 'no-white':token.noWhite }"
-            v-text="token.text"
-          />
-        </span>
-        </v-container>
-      </v-layout>
-    </v-container>
-  </v-layout>
-  <v-divider mx-4 />
-  <v-btn block color="#B0BEC5" v-if="this.hypernym" @click="showHideHypernym()">{{hypernymMessage}} Hypernyms </v-btn>
-  <ClusterBank
-        v-if="!clusterBarBottom"
-        :clusters="clusters"
-        :selectedCluster="selectedCluster"
-        :suggestedReviewerClusters="suggestedReviewerClusters"
-        :mode="mode"
-        v-on:newCluster="assignMention(true)"
-        v-on:candidateSelected="selectCluster"
-      ></ClusterBank>
-</v-container>
-    </v-main> -->
-
     <v-snackbar v-model="snackbar" :timeout="snackbarTimeout">
       {{ snackbarText }}
       <v-btn color="blue" text @click="snackbar = false">Close</v-btn>
@@ -173,7 +127,15 @@
 
     <v-tour name="myTour" :steps="tourSteps" />
     <v-footer :fixed="fixedFooter">
-      <v-btn id="help" @click.stop="help = true" fab dark small icon color="blue">
+      <v-btn
+        id="help"
+        @click.stop="help = true"
+        fab
+        dark
+        small
+        icon
+        color="blue"
+      >
         <v-icon>mdi-help</v-icon>
       </v-btn>
       <ClusterBank
@@ -190,7 +152,7 @@
 </template>
 
 <script>
-import jsonData from "./data/hit_data.json";
+import jsonData from "./data/onboarding_example.json"; 
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
 import {
@@ -267,7 +229,7 @@ export default {
     data.snackbar = false;
     data.snackbarText = "";
     data.snackbarTimeout = 2000;
-    data.fixedFooter = !data.fixedFooter ? false: true;
+    data.fixedFooter = !data.fixedFooter ? false : true;
     data.help = false;
     data.previousCoreferringWorkerTokens = {};
     data.clusterBarBottom = false;
@@ -277,14 +239,17 @@ export default {
     documents: function () {
       const documents = this.groupBy(this.tokens, "document");
       Object.keys(documents).map((doc) => {
-        var paragraphs = this.groupBy(documents[doc], "paragraph")
+        var paragraphs = this.groupBy(documents[doc], "paragraph");
         Object.keys(paragraphs).map((para) => {
-            paragraphs[para] = {
-              start: paragraphs[para][0].i,
-              end: paragraphs[para][paragraphs[para].length - 1].i,
-              mentions: this.getParagraphMentions(paragraphs[para][0].i, paragraphs[para][paragraphs[para].length - 1].i)
-            }
-        })
+          paragraphs[para] = {
+            start: paragraphs[para][0].i,
+            end: paragraphs[para][paragraphs[para].length - 1].i,
+            mentions: this.getParagraphMentions(
+              paragraphs[para][0].i,
+              paragraphs[para][paragraphs[para].length - 1].i
+            ),
+          };
+        });
         documents[doc] = {
           start: documents[doc][0].i,
           end: documents[doc][documents[doc].length - 1].i,
@@ -368,29 +333,25 @@ export default {
     },
 
     docsViewModel: function () {
-      const start = Date.now();
       let documentSpans = [];
       let mentInd = 0;
 
       // For each doc up to the current doc
       for (let [doc_id, doc] of Object.entries(this.documents)) {
-
         const spans = [];
-        // let tokInd = doc.start;
 
-        //for each paragraph in the document 
+        //for each paragraph in the document
         for (let para of Object.values(doc.paragraphs)) {
           let paragraph_spans = [];
 
-          paragraph_spans.push(...this.tokens.slice(para.start, para.mentions[0].start));
-          for (var i=0; i<para.mentions.length; i++) {
+          paragraph_spans.push(
+            ...this.tokens.slice(para.start, para.mentions[0].start)
+          );
+          for (var i = 0; i < para.mentions.length; i++) {
             let mention = para.mentions[i];
             let mentionSpan = {
-              tokens: this.tokens.slice(
-                mention.start,
-                mention.end + 1
-              ),
-              index: mentInd
+              tokens: this.tokens.slice(mention.start, mention.end + 1),
+              index: mentInd,
             };
 
             if (mentInd == this.curMentionIndex) {
@@ -405,17 +366,24 @@ export default {
             mentInd += 1;
 
             if (i < para.mentions.length - 1) {
-              paragraph_spans.push(...this.tokens.slice(mention.end + 1, para.mentions[i+1].start));
+              paragraph_spans.push(
+                ...this.tokens.slice(
+                  mention.end + 1,
+                  para.mentions[i + 1].start
+                )
+              );
             }
           }
-          
-          paragraph_spans.push(...this.tokens.slice(para.mentions[para.mentions.length - 1].end + 1, para.end + 1));
-          spans.push(paragraph_spans)
-        }
-        
-        
 
-        //process document type
+          paragraph_spans.push(
+            ...this.tokens.slice(
+              para.mentions[para.mentions.length - 1].end + 1,
+              para.end + 1
+            )
+          );
+          spans.push(paragraph_spans);
+        }
+
         //process document type
         if (doc_id != this.curDocument) {
           documentSpans.push({ class: "other-document", docSpans: spans });
@@ -424,62 +392,8 @@ export default {
           break;
         }
       }
-      const millis = Date.now() - start;
-      console.log(`Milli seconds elapsed = ${Math.floor(millis)}`);
-
       return documentSpans;
     },
-
-  //   docsViewModel: function () {
-  //     const start = Date.now();
-  //     let documentSpans = [],
-  //       mentInd = 0;
-
-  //     // For each doc up to the current doc
-  //     for (let [doc_id, doc] of Object.entries(this.documents)) {
-  //       const spans = [];
-  //       let tokInd = doc.start;
-  //       while (tokInd <= doc.end) {
-  //         if (tokInd == this.mentions[mentInd].start) {
-  //           // process mention
-  //           let mentionSpan = {
-  //             tokens: this.tokens.slice(
-  //               this.mentions[mentInd].start,
-  //               this.mentions[mentInd].end + 1
-  //             ),
-  //             index: mentInd
-  //           };
-  //           // mention type
-  //           if (mentInd == this.curMentionIndex) {
-  //             mentionSpan.class = "current";
-  //           } else if (this.mentions[mentInd].clustId == this.selectedCluster) {
-  //             mentionSpan.class = "cluster";
-  //           } else {
-  //             mentionSpan.class = "viewed";
-  //           }
-  //           spans.push(mentionSpan);
-  //           // increment indexes
-  //           tokInd += mentionSpan.tokens.length;
-  //           if (mentInd < this.mentionsViewed) {
-  //             mentInd += 1;
-  //           }
-  //         } else {
-  //           spans.push(this.tokens[tokInd]);
-  //           tokInd += 1;
-  //         }
-  //       }
-  //       //process document type
-  //       if (doc_id != this.curDocument) {
-  //         documentSpans.push({ class: "other-document", docSpans: spans });
-  //       } else {
-  //         documentSpans.push({ class: "", docSpans: spans });
-  //         break;
-  //       }
-  //     }
-  //     const millis = Date.now() - start;
-  //     console.log(`Milli seconds elapsed = ${Math.floor(millis)}`);
-  //     return documentSpans;
-  //   },
   },
   created() {
     window.addEventListener("keydown", this.processInput);
@@ -518,7 +432,9 @@ export default {
   },
   methods: {
     getParagraphMentions(start, end) {
-      return this.mentions.filter(mention => mention.start >= start && mention.end <= end)
+      return this.mentions.filter(
+        (mention) => mention.start >= start && mention.end <= end
+      );
     },
 
     groupBy(xs, key) {
@@ -549,7 +465,7 @@ export default {
             e.preventDefault();
             this.newMention();
           }
-          break;        
+          break;
         case 32: // space
           e.preventDefault();
           this.assignMention(e.altKey || e.ctrlKey);
@@ -568,7 +484,7 @@ export default {
     },
 
     viewedMentionClicked(e, mention) {
-      if (!mention.class){
+      if (!mention.class) {
         return; // just a token not a mention
       }
       if (e.altKey || e.ctrlKey) {
@@ -577,8 +493,11 @@ export default {
           this.reassignMention(mention.index);
         }
       } else {
-        if (mention.index != undefined && mention.index != this.curMentionIndex){
-            this.selectCluster(this.mentions[mention.index].clustId);
+        if (
+          mention.index != undefined &&
+          mention.index != this.curMentionIndex
+        ) {
+          this.selectCluster(this.mentions[mention.index].clustId);
         }
       }
     },
@@ -599,9 +518,17 @@ export default {
     fixSpan() {
       let [newStart, newEnd] = this.getSelection();
 
-      if (this.curMentionIndex > 0 && newStart <= this.mentions[this.curMentionIndex - 1].end){
-          newStart = this.mentions[this.curMentionIndex - 1].end + 1;
-      } 
+      if (isNaN(newStart) || isNaN(newEnd)) {
+        // If select is called before rerender
+        return;
+      }
+
+      if (
+        this.curMentionIndex > 0 &&
+        newStart <= this.mentions[this.curMentionIndex - 1].end
+      ) {
+        newStart = this.mentions[this.curMentionIndex - 1].end + 1;
+      }
 
       if (newStart > this.curMention.end || newEnd < this.curMention.start) {
         return; // if new mention span doesn't overlap with current mention
@@ -626,7 +553,7 @@ export default {
 
       // If the current mention span is longer than the new end split the mention
       if (this.curMention.end > newEnd) {
-        let newMention = {...this.curMention};
+        let newMention = { ...this.curMention };
         newMention.start = newEnd + 1;
         this.mentions.splice(this.curMentionIndex + 1, 0, newMention);
       }
@@ -635,18 +562,27 @@ export default {
       this.mentions[this.curMentionIndex].end = newEnd;
     },
 
-    validateInsertion(newStart, newEnd){
+    validateInsertion(newStart, newEnd) {
       /*
       If mention is valid returns insertion index otherwise returns -1 
       */
-      if (this.mode == "onboarding" && (
-          this.goldMentions[0].start != newStart ||
-          this.goldMentions[0].end != newEnd)){
-          return -1;
+      if (
+        this.mode == "onboarding" &&
+        (this.goldMentions[0].start != newStart ||
+          this.goldMentions[0].end != newEnd)
+      ) {
+        return -1;
       }
-      
-      if ( !this.mentions.includes(m=> m.start <= newEnd && newStart <= m.end)){
-        const insertionIndex = this.mentions.length - this.mentions.slice().reverse().findIndex(m => m.start < newStart);
+
+      if (
+        !this.mentions.includes((m) => m.start <= newEnd && newStart <= m.end)
+      ) {
+        const insertionIndex =
+          this.mentions.length -
+          this.mentions
+            .slice()
+            .reverse()
+            .findIndex((m) => m.start < newStart);
         if (this.mentionsViewed >= insertionIndex) {
           return insertionIndex;
         }
@@ -655,18 +591,20 @@ export default {
     },
 
     newMention() {
-       let [newStart, newEnd] = this.getSelection();
-       if ( !this.mentions.includes(m=> m.start <= newEnd && newStart <= m.end)){
+      let [newStart, newEnd] = this.getSelection();
+      if (
+        !this.mentions.includes((m) => m.start <= newEnd && newStart <= m.end)
+      ) {
         const insertionIndex = this.validateInsertion(newStart, newEnd);
         if (insertionIndex > -1) {
           let newMention = {
-            start:newStart,
-            end:newEnd
+            start: newStart,
+            end: newEnd,
           };
           this.mentions.splice(insertionIndex, 0, newMention);
           this.curMentionIndex = insertionIndex;
         }
-      }   
+      }
     },
 
     selectCluster(clustId) {
@@ -706,27 +644,30 @@ export default {
       }
 
       // this assignment forces the computed clusters property to be recalculated
-      let newAssignment = {...this.mentions[this.curMentionIndex]};
+      let newAssignment = { ...this.mentions[this.curMentionIndex] };
       newAssignment.clustId = clusterAssignment;
-      this.$set(this.mentions, this.curMentionIndex, newAssignment)
+      this.$set(this.mentions, this.curMentionIndex, newAssignment);
 
       if (this.curMentionIndex == this.mentionsViewed) {
-        this.mentionsViewed = Math.min(this.mentions.length -1 , this.mentionsViewed + 1);
+        this.mentionsViewed = Math.min(
+          this.mentions.length - 1,
+          this.mentionsViewed + 1
+        );
         // this.mentionsViewed += 1;
       }
       this.curMentionIndex = this.mentionsViewed;
     },
 
     isValidAssignment(clusterAssignment) {
-      // don't validate ressignments 
-      if (this.curMentionIndex != this.mentionsViewed){
+      // don't validate ressignments
+      if (this.curMentionIndex != this.mentionsViewed) {
         return true;
       }
       if (
         this.goldMentions[0].start != this.curMention.start ||
         this.goldMentions[0].end != this.curMention.end
       ) {
-        if (this.goldMentions[0].insertionErrorMessage){
+        if (this.goldMentions[0].insertionErrorMessage) {
           this.notify(this.goldMentions[0].insertionErrorMessage);
         } else {
           this.notify(this.goldMentions[0].fixSpanMessage);
@@ -793,16 +734,15 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 @import url("https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css");
 @import url("../node_modules/vuetify/dist/vuetify.min.css");
-
 .token,
-.mention-token {
+.mention {
   margin-right: 0.3em;
 }
 .token:hover {
   background-color: #ffffb8;
 }
 .no-white {
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 .viewed:hover {
   font-weight: medium;
