@@ -358,7 +358,7 @@ export default {
               mentionSpan.class = "current";
             } else if (this.mentions[mentInd].clustId == this.selectedCluster) {
               mentionSpan.class = "cluster";
-            } else {
+            } else if (mentInd < this.mentionsViewed){
               mentionSpan.class = "viewed";
             }
 
@@ -653,7 +653,6 @@ export default {
           this.mentions.length - 1,
           this.mentionsViewed + 1
         );
-        // this.mentionsViewed += 1;
       }
       this.curMentionIndex = this.mentionsViewed;
     },
