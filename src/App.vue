@@ -152,7 +152,7 @@
 </template>
 
 <script>
-import jsonData from "./data/onboarding_example.json"; 
+import jsonData from "./data/onboarding_example.json";
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
 import {
@@ -356,9 +356,12 @@ export default {
 
             if (mentInd == this.curMentionIndex) {
               mentionSpan.class = "current";
-            } else if (this.mentions[mentInd].clustId == this.selectedCluster) {
+            } else if (
+              this.mentions[mentInd].clustId == this.selectedCluster &&
+              mentInd < this.mentionsViewed
+            ) {
               mentionSpan.class = "cluster";
-            } else if (mentInd < this.mentionsViewed){
+            } else if (mentInd < this.mentionsViewed) {
               mentionSpan.class = "viewed";
             }
 
@@ -631,6 +634,19 @@ export default {
       this.curMentionIndex = index;
     },
 
+    updateMentionClustId(clusterAssignment, mentionIndex) {
+      let newAssignment = { ...this.mentions[mentionIndex] };
+      newAssignment.clustId = clusterAssignment;
+      this.$set(this.mentions, mentionIndex, newAssignment);
+    },
+
+    getClusterIndexes(clustId) {
+      return this.mentions.reduce(
+        (acc, m, i) => (m.clustId === clustId ? [...acc, i] : acc),
+        []
+      );
+    },
+
     assignMention(isNewCluster) {
       let clusterAssignment = isNewCluster
         ? this.curMention.start + "-" + this.curMention.end
@@ -643,11 +659,36 @@ export default {
         return;
       }
 
-      // this assignment forces the computed clusters property to be recalculated
-      let newAssignment = { ...this.mentions[this.curMentionIndex] };
-      newAssignment.clustId = clusterAssignment;
-      this.$set(this.mentions, this.curMentionIndex, newAssignment);
+      //if mentions already been assigned
+      if (this.mentions[this.curMentionIndex].clustId) {
+        // Get all mention indexes with current clusterId
+        const clustMentionIndexes = this.getClusterIndexes(
+          this.mentions[this.curMentionIndex].clustId
+        );
+        if (
+          this.curMentionIndex == clustMentionIndexes[0] &&
+          clustMentionIndexes.length > 1
+        ) {
+          //update all the other mentions to point at the second mention in the cluster
+          const secondMention = this.mentions[clustMentionIndexes[1]];
+          const secondClustId = secondMention.start + "-" + secondMention.end;
+          clustMentionIndexes
+            .slice(1, clustMentionIndexes.length)
+            .map((m_ind) => this.updateMentionClustId(secondClustId, m_ind));
+        }
+      }
+      this.updateMentionClustId(clusterAssignment, this.curMentionIndex);
+      //ensure that the cluster that's been assigned is defined by it's root
+      const clustMentionIndexes = this.getClusterIndexes(clusterAssignment);
+      if (this.curMentionIndex == clustMentionIndexes[0]) {
+        const newClustId = this.curMention.start + "-" + this.curMention.end;
+        clustMentionIndexes.map((m_ind) =>
+          this.updateMentionClustId(newClustId, m_ind)
+        );
+        this.selectedCluster = newClustId;
+      }
 
+      // set new current mention index
       if (this.curMentionIndex == this.mentionsViewed) {
         this.mentionsViewed = Math.min(
           this.mentions.length - 1,
