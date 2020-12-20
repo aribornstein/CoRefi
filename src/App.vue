@@ -680,7 +680,7 @@ export default {
       this.updateMentionClustId(clusterAssignment, this.curMentionIndex);
       //ensure that the cluster that's been assigned is defined by it's root
       const clustMentionIndexes = this.getClusterIndexes(clusterAssignment);
-      if (this.curMentionIndex == clustMentionIndexes[0]) {
+      if (this.curMentionIndex == clustMentionIndexes[0] && clustMentionIndexes.length > 1) {
         const newClustId = this.curMention.start + "-" + this.curMention.end;
         clustMentionIndexes.map((m_ind) =>
           this.updateMentionClustId(newClustId, m_ind)
