@@ -34,6 +34,10 @@
               Insert New Mention: Highlight text preceeding the current mention
               that does not belong to another mention and press the N key
             </li>
+            <li>
+              Toggle Cluster Bank Wrap: To show all the clusters at once press the W key to 
+              scroll clusters press W a second time.
+            </li>
           </ul>
         </v-card-text>
         <v-card-actions>
