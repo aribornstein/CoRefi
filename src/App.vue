@@ -115,6 +115,7 @@
         :selectedCluster="selectedCluster"
         :suggestedReviewerClusters="suggestedReviewerClusters"
         :mode="mode"
+        :wrap="wrap"
         v-on:newCluster="assignMention(true)"
         v-on:candidateSelected="selectCluster"
       ></ClusterBank>
@@ -144,6 +145,7 @@
         :selectedCluster.sync="selectedCluster"
         :suggestedReviewerClusters="suggestedReviewerClusters"
         :mode="mode"
+        :wrap="wrap"
         v-on:newCluster="assignMention(true)"
         v-on:candidateSelected="selectCluster"
       ></ClusterBank>
@@ -226,6 +228,7 @@ export default {
     data.tourSteps = !data.tourSteps ? [] : data.tourSteps; // if not created
     data.curMentionIndex = 1;
     data.mentionsViewed = 1;
+    data.wrap = false;
     data.snackbar = false;
     data.snackbarText = "";
     data.snackbarTimeout = 2000;
@@ -456,6 +459,10 @@ export default {
     processInput(e) {
       // do stuff
       switch (e.keyCode) {
+        case 87: // W
+          console.log("Why?");
+          this.wrap = !this.wrap;
+          break;
         case 70: //f
         case 102: //F
           if (!(e.altKey || e.ctrlKey) && this.fixableSpans) {

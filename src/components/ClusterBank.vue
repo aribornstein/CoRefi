@@ -1,7 +1,14 @@
 <template>
   <v-main>
-    <div v-if="mode=='reviewer'" class="d-flex .justify-center">
-      <v-chip class="ma-2" disabled label color="white" font-weight="700" text-color="black">
+    <div v-if="mode == 'reviewer'" class="d-flex .justify-center">
+      <v-chip
+        class="ma-2"
+        disabled
+        label
+        color="white"
+        font-weight="700"
+        text-color="black"
+      >
         <strong>Annotator Clusters:</strong>
       </v-chip>
       <v-chip-group
@@ -9,11 +16,10 @@
         v-bind:value="currentCluster"
         active-class="primary--text"
         mandatory
-        show-arrows
       >
         <v-chip
           small
-          v-if="reviewBankClusters.length==0"
+          v-if="reviewBankClusters.length == 0"
           text-color="purple"
           color="#F7EFFF"
           @click="newCluster"
@@ -28,11 +34,18 @@
           @click="candidateSelected(cluster.id)"
           label
           small
-        >{{ cluster.text }}</v-chip>
+          >{{ cluster.text }}</v-chip
+        >
       </v-chip-group>
     </div>
-    <v-divider v-if="mode=='reviewer'"></v-divider>
-    <v-chip-group active-class="primary--text" mandatory show-arrows v-model="currentCluster">
+    <v-divider v-if="mode == 'reviewer'"></v-divider>
+    <v-chip-group
+      active-class="primary--text"
+      mandatory
+      v-bind:column="wrap"
+      show-arrows
+      v-model="currentCluster"
+    >
       <v-chip small @click="newCluster">
         <v-icon color="#2d9cdb" dark>mdi-plus</v-icon>
       </v-chip>
@@ -43,7 +56,8 @@
         @click="candidateSelected(cluster.id)"
         label
         small
-      >{{ cluster.text }}</v-chip>
+        >{{ cluster.text }}</v-chip
+      >
     </v-chip-group>
   </v-main>
 </template>
@@ -65,14 +79,14 @@ export default {
     suggestedReviewerClusters: Set,
     selectedCluster: String,
     mode: String,
+    wrap: Boolean,
   },
   data: function () {
     return {
-      currentCluster: this.selectedCluster.toString()
+      currentCluster: this.selectedCluster.toString(),
     };
   },
   watch: {
-    // whenever question changes, this function will run
     selectedCluster: function (newCluster) {
       this.currentCluster = newCluster;
     },
